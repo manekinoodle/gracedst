@@ -1,0 +1,70 @@
+PrefabFiles = {
+	"grace",
+	"grace_none",
+}
+
+Assets = {
+    Asset( "IMAGE", "images/saveslot_portraits/grace.tex" ),
+    Asset( "ATLAS", "images/saveslot_portraits/grace.xml" ),
+
+    Asset( "IMAGE", "images/selectscreen_portraits/grace.tex" ),
+    Asset( "ATLAS", "images/selectscreen_portraits/grace.xml" ),
+
+    Asset( "IMAGE", "images/selectscreen_portraits/grace_silho.tex" ),
+    Asset( "ATLAS", "images/selectscreen_portraits/grace_silho.xml" ),
+
+    Asset( "IMAGE", "bigportraits/grace.tex" ),
+    Asset( "ATLAS", "bigportraits/grace.xml" ),
+
+	Asset( "IMAGE", "images/map_icons/grace.tex" ),
+	Asset( "ATLAS", "images/map_icons/grace.xml" ),
+
+	Asset( "IMAGE", "images/avatars/avatar_grace.tex" ),
+    Asset( "ATLAS", "images/avatars/avatar_grace.xml" ),
+
+	Asset( "IMAGE", "images/avatars/avatar_ghost_grace.tex" ),
+    Asset( "ATLAS", "images/avatars/avatar_ghost_grace.xml" ),
+
+	Asset( "IMAGE", "images/avatars/self_inspect_grace.tex" ),
+    Asset( "ATLAS", "images/avatars/self_inspect_grace.xml" ),
+
+	Asset( "IMAGE", "images/names_grace.tex" ),
+    Asset( "ATLAS", "images/names_grace.xml" ),
+
+	Asset( "IMAGE", "images/names_gold_grace.tex" ),
+    Asset( "ATLAS", "images/names_gold_grace.xml" ),
+}
+
+AddMinimapAtlas("images/map_icons/grace.xml")
+
+local require = GLOBAL.require
+local STRINGS = GLOBAL.STRINGS
+
+-- The character select screen lines
+STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
+STRINGS.CHARACTER_NAMES.grace = "Grace"
+STRINGS.CHARACTER_DESCRIPTIONS.grace = "*Can communicate with ghosts\n*Can build graves\n*Can eat spoiled food\n*Frail\n*Has a small appetite"
+STRINGS.CHARACTER_QUOTES.grace = "\"Souls of a feather flock together.\""
+STRINGS.CHARACTER_SURVIVABILITY.grace = "Grim"
+
+-- Custom speech strings
+STRINGS.CHARACTERS.GRACE = require "speech_grace"
+
+-- The character's name as appears in-game
+STRINGS.NAMES.grace = "Grace"
+STRINGS.SKIN_NAMES.grace_none = "Ghost Grace"
+
+-- The skins shown in the cycle view window on the character select screen.
+-- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes
+local skin_modes = {
+    {
+        type = "ghost_skin",
+        anim_bank = "ghost",
+        idle_anim = "idle",
+        scale = 0.75,
+        offset = { 0, -25 }
+    },
+}
+
+-- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
+AddModCharacter("grace", "FEMALE", skin_modes)
