@@ -65,6 +65,11 @@ local master_postinit = function(inst)
 	inst.components.health:SetMaxHealth(TUNING.GRACE_HEALTH)
 	inst.components.hunger:SetMax(TUNING.GRACE_HUNGER)
 	inst.components.sanity:SetMax(TUNING.GRACE_SANITY)
+
+	--makes her immune to ghost's sanity drain
+	inst.components.sanity:AddSanityAuraImmunity("ghost")
+    inst.components.sanity:SetPlayerGhostImmunity(true)
+
   inst.Transform:SetScale(1.0, 1.0, 1.0)
 
 	-- Damage multiplier (optional)
