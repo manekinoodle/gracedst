@@ -40,7 +40,7 @@ AddMinimapAtlas("images/map_icons/grace.xml")
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
-local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/levin.xml")
+local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/grave.xml")
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
