@@ -66,9 +66,15 @@ local master_postinit = function(inst)
 	inst.components.hunger:SetMax(TUNING.GRACE_HUNGER)
 	inst.components.sanity:SetMax(TUNING.GRACE_SANITY)
 
+	--This is probably what allows wendy to interact with pipspooks but idk if I'm using it right
+	inst:AddTag("ghostlyfriend")
+
 	--makes her immune to ghost's sanity drain
 	inst.components.sanity:AddSanityAuraImmunity("ghost")
     inst.components.sanity:SetPlayerGhostImmunity(true)
+
+	--sets favourite food and the additional bonuses it gives
+	inst.components.foodaffinity:AddPrefabAffinity("trailmix", TUNING.AFFINITY_15_CALORIES_SMALL)
 
   inst.Transform:SetScale(1.0, 1.0, 1.0)
 
