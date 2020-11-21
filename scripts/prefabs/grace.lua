@@ -65,6 +65,7 @@ local master_postinit = function(inst)
 	inst.components.health:SetMaxHealth(TUNING.GRACE_HEALTH)
 	inst.components.hunger:SetMax(TUNING.GRACE_HUNGER)
 	inst.components.sanity:SetMax(TUNING.GRACE_SANITY)
+  inst.Transform:SetScale(1.0, 1.0, 1.0)
 
 	-- Damage multiplier (optional)
     inst.components.combat.damagemultiplier = 1
