@@ -2,6 +2,9 @@ local assets =
 {
     Asset("ANIM", "anim/gravestones.zip"),
     Asset("MINIMAP_IMAGE", "gravestones"),
+
+	Asset("ATLAS", "images/inventoryimages/gravestone.xml"), 
+    Asset("IMAGE", "images/inventoryimages/gravestone.tex"), 
 }
 
 local prefabs =

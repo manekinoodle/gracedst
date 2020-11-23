@@ -1,6 +1,7 @@
 PrefabFiles = {
 	"grace",
 	"grace_none",
+	"gravestone"
 }
 
 Assets = {
@@ -40,7 +41,13 @@ AddMinimapAtlas("images/map_icons/grace.xml")
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
-local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/grave.xml")
+--gravestone related stuff
+local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gravestone.xml")
+
+STRINGS.NAMES.gravestone = "Gravestone"
+STRINGS.NAMES.GRAVESTONE = "Gravestone"
+STRINGS.RECIPE_DESC.gravestone = "Put old bones to rest."
+STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
