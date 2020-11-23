@@ -91,6 +91,12 @@ local function fn()
 	  
     end
     
+	 --tool (from tool component) added to pristine state for optimization
+    inst:AddTag("tool")
+
+	inst:AddComponent("tool")
+    inst.components.tool:SetAction(ACTIONS.DIG)
+
 	inst:AddComponent("weapon")
 	inst.components.weapon:SetOnAttack(onattack)
 	inst.components.weapon:SetDamage(40)
@@ -99,6 +105,7 @@ local function fn()
     inst.components.finiteuses:SetMaxUses(160)
     inst.components.finiteuses:SetUses(160)
     inst.components.finiteuses:SetOnFinished(inst.Remove)
+	inst.components.finiteuses:SetConsumption(ACTIONS.DIG, 1)
 	
 	inst:AddComponent("inspectable")
 	inst:AddComponent("lootdropper")
