@@ -45,7 +45,7 @@ local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECI
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
 STRINGS.CHARACTER_NAMES.grace = "Grace"
-STRINGS.CHARACTER_DESCRIPTIONS.grace = "*Can communicate with ghosts\n*Can build graves\n*Can eat spoiled food\n*Frail\n*Has a small appetite"
+STRINGS.CHARACTER_DESCRIPTIONS.grace = "*A friend to all ghosts\n*Can build graves\n*Spoiled food has less of an effect\n*Frail\n*Has a small appetite"
 STRINGS.CHARACTER_QUOTES.grace = "\"Souls of a feather flock together.\""
 STRINGS.CHARACTER_SURVIVABILITY.grace = "Grim"
 
