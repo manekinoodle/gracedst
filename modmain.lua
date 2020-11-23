@@ -1,7 +1,8 @@
 PrefabFiles = {
 	"grace",
 	"grace_none",
-	"gravestone"
+	"gravestone",
+	"gladius"
 }
 
 Assets = {
@@ -48,6 +49,14 @@ STRINGS.NAMES.gravestone = "Gravestone"
 STRINGS.NAMES.GRAVESTONE = "Gravestone"
 STRINGS.RECIPE_DESC.gravestone = "Put old bones to rest."
 STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
+
+--This is supposed to be the shovel
+local gladius = AddRecipe("gladius", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gladius.xml")
+
+STRINGS.NAMES.gladius = "Gladius"
+STRINGS.NAMES.GLADIUS = "Gladius"
+STRINGS.RECIPE_DESC.gladius = "It's a sword, it can cut and slice things."
+STRINGS.RECIPE_DESC.GLADIUS = "It's a sword, it can cut and slice things."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
