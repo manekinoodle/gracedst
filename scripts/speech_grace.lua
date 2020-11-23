@@ -1997,7 +1997,7 @@ return {
         PURPLEGEM = "Purple like a... purple thing.",
         RABBIT =
         {
-            GENERIC = "He's wandering mindlessly, oblivious to his fate.",
+            GENERIC = "These little ones are unassuming, like me.", -- MT
             HELD = "He is safely in my embrace.",
         },
         RABBITHOLE =
@@ -3409,7 +3409,7 @@ return {
         GAZPACHO = "Cold and watery like a sailor's grave.",
         ASPARAGUSSOUP = "Soup.",
         VEGSTINGER = "Doesn't spice up my life.",
-        BANANAPOP = "I used to eat these with Abigail...",
+        BANANAPOP = "I think the other children would like these too.", -- MT
         CEVICHE = "All I taste is my sadness...",
         SALSA = "I don't feel much like dancing.",
         PEPPERPOPPER = "They're so good I almost forgot my crushing grief.",
