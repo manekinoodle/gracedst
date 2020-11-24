@@ -3,8 +3,8 @@ local assets=
 
 { 
 
-    Asset("ANIM", "anim/gladius.zip"), 
-    Asset("ANIM", "anim/swap_gladius.zip"),  
+    Asset("ANIM", "anim/shovel.zip"), 
+    Asset("ANIM", "anim/swap_shovel.zip"),  
 
     Asset("ATLAS", "images/inventoryimages/gladius.xml"), 
     Asset("IMAGE", "images/inventoryimages/gladius.tex"), 
@@ -55,7 +55,7 @@ local function fn()
 
     local function OnEquip(inst, owner)
 	
-        owner.AnimState:OverrideSymbol("swap_object", "swap_gladius", "gladius")
+        owner.AnimState:OverrideSymbol("swap_object", "swap_shovel", "swap_shovel")
 		
         owner.AnimState:Show("ARM_carry") 
         owner.AnimState:Hide("ARM_normal") 
@@ -81,8 +81,8 @@ local function fn()
 	MakeInventoryPhysics(inst)
     MakeHauntableLaunch(inst)
 	
-    anim:SetBank("gladius")
-    anim:SetBuild("gladius")
+    anim:SetBank("shovel")
+    anim:SetBuild("shovel")
     anim:PlayAnimation("idle")
 	
 	if not TheWorld.ismastersim then
@@ -96,6 +96,7 @@ local function fn()
 
 	inst:AddComponent("tool")
     inst.components.tool:SetAction(ACTIONS.DIG)
+	inst.components.tool:SetAction(ACTIONS.HAMMER)
 
 	inst:AddComponent("weapon")
 	inst.components.weapon:SetOnAttack(onattack)
