@@ -12,47 +12,47 @@ return {
 	{
         REPAIR =
         {
-            WRONGPIECE = "Will I never make the pieces fit in this pitiful life?",
+            WRONGPIECE = "A round peg in a square hole.", -- MT
         },
         BUILD =
         {
             MOUNTED = "I can't reach the ground from up here.", -- MT
-            HASPET = "I can only have one...",
+            HASPET = "Only one Half. Never more.", -- MT
         },
 		SHAVE =
 		{
-			AWAKEBEEFALO = "I'd prefer to be blanketed by the night for this.",
-			GENERIC = "I'm not taking a razor to that.",
-			NOBITS = "She's already lost everything.",
+			AWAKEBEEFALO = "I need for this creature to be still like the dead first.", -- MT
+			GENERIC = "No, I'm not going to do that.", -- MT
+			NOBITS = "Nothing is left.", -- MT
 --fallback to speech_wilson.lua             REFUSE = "only_used_by_woodie",
 		},
 		STORE =
 		{
-			GENERIC = "It wouldn't fit.",
-			NOTALLOWED = "I must mind my manners.",
-			INUSE = "Can I use that after you?",
-            NOTMASTERCHEF = "That belongs to Warly.",
+			GENERIC = "It's full.", -- MT
+			NOTALLOWED = "No, that wouldn't be polite.", -- MT
+			INUSE = "Are you storing your burdens?", -- MT
+            NOTMASTERCHEF = "I'll burn myself if I use that.", -- MT
 		},
         CONSTRUCT =
         {
-            INUSE = "No one wants to share with me.",
-            NOTALLOWED = "It doesn't go there. I know the feeling.",
-            EMPTY = "Nothing comes of nothing.",
-            MISMATCH = "I can't do anything right.",
+            INUSE = "I can wait my turn.", -- MT
+            NOTALLOWED = "The earth rejects it.", -- MT
+            EMPTY = "It won't be borne of the ground.", -- MT
+            MISMATCH = "A round peg in a square hole.", -- MT
         },
 		RUMMAGE =
 		{
-			GENERIC = "Must everything in life be hard?",
-			INUSE = "I can come back later...",
-            NOTMASTERCHEF = "That belongs to Warly.",
+			GENERIC = "Must life be so long?", -- MT
+			INUSE = "I can wait my turn.", -- MT
+            NOTMASTERCHEF = "No, I shouldn't do that.", -- MT
 		},
 		UNLOCK =
         {
---fallback to speech_wilson.lua         	WRONGKEY = "I can't do that.",
+--fallback to speech_wilson.lua         	WRONGKEY = "No, that's not right.", -- MT
         },
 		USEKLAUSSACKKEY =
         {
-        	WRONGKEY = "It remains locked, like my heart.",
+        	WRONGKEY = "It was rejected. Like a body with debts.", -- MT
         	KLAUS = "Death would surely find me if I tried...",
 			QUAGMIRE_WRONGKEY = "Should I give up, or find another key?",
         },
@@ -62,28 +62,28 @@ return {
 		},
         COOK =
         {
-            GENERIC = "Oh. No one ever taught me to cook.",
-            INUSE = "What are you making...? Smells good...",
-            TOOFAR = "It's so... far away...",
+            GENERIC = "I always ate what the earth gave me.", -- MT
+            INUSE = "I can sustain myself with the smell.", -- MT
+            TOOFAR = "I am damp, but my arms are still too brittle.", -- MT
         },
         START_CARRAT_RACE =
         {
-            NO_RACERS = "I suppose I'll have to go find some Carrats...",
+            NO_RACERS = "No Carrats. I can always just crouch and grab.", -- MT
         },
 
 		DISMANTLE =
 		{
-			COOKING = "Mother warned me not to touch a pot while it's cooking.",
-			INUSE = "Someone's in there.",
-			NOTEMPTY = "It isn't empty inside, unlike me.",
+			COOKING = "No, it's still creating.", -- MT
+			INUSE = "I can wait my turn.", -- MT
+			NOTEMPTY = "Take the bounty before throwing out the blood.", -- MT
         },
         FISH_OCEAN =
 		{
-			TOODEEP = "I can't catch anything out here with this flimsy rod.",
+			TOODEEP = "It'll snap if I do that.", -- MT
 		},
         OCEAN_FISHING_POND =
 		{
-			WRONGGEAR = "This might be overdoing it a bit.",
+			WRONGGEAR = "Don't bring a gun to a knife fight.", -- MT
 		},
         --wickerbottom specific action
 --fallback to speech_wilson.lua         READ =
@@ -94,140 +94,140 @@ return {
 
         GIVE =
         {
-            GENERIC = "No... I can't...",
-            DEAD = "They've no need of material possessions where they've gone.",
-            SLEEPING = "Another time. It's enjoying a temporary death right now...",
-            BUSY = "It's too busy to pay attention to me...",
-            ABIGAILHEART = "As I thought. Why do you keep straddling this fence?", -- MT
-            GHOSTHEART = "Some things should stay dead.",
-            NOTGEM = "I don't think that will work there...",
-            WRONGGEM = "I got it wrong... again...",
-            NOTSTAFF = "That's not the right thing...",
-            MUSHROOMFARM_NEEDSSHROOM = "It doesn't need that. It needs a mushroom.",
-            MUSHROOMFARM_NEEDSLOG = "It doesn't need that. It needs a magic log.",
-            MUSHROOMFARM_NOMOONALLOWED = "They won't survive here.",
-            SLOTFULL = "There's no room...",
-            FOODFULL = "It hasn't yet eaten our last sacrifice...",
-            NOTDISH = "That may not be best...",
-            DUPLICATE = "Oh... my information's useless...",
-            NOTSCULPTABLE = "I think that's... wrong...",
---fallback to speech_wilson.lua             NOTATRIUMKEY = "It's not quite the right shape.",
-            CANTSHADOWREVIVE = "It has no will to live.",
-            WRONGSHADOWFORM = "These bones are grimly misassembled...",
-            NOMOON = "I can't... not in here.",
+            GENERIC = "I can't ease this burden.", -- MT
+            DEAD = "The dead know no greed.", -- MT
+            SLEEPING = "No, a gift can't be received like this.", -- MT
+            BUSY = "Too busy. No feelings to give me in return.", -- MT
+            ABIGAILHEART = "As I thought.", -- MT
+            GHOSTHEART = "They have no attachment to this world.", -- MT
+            NOTGEM = "No, that's not the right thing.", -- MT
+            WRONGGEM = "This isn't it.", -- MT
+            NOTSTAFF = "It won't fit.", -- MT
+            MUSHROOMFARM_NEEDSSHROOM = "No, no, it desires a mushroom.", -- MT
+            MUSHROOMFARM_NEEDSLOG = "No, no, it desires a magic log.", -- MT
+            MUSHROOMFARM_NOMOONALLOWED = "They need the sight of Suok to survive.", -- MT
+            SLOTFULL = "It's full already.", -- MT
+            FOODFULL = "No more food. I'm sorry.", -- MT
+            NOTDISH = "I don't think that's right.", -- MT
+            DUPLICATE = "It's already known.", -- MT
+            NOTSCULPTABLE = "I can't give it shape.", -- MT
+--fallback to speech_wilson.lua             NOTATRIUMKEY = "That's not the right one.", -- MT
+            CANTSHADOWREVIVE = "It is an agent of the sky. I shouldn't bring it to the earth.", -- MT
+            WRONGSHADOWFORM = "Misshapen, like a certain golem.", -- MT
+            NOMOON = "I can't do that here.", -- MT
 			PIGKINGGAME_MESSY = "What a mess.", -- MT
-			PIGKINGGAME_DANGER = "Danger lurks. There's no time for games.",
-			PIGKINGGAME_TOOLATE = "It's much too late for games.",
+			PIGKINGGAME_DANGER = "I feel danger nipping at my heels.", -- MT
+			PIGKINGGAME_TOOLATE = "Some stories can be missed.", -- MT
         },
         GIVETOPLAYER =
         {
-            FULL = "They're already too burdened by this world...",
+            FULL = "Their burdens should be eased, first.", -- MT
             DEAD = "The dead know no greed.", -- MT
-            SLEEPING = "They look so peaceful... I'll come back later.",
-            BUSY = "Oh... I can tell you're busy...",
+            SLEEPING = "No, a gift can't be received like this.", -- MT
+            BUSY = "Too busy. No feelings to give me in return.", -- MT
         },
         GIVEALLTOPLAYER =
         {
-            FULL = "They're already too burdened by this world...",
+            FULL = "Their burdens should be eased, first.", -- MT
             DEAD = "The dead know no greed.", -- MT
-            SLEEPING = "They look so peaceful... I'll come back later.",
-            BUSY = "Oh... I can tell you're busy...",
+            SLEEPING = "No, a gift can't be received like this.", -- MT
+            BUSY = "Too busy. No feelings to give me in return.", -- MT
         },
         WRITE =
         {
-            GENERIC = "I... I can't.",
-            INUSE = "Take your time... I'll just watch.",
+            GENERIC = "No, I can't do that.", -- MT
+            INUSE = "Can I have a turn after you?", -- MT
         },
         DRAW =
         {
-            NOIMAGE = "I draw better with references...",
+            NOIMAGE = "References are an artist's best friend.", -- MT
         },
         CHANGEIN =
         {
-            GENERIC = "What's the point.",
-            BURNING = "I guess I won't be changing again anytime soon.",
-            INUSE = "I'd like to use that after you. If you don't mind, I mean.",
+            GENERIC = "What's the point of doing that?", -- MT
+            BURNING = "I'd just cremate myself. No, that's not the word.", -- MT
+            INUSE = "I can wait my turn.", -- MT
         },
         ATTUNE =
         {
-            NOHEALTH = "I can't... I don't feel so good...",
+            NOHEALTH = "My life force is lacking.", -- MT
         },
         MOUNT =
         {
-            TARGETINCOMBAT = "I'll wait for it to calm down...",
-            INUSE = "I'll have to be quicker to the saddle next time.",
+            TARGETINCOMBAT = "They're fighting for their fate.",
+            INUSE = "No, I shouldn't become another burden.",
         },
         SADDLE =
         {
-            TARGETINCOMBAT = "I'll wait for it to calm down...",
+            TARGETINCOMBAT = "They're fighting for their fate.",
         },
         TEACH =
         {
             --Recipes/Teacher
-            KNOWN = "I already possess that knowledge...",
-            CANTLEARN = "That knowledge is beyond me...",
+            KNOWN = "I've already learnt this.",
+            CANTLEARN = "Maybe those brothers could understand, but not me.",
 
             --MapRecorder/MapExplorer
-            WRONGWORLD = "It's... not right...",
+            WRONGWORLD = "It's something that's out of this world, and I don't mean exceptional.", -- MT
 
 			--MapSpotRevealer/messagebottle
-			MESSAGEBOTTLEMANAGER_NOT_FOUND = "The world is too dark... I can't see it clearly.",--Likely trying to read messagebottle treasure map in caves
+			MESSAGEBOTTLEMANAGER_NOT_FOUND = "The Lines, er, the lines are hidden.",--Likely trying to read messagebottle treasure map in caves
         },
         WRAPBUNDLE =
         {
-            EMPTY = "I can't wrap nothingness...",
+            EMPTY = "I must wrap something tangible.",
         },
         PICKUP =
         {
-			RESTRICTION = "No... I don't want that...",
-			INUSE = "Someone's beat me to it.",
+			RESTRICTION = "I shouldn't touch that.",
+			INUSE = "It's been claimed.",
             NOTMINE_YOTC =
             {
-                "It... doesn't seem to like me very much.",
-                "I shouldn't take what isn't mine.",
+                "It wants to bite me.",
+                "Stealing is frowned upon.",
             },
         },
         SLAUGHTER =
         {
-            TOOFAR = "It has escaped death's cold embrace... for now.",
+            TOOFAR = "My side is damp, but my arms are too brittle.",
         },
         REPLATE =
         {
-            MISMATCH = "Like my soul, this food doesn't belong in this vessel.",
-            SAMEDISH = "I've already put this on a dish.",
+            MISMATCH = "I don't like how that would look.",
+            SAMEDISH = "Just one serving is enough.",
         },
         SAIL =
         {
-        	REPAIR = "It looks okay to me.",
+        	REPAIR = "It doesn't need patching yet. But I do.",
         },
         ROW_FAIL =
         {
-            BAD_TIMING0 = "As usual, I seem to be out of step with the world.",
+            BAD_TIMING0 = "Did I count four? Or three?",
             BAD_TIMING1 = "No, I'm out of touch, and out of time...",
-            BAD_TIMING2 = "That was pathetic...",
+            BAD_TIMING2 = "Maybe today is Thursday.",
         },
         LOWER_SAIL_FAIL =
         {
-            "Well... that was a futile effort.",
-            "As expected... utter failure.",
-            "It seems I'm not cut out for a life of sailing.",
+            "I only know the earth. The sea eludes me.",
+            "I should just go back to the soil...",
+            "I'm sorry, Murky, but I can't take you sailing.",
         },
         BATHBOMB =
         {
-            GLASSED = "It's covered in glass...",
-            ALREADY_BOMBED = "It's already been done.",
+            GLASSED = "I don't want to cut or be cut.",
+            ALREADY_BOMBED = "The deed has already been done.",
         },
 		GIVE_TACKLESKETCH =
 		{
-			DUPLICATE = "Oh... my information's useless...",
+			DUPLICATE = "It's already known.",
 		},
 		COMPARE_WEIGHABLE =
 		{
-			TOO_SMALL = "It was taken too soon...",
+			TOO_SMALL = "It wasn't nurtured enough.",
 		},
         BEGIN_QUEST =
         {
-            ONEGHOST = "I can only ferry one soul to their destination at a time...",
+            ONEGHOST = "Children get lonely. I should focus on my current companion.",
         },
 		TELLSTORY =
 		{
@@ -240,13 +240,13 @@ return {
 --fallback to speech_wilson.lua             SAMESONG = "only_used_by_wathgrithr",
         },
 	},
-	ACTIONFAIL_GENERIC = "I can't do anything right.",
-	ANNOUNCE_BOAT_LEAK = "Our boat weeps salty tears.",
-	ANNOUNCE_BOAT_SINK = "Here I come, Ophelia.",
-	ANNOUNCE_DIG_DISEASE_WARNING = "Your death has been delayed another day.",
-	ANNOUNCE_PICK_DISEASE_WARNING = "Smells like death.",
-	ANNOUNCE_ADVENTUREFAIL = "Not all deaths are alike.",
-    ANNOUNCE_MOUNT_LOWHEALTH = "This beast... is not long for this world.",
+	ACTIONFAIL_GENERIC = "My arms are limp. I can't do it.",
+	ANNOUNCE_BOAT_LEAK = "Oh no, please don't cry.",
+	ANNOUNCE_BOAT_SINK = "Now all of me will be damp.",
+	ANNOUNCE_DIG_DISEASE_WARNING = "It is silent. Will that... plague us again?",
+	ANNOUNCE_PICK_DISEASE_WARNING = "The Pest...",
+	ANNOUNCE_ADVENTUREFAIL = "No matter who falls, the final embrace is the same.",
+    ANNOUNCE_MOUNT_LOWHEALTH = "I'll make a grave. You'll need it soon.",
 
     --waxwell and wickerbottom specific strings
 --fallback to speech_wilson.lua     ANNOUNCE_TOOMANYBIRDS = "only_used_by_waxwell_and_wicker",
@@ -258,31 +258,31 @@ return {
 --fallback to speech_wilson.lua     ANNOUNCE_WIMPYTONORMAL = "only_used_by_wolfang",
 --fallback to speech_wilson.lua     ANNOUNCE_MIGHTYTONORMAL = "only_used_by_wolfang",
 
-	ANNOUNCE_BEES = "Bees! Maybe I'm allergic!",
-	ANNOUNCE_BOOMERANG = "Ow! That was karma.",
-	ANNOUNCE_CHARLIE = "Demon! Show yourself!",
-	ANNOUNCE_CHARLIE_ATTACK = "I am attacked!",
+	ANNOUNCE_BEES = "Bees? Stop and smell the roses.",
+	ANNOUNCE_BOOMERANG = "Ouch! It'll be back.",
+	ANNOUNCE_CHARLIE = "Poet, builder, lover, soldier: grass and men...",
+	ANNOUNCE_CHARLIE_ATTACK = "...seize what light they ken - until life ceases.",
 --fallback to speech_wilson.lua 	ANNOUNCE_CHARLIE_MISSED = "only_used_by_winona", --winona specific
 	ANNOUNCE_COLD = "It's cold here. Grave-cold.", -- MT
-	ANNOUNCE_HOT = "I am miserably hot.",
-	ANNOUNCE_CRAFTING_FAIL = "I lack the necessary materials.",
-	ANNOUNCE_DEERCLOPS = "That could be bad.",
-	ANNOUNCE_CAVEIN = "We're going to be crushed...",
+	ANNOUNCE_HOT = "I feel my skin flake...",
+	ANNOUNCE_CRAFTING_FAIL = "I don't have enough to do that.",
+	ANNOUNCE_DEERCLOPS = "What do you see, big, strange bull?",
+	ANNOUNCE_CAVEIN = "The earth is angry. She itches.",
 	ANNOUNCE_ANTLION_SINKHOLE =
 	{
-		"Oh, now what?",
-		"The ground crumbles beneath me.",
-		"May the earth swallow me whole.",
+		"What a warm embrace.",
+		"Will I finally see the true form of the world?",
+		"Can dolls be buried without being forgotten?",
 	},
 	ANNOUNCE_ANTLION_TRIBUTE =
 	{
-        "A gift...",
-        "We pay tribute, this day...",
-        "Its bloodlust is temporarily quenched.",
+        "With this, take my compassion.",
+        "Are you calmer now?",
+        "Your hunger... will it ever be sated?",
 	},
-	ANNOUNCE_SACREDCHEST_YES = "It accepted our items.",
-	ANNOUNCE_SACREDCHEST_NO = "We failed... again...",
-    ANNOUNCE_DUSK = "The sickly sweet scent of roses fills the air...",
+	ANNOUNCE_SACREDCHEST_YES = "It accepts the items and our feelings.",
+	ANNOUNCE_SACREDCHEST_NO = "Ah, what do you lack?",
+    ANNOUNCE_DUSK = "The scent of twyre? It's the scent of home.",
 
     --wx-78 specific
 --fallback to speech_wilson.lua     ANNOUNCE_CHARGE = "only_used_by_wx78",
@@ -290,12 +290,12 @@ return {
 
 	ANNOUNCE_EAT =
 	{
-		GENERIC = "Yum!",
-		PAINFUL = "That was not edible.",
+		GENERIC = "My stomach is filled.",
+		PAINFUL = "I could have managed without that.",
 		SPOILED = "Even like this, I should always express thanks for the meal.", -- MT
-		STALE = "Was that stale?",
-		INVALID = "I would never.",
-        YUCKY = "I fear consuming that.",
+		STALE = "My stomach is filled.",
+		INVALID = "No, I won't have it.",
+        YUCKY = "I can manage without that.",
 
         --Warly specific ANNOUNCE_EAT strings
 --fallback to speech_wilson.lua 		COOKED = "only_used_by_warly",
@@ -309,7 +309,7 @@ return {
 --fallback to speech_wilson.lua         SAME_OLD_5 = "only_used_by_warly",
 --fallback to speech_wilson.lua 		TASTY = "only_used_by_warly",
     },
-
+-- MNK 25/11 00:38
     ANNOUNCE_ENCUMBERED =
     {
         "I must carry... my own burden...",
