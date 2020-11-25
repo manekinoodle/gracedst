@@ -51,20 +51,20 @@ STRINGS.RECIPE_DESC.gravestone = "Put old bones to rest."
 STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 
 --removing gravestone stuff
-local ACTIONS = GLOBAL.ACTIONS
+--local ACTIONS = GLOBAL.ACTIONS
 
-local function onhammered(inst, worker)
-	inst:Remove()
-end
+--local function onhammered(inst, worker)
+	--inst:Remove()
+--end
 
-local function init(inst)
-	inst:AddComponent("workable")
-	inst.components.workable:SetWorkAction(ACTIONS.HAMMER)
-    inst.components.workable:SetWorkLeft(3)
-    inst.components.workable:SetOnFinishCallback(onhammered)
-end
+--local function init(inst)
+	--inst:AddComponent("workable")
+	--inst.components.workable:SetWorkAction(ACTIONS.HAMMER)
+    --inst.components.workable:SetWorkLeft(3)
+    --inst.components.workable:SetOnFinishCallback(onhammered)
+--end
 
-AddPrefabPostInit("gravestone", init)
+--AddPrefabPostInit("gravestone", init)
 
 --This is supposed to be the shovel
 local gladius = AddRecipe("gladius", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gladius.xml")

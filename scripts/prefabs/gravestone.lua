@@ -11,9 +11,35 @@ local prefabs =
 {
     "smallghost",
     "mound",
+	"rock_break_fx",
+    "collapse_small",
 }
 
+SetSharedLootTable( 'rock_flintless_med',
+{
+    {'rocks', 1.0},
+    {'rocks', 1.0},
+    {'rocks', 1.0},
+    {'rocks', 0.4},
+})
+
 local function on_child_mound_dug(mound, data)
+end
+
+--function that is executed when grave is hammered
+local function onhammered(inst, worker)
+		local pt = inst:GetPosition()
+        SpawnPrefab("rock_break_fx").Transform:SetPosition(pt:Get())
+        inst.components.lootdropper:DropLoot(pt)
+
+        if inst.showCloudFXwhenRemoved then
+            local fx = SpawnPrefab("collapse_small")
+            fx.Transform:SetPosition(inst.Transform:GetWorldPosition())
+        end
+
+		if not inst.doNotRemoveOnWorkDone then
+	        inst:Remove()
+		end
 end
 
 local function onload(inst, data, newents)
@@ -123,6 +149,16 @@ local function fn()
     if not TheWorld.ismastersim then
         return inst
     end
+
+	--for hammering graves
+	inst:AddComponent("lootdropper")
+
+	inst.components.lootdropper:SetChanceLootTable('rock_flintless_med')
+
+	inst:AddComponent("workable")
+	inst.components.workable:SetWorkAction(ACTIONS.HAMMER)
+    inst.components.workable:SetWorkLeft(3)
+    inst.components.workable:SetOnFinishCallback(onhammered)
 
     inst.AnimState:PlayAnimation("grave"..tostring(math.random(4)))
 
