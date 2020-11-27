@@ -4,7 +4,7 @@ local assets=
 { 
 
     Asset("ANIM", "anim/shovel.zip"), 
-    Asset("ANIM", "anim/swap_shovel.zip"),  
+    Asset("ANIM", "anim/swap_gravedigger.zip"),  
 
     Asset("ATLAS", "images/inventoryimages/gladius.xml"), 
     Asset("IMAGE", "images/inventoryimages/gladius.tex"), 
@@ -55,7 +55,7 @@ local function fn()
 
     local function OnEquip(inst, owner)
 	
-        owner.AnimState:OverrideSymbol("swap_object", "swap_shovel", "swap_shovel")
+        owner.AnimState:OverrideSymbol("swap_object", "swap_gravedigger", "swap_gravedigger")
 		
         owner.AnimState:Show("ARM_carry") 
         owner.AnimState:Hide("ARM_normal") 
