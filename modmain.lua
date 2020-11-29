@@ -67,7 +67,7 @@ STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 --AddPrefabPostInit("gravestone", init)
 
 --This is supposed to be the shovel
-local gladius = AddRecipe("gladius", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gladius.xml")
+local gladius = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gladius.xml")
 
 STRINGS.NAMES.gladius = "Gladius"
 STRINGS.NAMES.GLADIUS = "Gladius"
