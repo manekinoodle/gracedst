@@ -129,7 +129,7 @@ local function fn()
 	
 end
 
-return  Prefab("common/inventory/gladius", fn, assets, prefabs)
+return  Prefab("common/inventory/gravedigger", fn, assets, prefabs)
 
 --Latest Mod Update: 22.04.2017
 --Current Mod Version: [1.0.3]
