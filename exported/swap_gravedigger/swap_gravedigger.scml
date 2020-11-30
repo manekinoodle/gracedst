@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
     <folder id="0" name="swap_gravedigger">
-        <file id="0" name="swap_gravedigger/swap_gravedigger-0.png" width="164" height="312" pivot_x="0.491057" pivot_y="0.690497"/>
-        <file id="1" name="swap_gravedigger/swap_gravedigger-2.png" width="164" height="312" pivot_x="0.656842" pivot_y="0.675771"/>
-        <file id="2" name="swap_gravedigger/swap_gravedigger-3.png" width="408" height="260" pivot_x="0.540403" pivot_y="0.602301"/>
+        <file id="0" name="swap_gravedigger/swap_gravedigger-0.png" width="156" height="260" pivot_x="0.612076" pivot_y="0.560204"/>
+        <file id="1" name="swap_gravedigger/swap_gravedigger-2.png" width="164" height="312" pivot_x="0.492255" pivot_y="0.640065"/>
+        <file id="2" name="swap_gravedigger/swap_gravedigger-3.png" width="72" height="324" pivot_x="0.649992" pivot_y="0.626916"/>
         <file id="3" name="swap_gravedigger/swap_gravedigger-4.png" width="88" height="164" pivot_x="0.373309" pivot_y="0.676972"/>
-        <file id="4" name="swap_gravedigger/swap_gravedigger-5.png" width="136" height="348" pivot_x="0.510581" pivot_y="0.744127"/>
-        <file id="5" name="swap_gravedigger/swap_gravedigger-6.png" width="72" height="324" pivot_x="0.662784" pivot_y="0.678468"/>
-        <file id="6" name="swap_gravedigger/swap_gravedigger-7.png" width="156" height="260" pivot_x="0.610028" pivot_y="0.600289"/>
+        <file id="4" name="swap_gravedigger/swap_gravedigger-5.png" width="156" height="260" pivot_x="0.609661" pivot_y="0.557665"/>
+        <file id="5" name="swap_gravedigger/swap_gravedigger-6.png" width="156" height="320" pivot_x="0.604081" pivot_y="0.553791"/>
+        <file id="6" name="swap_gravedigger/swap_gravedigger-7.png" width="156" height="320" pivot_x="0.489009" pivot_y="0.634557"/>
     </folder>
     <entity id="0" name="swap_gravedigger">
         <animation id="0" name="idle" length="200">
             <mainline>
                 <key id="0">
-                    <object_ref id="0" name="swap_gravedigger-0" folder="0" file="0" abs_x="1.008943" abs_y="62.809503" abs_pivot_x="0.491057" abs_pivot_y="0.690497" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="0" name="swap_gravedigger-0" folder="0" file="0" abs_x="19.887924" abs_y="26.939796" abs_pivot_x="0.612076" abs_pivot_y="0.560204" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
                 </key>
                 <key id="1" time="34">
                     <object_ref id="0" timeline="1" key="0" z_index="0"/>
@@ -27,11 +27,11 @@
                 <key id="4" time="134">
                     <object_ref id="0" timeline="4" key="0" z_index="0"/>
                 </key>
-                <key id="5" time="167">
-                    <object_ref id="0" timeline="5" key="0" z_index="0"/>
+                <key id="5" time="162">
+                    <object_ref id="0" timeline="4" key="1" z_index="0"/>
                 </key>
-                <key id="6" time="168">
-                    <object_ref id="0" timeline="5" key="1" z_index="0"/>
+                <key id="6" time="167">
+                    <object_ref id="0" timeline="5" key="0" z_index="0"/>
                 </key>
                 <key id="7" time="200">
                     <object_ref id="0" timeline="6" key="0" z_index="0"/>
@@ -39,26 +39,26 @@
             </mainline>
             <timeline id="0" name="swap_gravedigger-0">
                 <key id="0" spin="0">
-                    <object folder="0" file="0" x="1.008943" y="62.809503" angle="0"/>
+                    <object folder="0" file="0" x="19.887924" y="26.939796" angle="0"/>
                 </key>
                 <key id="1" time="34" spin="0">
-                    <object folder="0" file="0" x="1.008943" y="62.809503" angle="0"/>
+                    <object folder="0" file="0" x="19.887924" y="26.939796" angle="0"/>
                 </key>
             </timeline>
             <timeline id="1" name="swap_gravedigger-2_000">
                 <key id="0" time="34" spin="0">
-                    <object folder="0" file="1" x="1" y="70" angle="0"/>
+                    <object folder="0" file="1" x="-0.992255" y="60.859935" angle="0"/>
                 </key>
                 <key id="1" time="67" spin="0">
-                    <object folder="0" file="1" x="1" y="70" angle="0"/>
+                    <object folder="0" file="1" x="-0.992255" y="60.859935" angle="0"/>
                 </key>
             </timeline>
             <timeline id="2" name="swap_gravedigger-3">
                 <key id="0" time="67" spin="0">
-                    <object folder="0" file="2" x="2.959597" y="31.897699" angle="0"/>
+                    <object folder="0" file="2" x="10.850008" y="39.873084" angle="0"/>
                 </key>
                 <key id="1" time="100" spin="0">
-                    <object folder="0" file="2" x="2.959597" y="31.897699" angle="0"/>
+                    <object folder="0" file="2" x="10.850008" y="39.873084" angle="0"/>
                 </key>
             </timeline>
             <timeline id="3" name="swap_gravedigger-4">
@@ -71,26 +71,26 @@
             </timeline>
             <timeline id="4" name="swap_gravedigger-5">
                 <key id="0" time="134" spin="0">
-                    <object folder="0" file="4" x="-0.010581" y="51.755873" angle="0"/>
+                    <object folder="0" file="4" x="95.096531" y="-63.251311" angle="0"/>
                 </key>
-                <key id="1" time="167" spin="0">
-                    <object folder="0" file="4" x="-0.010581" y="51.755873" angle="0"/>
+                <key id="1" time="162" spin="0">
+                    <object folder="0" file="4" x="15.445895" y="3.275669" angle="0"/>
+                </key>
+                <key id="2" time="167" spin="0">
+                    <object folder="0" file="4" x="15.445895" y="3.275669" angle="0"/>
                 </key>
             </timeline>
             <timeline id="5" name="swap_gravedigger-6">
                 <key id="0" time="167" spin="0">
-                    <object folder="0" file="5" x="50.708344" y="-61.351784" angle="0"/>
+                    <object folder="0" file="5" x="1.895919" y="27.946209" angle="0"/>
                 </key>
-                <key id="1" time="168" spin="0">
-                    <object folder="0" file="5" x="13.837216" y="43.821532" angle="0"/>
-                </key>
-                <key id="2" time="200" spin="0">
-                    <object folder="0" file="5" x="13.837216" y="43.821532" angle="0"/>
+                <key id="1" time="200" spin="0">
+                    <object folder="0" file="5" x="1.895919" y="27.946209" angle="0"/>
                 </key>
             </timeline>
             <timeline id="6" name="swap_gravedigger-7">
                 <key id="0" time="200" spin="0">
-                    <object folder="0" file="6" x="1.889972" y="37.899711" angle="0"/>
+                    <object folder="0" file="6" x="5.010991" y="48.865443" angle="0"/>
                 </key>
             </timeline>
         </animation>

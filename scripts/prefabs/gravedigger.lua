@@ -56,6 +56,7 @@ local function fn()
     local function OnEquip(inst, owner)
 	
         owner.AnimState:OverrideSymbol("swap_object", "swap_gravedigger", "swap_gravedigger")
+		inst.Transform:SetScale(0.8, 0.8, 0.8)
 		
         owner.AnimState:Show("ARM_carry") 
         owner.AnimState:Hide("ARM_normal") 
@@ -63,7 +64,8 @@ local function fn()
     end
 
     local function OnUnequip(inst, owner) 
-	
+		
+		inst.Transform:SetScale(1.0, 1.0, 1.0)
         owner.AnimState:Hide("ARM_carry") 
         owner.AnimState:Show("ARM_normal") 
 		
