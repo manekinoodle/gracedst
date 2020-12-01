@@ -11,7 +11,7 @@ TUNING.GRACE_SANITY = 200
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.GRACE = {
-	"shovel",
+	"gravedigger",
 }
 
 local start_inv = {}
@@ -19,6 +19,12 @@ for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
     start_inv[string.lower(k)] = v.GRACE
 end
 local prefabs = FlattenTree(start_inv, true)
+
+local function oneat(inst, food)
+    if (food.prefab == "petals" or food.prefab == "petals_evil" or food.prefab == "foliage" or food.prefab == "succulent_picked") then
+		inst.components.hunger:DoDelta(1.5)
+    end
+end
 
 -- When the character is revived from human
 local function onbecamehuman(inst)
@@ -72,6 +78,7 @@ local master_postinit = function(inst)
 	--WX78 had this tag, not sure if it's what gives him his spoilage immunity
 	if inst.components.eater ~= nil then
         inst.components.eater.ignoresspoilage = true
+		inst.components.eater:SetOnEatFn(oneat)
     end
 
 	--makes her immune to ghost's sanity drain
