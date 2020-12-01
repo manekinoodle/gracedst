@@ -3,7 +3,7 @@ local assets=
 
 { 
 
-    Asset("ANIM", "anim/shovel.zip"), 
+    Asset("ANIM", "anim/gravedigger.zip"), 
     Asset("ANIM", "anim/swap_gravedigger.zip"),  
 
     Asset("ATLAS", "images/inventoryimages/gladius.xml"), 
@@ -83,8 +83,8 @@ local function fn()
 	MakeInventoryPhysics(inst)
     MakeHauntableLaunch(inst)
 	
-    anim:SetBank("shovel")
-    anim:SetBuild("shovel")
+    anim:SetBank("gravedigger")
+    anim:SetBuild("gravedigger")
     anim:PlayAnimation("idle")
 	
 	if not TheWorld.ismastersim then
