@@ -73,7 +73,7 @@ return {
 
 		DISMANTLE =
 		{
-			COOKING = "No, it's still creating.", -- MT
+			COOKING = "No, it's still cooking.", -- MT
 			INUSE = "I can wait my turn.", -- MT
 			NOTEMPTY = "Take the bounty before throwing out the blood.", -- MT
         },
@@ -2029,46 +2029,46 @@ return {
             GENERIC = "Reeds. They could be used for something.",
             PICKED = "Shaved beyond recognition.", -- MNK 01/12 12:56
         },
-        RELIC = "A leftover of an ancient world.",
-        RUINS_RUBBLE = "A pile of broken dreams.",
-        RUBBLE = "Broken bits of stone.",
+        RELIC = "It's from a bygone age.",
+        RUINS_RUBBLE = "Broken and forgotten.",
+        RUBBLE = "Broken.",
         RESEARCHLAB =
         {
-            GENERIC = "I will learn unspeakable things.",
-            BURNT = "It is unspeakably burnt.",
+            GENERIC = "What will I learn today?",
+            BURNT = "I have learnt... nothing!",
         },
         RESEARCHLAB2 =
         {
-            GENERIC = "I will learn unspeakable things.",
-            BURNT = "It is unspeakably burnt.",
+            GENERIC = "What will I learn today?",
+            BURNT = "I have learnt... nothing!",
         },
         RESEARCHLAB3 =
         {
-            GENERIC = "I have learnt unspeakable things.",
-            BURNT = "It is unspeakably burnt.",
+            GENERIC = "I learnt much today!",
+            BURNT = "I have learnt... nothing!",
         },
         RESEARCHLAB4 =
         {
-            GENERIC = "This is but a step from madness.",
-            BURNT = "Madness brings fire.",
+            GENERIC = "I will be learning mad things.",
+            BURNT = "Mad gains? More like mad losses.",
         },
         RESURRECTIONSTATUE =
         {
-            GENERIC = "It's just putting off the inevitable.",
-            BURNT = "I'm glad that fail-safe is gone.",
+            GENERIC = "Why can't we have this at home?",
+            BURNT = "We're doing death the normal way.",
         },
-        RESURRECTIONSTONE = "A futile ward.",
+        RESURRECTIONSTONE = "One day more...",
         ROBIN =
         {
-            GENERIC = "Does that mean spring is coming? I hope not.",
-            HELD = "He likes being trapped in my pocket.",
+            GENERIC = "A sweet little bird. A good omen.",
+            HELD = "A pocket full of luck.",
         },
         ROBIN_WINTER =
         {
-            GENERIC = "Life in the barren, frozen wastes.",
-            HELD = "It's so soft. It is my enemy.",
+            GENERIC = "Now it's the colour of Suok.",
+            HELD = "I don't feel lucky holding this.",
         },
-        ROBOT_PUPPET = "I wonder what they did.",
+        ROBOT_PUPPET = "It's nothing like me.",
         ROCK_LIGHT =
         {
             GENERIC = "There's a fire in the pit's belly.",
@@ -2078,130 +2078,130 @@ return {
         },
         CAVEIN_BOULDER =
         {
-            GENERIC = "Call me Sisyphus.",
-            RAISED = "So close, yet so far away.",
+            GENERIC = "I'm no Sisyphus, I can't even push.",
+            RAISED = "Not much I can do about that.",
         },
-        ROCK = "Even that is not permanent.",
-        PETRIFIED_TREE = "Now it will never die...",
-        ROCK_PETRIFIED_TREE = "Now it will never die...",
-        ROCK_PETRIFIED_TREE_OLD = "Now it will never die...",
+        ROCK = "It's just a rock.",
+        PETRIFIED_TREE = "Like a fleeting dream held captive.",
+        ROCK_PETRIFIED_TREE = "Like a fleeting dream held captive.",
+        ROCK_PETRIFIED_TREE_OLD = "Like a fleeting dream held captive.",
         ROCK_ICE =
         {
-            GENERIC = "A large piece of cold, unfeeling ice.",
-            MELTED = "A large pool of cool, melted ice.",
+            GENERIC = "Ice. Nice.",
+            MELTED = "That's just water now.",
         },
-        ROCK_ICE_MELTED = "A large pool of cool, melted ice.",
-        ICE = "Broken pieces of my heart.",
-        ROCKS = "Some small rocks.",
-        ROOK = "A Rook? Or is it a Castle?",
-        ROPE = "That would be the easy way out of this place.",
-        ROTTENEGG = "The way of all things.",
-        ROYAL_JELLY = "We stole it out of the mouths of baby bees.",
-        JELLYBEAN = "Beans that shall never know life.",
-        SADDLE_BASIC = "As if it wasn't already burdened by the yoke of life...",
-        SADDLE_RACE = "Too much whimsy gives me indigestion.",
-        SADDLE_WAR = "Oh, how we bend creatures to our ill intent.",
-        SADDLEHORN = "I'm only taking back what's mine.",
-        SALTLICK = "The beasts crave it...",
-        BRUSH = "Oh, to rid the world of fluff.",
+        ROCK_ICE_MELTED = "That's just water now.",
+        ICE = "Fleeting cold.",
+        ROCKS = "Rocks, but broken up into bite-sized pieces.",
+        ROOK = "Rook, line, and sinker.",
+        ROPE = "You're not thinking what I'm thinking.",
+        ROTTENEGG = "Stinky.",
+        ROYAL_JELLY = "Baby bee food. Not anymore.",
+        JELLYBEAN = "I can't grow these?", -- MNK 01/12 20:11
+        SADDLE_BASIC = "Now we can ride the big bull safely.",
+        SADDLE_RACE = "Are these enough wings to finally fly?",
+        SADDLE_WAR = "Now I'm a warlord!",
+        SADDLEHORN = "For when I'm having regrets.",
+        SALTLICK = "So the big bulls have something to do, I guess.",
+        BRUSH = "Brushing is good for the bull and good for me.",
 		SANITYROCK =
 		{
-			ACTIVE = "It's calling to me.",
-			INACTIVE = "Even this obelisk has left me.",
+			ACTIVE = "I can't get past.",
+			INACTIVE = "Wasn't there something here?",
 		},
 		SAPLING =
 		{
-			BURNING = "Consigned to the flames.",
-			WITHERED = "The oppressive heat got to this one.",
-			GENERIC = "It's trying to grow up.",
-			PICKED = "Maybe next time, sapling.",
-			DISEASED = "It's not long for this world...",
-			DISEASING = "It is on the precipice...",
+			BURNING = "It won't last long.",
+			WITHERED = "It's withered away.",
+			GENERIC = "It's growing, I think?",
+			PICKED = "Picked clean.",
+			DISEASED = "I thought I'd never see disease again...",
+			DISEASING = "It's infected.",
 		},
    		SCARECROW =
    		{
-			GENERIC = "Who would want to scare crows away?",
-			BURNING = "Antagonizing crows is always bad luck.",
-			BURNT = "Now the crows will be at peace.",
+			GENERIC = "Ain't you cute?",
+			BURNING = "Now the crows can roam lawlessly again.",
+			BURNT = "Rest in peace. I'll take care of you.",
    		},
    		SCULPTINGTABLE=
    		{
 			EMPTY = "It reminds me of home... and my new family...", -- MT
 			BLOCK = "Let's see, can I try doing what he does?", -- MT
-			SCULPTURE = "Cleft from the stone.",
-			BURNT = "...I can't be disappointed... If I expect nothing...",
+			SCULPTURE = "It doesn't look too bad.",
+			BURNT = "I can't lose this...",
    		},
-        SCULPTURE_KNIGHTHEAD = "Off with his head! Heehee.",
+        SCULPTURE_KNIGHTHEAD = "The perfect horse for a headless horseman.",
 		SCULPTURE_KNIGHTBODY =
 		{
-			COVERED = "There's a sickly beauty to it...",
-			UNCOVERED = "We all have monsters within, I suppose.",
-			FINISHED = "If only the rest of us could be whole again.",
-			READY = "It wants out...",
+			COVERED = "I wonder what this is.",
+			UNCOVERED = "A headless horse.",
+			FINISHED = "If only it was this easy to fix people.",
+			READY = "There's life in here.",
 		},
-        SCULPTURE_BISHOPHEAD = "How did this get here?",
+        SCULPTURE_BISHOPHEAD = "What's this, now?",
 		SCULPTURE_BISHOPBODY =
 		{
-			COVERED = "A beautiful corruption gnaws at its base...",
-			UNCOVERED = "The more the marble wastes, the more the statue grows.",
-			FINISHED = "Not everyone can be put back together after falling apart.",
-			READY = "It wants out...",
+			COVERED = "I wonder what this is.",
+			UNCOVERED = "I'm breaking the statue. Is this how it works?",
+			FINISHED = "If only it was this easy to fix people.",
+			READY = "There's life in here.",
 		},
-        SCULPTURE_ROOKNOSE = "Strange marble debris...",
+        SCULPTURE_ROOKNOSE = "Is this a pillar?",
 		SCULPTURE_ROOKBODY =
 		{
-			COVERED = "I feel... queasy...",
-			UNCOVERED = "Perhaps it wanted to hide the shame of its monstrous form?",
-			FINISHED = "It's been made whole again. Lucky.",
-			READY = "It wants out...",
+			COVERED = "I wonder what this is.",
+			UNCOVERED = "I still can't tell what this is.",
+			FINISHED = "If only it was this easy to fix people.",
+			READY = "There's life in here.",
 		},
-        GARGOYLE_HOUND = "A \"puppy\", frozen in time...",
-        GARGOYLE_WEREPIG = "I can make that face too...",
-		SEEDS = "Life, or at least the promise of it.",
-		SEEDS_COOKED = "The fire has toasted their life away.",
-		SEWING_KIT = "Another implement for staving off the inevitable decay.",
-		SEWING_TAPE = "It doesn't mend the hole... merely masks it.",
-		SHOVEL = "What terrible secrets might be uncovered with this?",
-		SILK = "So slippery and fine.",
-		SKELETON = "I envy your escape.",
-		SCORCHED_SKELETON = "The flame has cleansed this poor wretched soul.",
-		SKULLCHEST = "It shall contain my memento mori.",
+        GARGOYLE_HOUND = "It's the only way we can appreciate those dogs.",
+        GARGOYLE_WEREPIG = "What a funny face.",
+		SEEDS = "Now this is the kind of gourmet food I'm used to.",
+		SEEDS_COOKED = "Toasted to perfection.",
+		SEWING_KIT = "Clothes decay, but we can prolong death.",
+		SEWING_TAPE = "It's just a bit of tape.",
+		SHOVEL = "It's heavy in my hands. A tool of my trade.",
+		SILK = "This feels nice.",
+		SKELETON = "I'll take care of your spirit.",
+		SCORCHED_SKELETON = "This person is truly dead.",
+		SKULLCHEST = "That's a bit much, isn't it?",
 		SMALLBIRD =
 		{
-			GENERIC = "Hello there, little one.",
-			HUNGRY = "Are you empty inside?",
-			STARVING = "A black hole from which seeds never return.",
-			SLEEPING = "Dream of a better place.",
+			GENERIC = "You look cheerful again today. I think. I can't tell.",
+			HUNGRY = "You're hungry?",
+			STARVING = "I'll have to feed you soon.",
+			SLEEPING = "Dream of freedom.",
 		},
-		SMALLMEAT = "It smells like tiny fear.",
-		SMALLMEAT_DRIED = "Meat, turned dry and delicious.",
-		SPAT = "I should put it out of its misery.",
-		SPEAR = "They who wield it shall become the destroyer of worlds.",
-		SPEAR_WATHGRITHR = "It seems a tad dramatic.",
-		WATHGRITHRHAT = "I've never seen her take it off before...",
+		SMALLMEAT = "Barely a morsel. More than enough for me.",
+		SMALLMEAT_DRIED = "Meat, but now it's all chewy.",
+		SPAT = "Is it sick?",
+		SPEAR = "One step closer to lawlessness.",
+		SPEAR_WATHGRITHR = "Are these props? They're pointy.",
+		WATHGRITHRHAT = "Surpringly comfy.",
 		SPIDER =
 		{
-			DEAD = "We will meet again some day.",
-			GENERIC = "A creature of the night!",
-			SLEEPING = "Evil is sleeping.",
+			DEAD = "Stay dead.",
+			GENERIC = "Creepy crawly creature!",
+			SLEEPING = "Even these things sleep...",
 		},
-		SPIDERDEN = "A nest of filth and villainy.",
-		SPIDEREGGSACK = "A tiny package full of death and destruction.",
-		SPIDERGLAND = "Even in death, this beast causes pain.",
-		SPIDERHAT = "Time to stare into the abyss.",
-		SPIDERQUEEN = "She is regal in her horribleness.",
+		SPIDERDEN = "A nest of real villains, not like the vulture's nest.",
+		SPIDEREGGSACK = "If I ever want to grow my own dark den...",
+		SPIDERGLAND = "This heals wounds. Physical, not mental.",
+		SPIDERHAT = "Now I'm one fo them!",
+		SPIDERQUEEN = "She reminds me a bit of Mistress Nina...",
 		SPIDER_WARRIOR =
 		{
-			DEAD = "Alas, brave warrior.",
-			GENERIC = "A warrior of the night!",
-			SLEEPING = "I must beware.",
+			DEAD = "It died doing what it loved.",
+			GENERIC = "Creepy crawly copper!",
+			SLEEPING = "They're still dangerous.",
 		},
-		SPOILED_FOOD = "Everything turns to waste, eventually.",
+		SPOILED_FOOD = "Can I even eat this?",
         STAGEHAND =
         {
 			AWAKE = "Which masks are moving you?", -- MT
 			HIDING = "Director?", -- MT
-        },
+        }, -- MNK 02/12 20:38
         STATUE_MARBLE =
         {
             GENERIC = "Cold, hard stone...",
