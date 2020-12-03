@@ -6,8 +6,8 @@ local assets=
     Asset("ANIM", "anim/gravedigger.zip"), 
     Asset("ANIM", "anim/swap_gravedigger.zip"),  
 
-    Asset("ATLAS", "images/inventoryimages/gladius.xml"), 
-    Asset("IMAGE", "images/inventoryimages/gladius.tex"), 
+    Asset("ATLAS", "images/inventoryimages/gravedigger.xml"), 
+    Asset("IMAGE", "images/inventoryimages/gravedigger.tex"), 
 	
 }
 
@@ -83,8 +83,8 @@ local function fn()
 	MakeInventoryPhysics(inst)
     MakeHauntableLaunch(inst)
 	
-    anim:SetBank("gravedigger")
-    anim:SetBuild("gravedigger")
+    anim:SetBank("shovel")
+    anim:SetBuild("shovel")
     anim:PlayAnimation("idle")
 	
 	if not TheWorld.ismastersim then
@@ -119,8 +119,8 @@ local function fn()
     inst.components.equippable:SetOnUnequip( OnUnequip )
 	
 	inst:AddComponent("inventoryitem")
-    inst.components.inventoryitem.imagename = "gladius"
-    inst.components.inventoryitem.atlasname = "images/inventoryimages/gladius.xml"
+    inst.components.inventoryitem.imagename = "gravedigger"
+    inst.components.inventoryitem.atlasname = "images/inventoryimages/gravedigger.xml"
 
 	inst:AddTag("needssharpening")
 	

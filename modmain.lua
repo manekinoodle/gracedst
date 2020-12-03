@@ -2,7 +2,7 @@ PrefabFiles = {
 	"grace",
 	"grace_none",
 	"gravestone",
-	"gravedigger",
+	--"gravedigger",
 }
 
 Assets = {
@@ -67,12 +67,12 @@ STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 --AddPrefabPostInit("gravestone", init)
 
 --This is supposed to be the shovel
-local gladius = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gladius.xml")
+--local gravedigger = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gravedigger.xml")
 
-STRINGS.NAMES.gladius = "Gladius"
-STRINGS.NAMES.GLADIUS = "Gladius"
-STRINGS.RECIPE_DESC.gladius = "It's a sword, it can cut and slice things."
-STRINGS.RECIPE_DESC.GLADIUS = "It's a sword, it can cut and slice things."
+--STRINGS.NAMES.gravedigger = "Gravedigger Shovel"
+--STRINGS.NAMES.GRAVEDIGGER = "Gravedigger Shovel"
+--STRINGS.RECIPE_DESC.gravedigger = "Also works for digging bodies back up."
+--STRINGS.RECIPE_DESC.GRAVEDIGGER = "Also works for digging bodies back up."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
