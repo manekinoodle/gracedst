@@ -132,15 +132,3 @@ local function fn()
 end
 
 return  Prefab("common/inventory/gravedigger", fn, assets, prefabs)
-
---Latest Mod Update: 22.04.2017
---Current Mod Version: [1.0.3]
---Current Mod Build: [10322042017]
-
---Original Mod Author: Senshimi [https://steamcommunity.com/id/Senshimi/]
---Community Project Collection: STEAM [http://steamcommunity.com/workshop/filedetails/?id=833197968]
---Touhou Project Collection: STEAM [http://steamcommunity.com/sharedfiles/filedetails/?id=701414094]
-
--- Mod Creator's PATREON [https://www.patreon.com/Senshimi]
--- Mod Creator's DEVIANTART [http://senshimi.deviantart.com/]
--- Mod Creator's STEAMGROUP [https://steamcommunity.com/groups/Senshimi/]
