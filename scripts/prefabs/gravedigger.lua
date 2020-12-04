@@ -99,7 +99,7 @@ local function fn()
 
 	inst:AddComponent("weapon")
 	inst.components.weapon:SetOnAttack(onattack)
-	inst.components.weapon:SetDamage(40)
+	inst.components.weapon:SetDamage(19)
 	
 	inst:AddComponent("finiteuses")
     inst.components.finiteuses:SetMaxUses(160)
