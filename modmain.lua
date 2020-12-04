@@ -2,7 +2,7 @@ PrefabFiles = {
 	"grace",
 	"grace_none",
 	"gravestone",
-	--"gravedigger",
+	"gravedigger",
 }
 
 Assets = {
@@ -51,12 +51,15 @@ STRINGS.RECIPE_DESC.gravestone = "Put old bones to rest."
 STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 
 --This is supposed to be the shovel
---local gravedigger = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gravedigger.xml")
+local gravedigger = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gravedigger.xml")
 
---STRINGS.NAMES.gravedigger = "Gravedigger Shovel"
---STRINGS.NAMES.GRAVEDIGGER = "Gravedigger Shovel"
---STRINGS.RECIPE_DESC.gravedigger = "Also works for digging bodies back up."
---STRINGS.RECIPE_DESC.GRAVEDIGGER = "Also works for digging bodies back up."
+STRINGS.NAMES.gravedigger = "Gravedigger Shovel"
+STRINGS.NAMES.GRAVEDIGGER = "Gravedigger Shovel"
+STRINGS.RECIPE_DESC.gravedigger = "Also works for digging bodies up."
+STRINGS.RECIPE_DESC.GRAVEDIGGER = "Also works for digging bodies up."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.levin = "Used to bury the dead."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LEVIN = "Used to bury the dead."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"

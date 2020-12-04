@@ -56,7 +56,6 @@ local function fn()
     local function OnEquip(inst, owner)
 	
         owner.AnimState:OverrideSymbol("swap_object", "swap_gravedigger", "swap_gravedigger")
-		inst.Transform:SetScale(0.8, 0.8, 0.8)
 		
         owner.AnimState:Show("ARM_carry") 
         owner.AnimState:Hide("ARM_normal") 
@@ -64,8 +63,6 @@ local function fn()
     end
 
     local function OnUnequip(inst, owner) 
-		
-		inst.Transform:SetScale(1.0, 1.0, 1.0)
         owner.AnimState:Hide("ARM_carry") 
         owner.AnimState:Show("ARM_normal") 
 		
@@ -83,8 +80,8 @@ local function fn()
 	MakeInventoryPhysics(inst)
     MakeHauntableLaunch(inst)
 	
-    anim:SetBank("shovel")
-    anim:SetBuild("shovel")
+    anim:SetBank("gravedigger")
+    anim:SetBuild("gravedigger")
     anim:PlayAnimation("idle")
 	
 	if not TheWorld.ismastersim then
@@ -121,8 +118,6 @@ local function fn()
 	inst:AddComponent("inventoryitem")
     inst.components.inventoryitem.imagename = "gravedigger"
     inst.components.inventoryitem.atlasname = "images/inventoryimages/gravedigger.xml"
-
-	inst:AddTag("needssharpening")
 	
 	inst:ListenForEvent("equip", function(inst, data) onequip(inst, data) end)
 	inst:ListenForEvent("unequip", function(inst, data) onunequip(inst, data) end)
