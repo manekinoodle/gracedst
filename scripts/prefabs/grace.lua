@@ -11,7 +11,7 @@ TUNING.GRACE_SANITY = 200
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.GRACE = {
-	"shovel",
+	"gravedigger",
 }
 
 local start_inv = {}

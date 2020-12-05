@@ -43,7 +43,7 @@ local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
 --gravestone related stuff
-local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gravestone.xml")
+local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.TOWN, GLOBAL.TECH.NONE, "grave_placer", nil, nil, nil, nil, "images/inventoryimages/gravestone.xml")
 
 STRINGS.NAMES.gravestone = "Gravestone"
 STRINGS.NAMES.GRAVESTONE = "Gravestone"
@@ -51,7 +51,7 @@ STRINGS.RECIPE_DESC.gravestone = "Put old bones to rest."
 STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 
 --This is supposed to be the shovel
-local gravedigger = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.WAR, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gravedigger.xml")
+local gravedigger = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.TOOLS, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/gravedigger.xml")
 
 STRINGS.NAMES.gravedigger = "Gravedigger Shovel"
 STRINGS.NAMES.GRAVEDIGGER = "Gravedigger Shovel"

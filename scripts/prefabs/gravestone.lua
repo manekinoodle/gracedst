@@ -182,4 +182,5 @@ local function fn()
     return inst
 end
 
-return Prefab("gravestone", fn, assets, prefabs)
+return Prefab("gravestone", fn, assets, prefabs),
+	MakePlacer("grave_placer", "gravestone", "gravestone", "gravestones")
