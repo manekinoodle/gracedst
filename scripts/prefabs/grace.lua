@@ -74,6 +74,8 @@ local master_postinit = function(inst)
 
 	--This is probably what allows wendy to interact with pipspooks but idk if I'm using it right
 	inst:AddTag("ghostlyfriend")
+	--builder tag
+	inst:AddTag("gravekeeper")
 
 	--WX78 had this tag, not sure if it's what gives him his spoilage immunity
 	if inst.components.eater ~= nil then
