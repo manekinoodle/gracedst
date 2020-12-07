@@ -3,6 +3,7 @@ PrefabFiles = {
 	"grace_none",
 	"gravestone",
 	"gravedigger",
+	"dearly_departed",
 }
 
 Assets = {
