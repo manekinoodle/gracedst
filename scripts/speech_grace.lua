@@ -3194,132 +3194,132 @@ return {
         OAR = "If I ever have to move the boat with a bit of elbow grease...",
 		OAR_DRIFTWOOD = "If I ever have to move the boat with a bit of elbow grease...", -- MNK 06/12 10:28
 
-		OCEANFISHINGROD = "The depths will offer no safety from my hook.",
-		OCEANFISHINGBOBBER_NONE = "The line seems terribly bare... perhaps it needs something...",
-        OCEANFISHINGBOBBER_BALL = "It floats happily until something drags it under.",
-        OCEANFISHINGBOBBER_OVAL = "It floats happily until something drags it under.",
-		OCEANFISHINGBOBBER_CROW = "It floats happily until something drags it under.",
-		OCEANFISHINGBOBBER_ROBIN = "It floats happily until something drags it under.",
-		OCEANFISHINGBOBBER_ROBIN_WINTER = "It floats happily until something drags it under.",
-		OCEANFISHINGBOBBER_CANARY = "It floats happily until something drags it under.",
-		OCEANFISHINGBOBBER_GOOSE = "It floats happily until something drags it under.",
-		OCEANFISHINGBOBBER_MALBATROSS = "It floats happily until something drags it under.",
+		OCEANFISHINGROD = "I can get the reel big fish with this.",
+		OCEANFISHINGBOBBER_NONE = "The line's a bit plain.",
+        OCEANFISHINGBOBBER_BALL = "Watch the bobber until it drops.",
+        OCEANFISHINGBOBBER_OVAL = "Watch the bobber until it drops.",
+		OCEANFISHINGBOBBER_CROW = "Watch the bobber until it drops.",
+		OCEANFISHINGBOBBER_ROBIN = "Watch the bobber until it drops.",
+		OCEANFISHINGBOBBER_ROBIN_WINTER = "Watch the bobber until it drops.",
+		OCEANFISHINGBOBBER_CANARY = "Watch the bobber until it drops.",
+		OCEANFISHINGBOBBER_GOOSE = "Watch the bobber until it drops.",
+		OCEANFISHINGBOBBER_MALBATROSS = "Watch the bobber until it drops.",
 
-		OCEANFISHINGLURE_SPINNER_RED = "A paltry last meal for the fish.",
-		OCEANFISHINGLURE_SPINNER_GREEN = "A paltry last meal for the fish.",
-		OCEANFISHINGLURE_SPINNER_BLUE = "A paltry last meal for the fish.",
-		OCEANFISHINGLURE_SPOON_RED = "A paltry last meal for the fish.",
-		OCEANFISHINGLURE_SPOON_GREEN = "A paltry last meal for the fish.",
-		OCEANFISHINGLURE_SPOON_BLUE = "A paltry last meal for the fish.",
-		OCEANFISHINGLURE_HERMIT_RAIN = "The rain will mask my tears of boredom...",
-		OCEANFISHINGLURE_HERMIT_SNOW = "How miserable.",
-		OCEANFISHINGLURE_HERMIT_DROWSY = "Perhaps it's poisoned?",
-		OCEANFISHINGLURE_HERMIT_HEAVY = "I'll never catch a fish as heavy as my heart.",
+		OCEANFISHINGLURE_SPINNER_RED = "A fish's last supper.",
+		OCEANFISHINGLURE_SPINNER_GREEN = "A fish's last supper.",
+		OCEANFISHINGLURE_SPINNER_BLUE = "A fish's last supper.",
+		OCEANFISHINGLURE_SPOON_RED = "A fish's last supper.",
+		OCEANFISHINGLURE_SPOON_GREEN = "A fish's last supper.",
+		OCEANFISHINGLURE_SPOON_BLUE = "A fish's last supper.",
+		OCEANFISHINGLURE_HERMIT_RAIN = "I need to think like my enemy...",
+		OCEANFISHINGLURE_HERMIT_SNOW = "Beats cabin fever.",
+		OCEANFISHINGLURE_HERMIT_DROWSY = "Ha. You can't get more confused than me.",
+		OCEANFISHINGLURE_HERMIT_HEAVY = "I only want the reel-y big fish!",
 
-		OCEANFISH_SMALL_1 = "It didn't have enough time to grow.",
-		OCEANFISH_SMALL_2 = "I'm afraid you've splished your last splash.",
-		OCEANFISH_SMALL_3 = "I suppose it will do for now.",
-		OCEANFISH_SMALL_4 = "All my efforts reap only the smallest rewards.",
-		OCEANFISH_SMALL_5 = "It looks oddly... crunchy?",
-		OCEANFISH_SMALL_6 = "It already reeks of decay.",
-		OCEANFISH_SMALL_7 = "Hmph. I see no resemblance.",
-		OCEANFISH_SMALL_8 = "The sun has set on your time in this world.",
-        OCEANFISH_SMALL_9 = "What a rude little creature.",
+		OCEANFISH_SMALL_1 = "That's too small for me, even.",
+		OCEANFISH_SMALL_2 = "It swam off all its meat.",
+		OCEANFISH_SMALL_3 = "Teeny tiny.",
+		OCEANFISH_SMALL_4 = "No risk, no reward.",
+		OCEANFISH_SMALL_5 = "It doesn't smell like a fish...",
+		OCEANFISH_SMALL_6 = "I can't be-leaf my eyes.",
+		OCEANFISH_SMALL_7 = "What an odd flower.",
+		OCEANFISH_SMALL_8 = "This fish could grill itself.",
+        OCEANFISH_SMALL_9 = "A tricky little fellow.",
 
-		OCEANFISH_MEDIUM_1 = "What a horrendous looking creature.",
-		OCEANFISH_MEDIUM_2 = "I'm afraid your time is up.",
-		OCEANFISH_MEDIUM_3 = "It fought hard to live. A shame, really.",
-		OCEANFISH_MEDIUM_4 = "My luck couldn't possibly be worse than it already is.",
-		OCEANFISH_MEDIUM_5 = "Its existence must be so confusing.",
-		OCEANFISH_MEDIUM_6 = "It's almost too pretty to eat. Almost.",
-		OCEANFISH_MEDIUM_7 = "It's almost too pretty to eat. Almost.",
+		OCEANFISH_MEDIUM_1 = "It, uh, tastes good, right?",
+		OCEANFISH_MEDIUM_2 = "No treble catching this one.",
+		OCEANFISH_MEDIUM_3 = "This lion isn't sleeping tonight.",
+		OCEANFISH_MEDIUM_4 = "Jester? Wait, no, he's grey...",
+		OCEANFISH_MEDIUM_5 = "Just a cod of corn.",
+		OCEANFISH_MEDIUM_6 = "Pretty fish!",
+		OCEANFISH_MEDIUM_7 = "Pretty fish!",
 		OCEANFISH_MEDIUM_8 = "It's chilly. Very chilly.", -- MT
 
-		PONDFISH = "It was flopping around desperately for life. The poor fool.",
-		PONDEEL = "An eel.",
+		PONDFISH = "Even when struggling for life, it has such a blank look.",
+		PONDEEL = "It's eel-y slippery.",
 
-        FISHMEAT = "It's been decapitated.",
-        FISHMEAT_COOKED = "A proper grilling puts a stop to the flopping.",
-        FISHMEAT_SMALL = "There are other fish in the sea. Bigger ones, hopefully.",
-        FISHMEAT_SMALL_COOKED = "It will... tide... me over for now.",
-		SPOILED_FISH = "Farewell, chum.",
+        FISHMEAT = "Gutted and cleaned.",
+        FISHMEAT_COOKED = "The skin's the best bit, but the meat is the most filling.",
+        FISHMEAT_SMALL = "Bite-sized bits of fish.",
+        FISHMEAT_SMALL_COOKED = "It's a perfect portion.",
+		SPOILED_FISH = "There's more fish in the sea.",
 
-		FISH_BOX = "It feels a bit cruel to trap them within sight of freedom.",
-        POCKET_SCALE = "What is the weight of my actions?",
+		FISH_BOX = "Cruel captivity.",
+        POCKET_SCALE = "I feel like Anubis.",
 
-		TACKLECONTAINER = "At least I won't have to carry bait in my pockets anymore.",
-		SUPERTACKLECONTAINER = "I don't see what's so spectacular about it.",
+		TACKLECONTAINER = "More space for bait, more space for fish.",
+		SUPERTACKLECONTAINER = "Even more bait could go in here.",
 
 		TROPHYSCALE_FISH =
 		{
-			GENERIC = "If my fish was as heavy as my heart, I'd surely win.",
+			GENERIC = "There's nothing heavier than the burden of life, but fish come close.",
 			HAS_ITEM = "Weight: {weight}\nCaught by: {owner}",
-			HAS_ITEM_HEAVY = "Weight: {weight}\nCaught by: {owner}\nNot even the strongest are guaranteed survival.",
-			BURNING = "Nothing is safe.",
-			BURNT = "How sad.",
-			OWNER = "Weight: {weight}\nCaught by: {owner}\nOh... I... I did it...",
-			OWNER_HEAVY = "Weight: {weight}\nCaught by: {owner}\nDo you miss your family, fishy?",
+			HAS_ITEM_HEAVY = "Weight: {weight}\nCaught by: {owner}\nWow! I wonder if my skinny arms could lift it.",
+			BURNING = "The water means nothing.",
+			BURNT = "Well, dam.",
+			OWNER = "Weight: {weight}\nCaught by: {owner}\nNow that's a big fish!",
+			OWNER_HEAVY = "Weight: {weight}\nCaught by: {owner}\nNow that's a reel-y big fish!",
 		},
 
-		OCEANFISHABLEFLOTSAM = "Nothing but grass and muck.",
+		OCEANFISHABLEFLOTSAM = "Junk is the same in the ocean as it is on land.",
 
-		CALIFORNIAROLL = "A cold fish, dressed up in a seaweed jacket.",
-		SEAFOODGUMBO = "A sea once teeming with life. No more.",
-		SURFNTURF = "It could be worse.",
+		CALIFORNIAROLL = "They're unforgettable.",
+		SEAFOODGUMBO = "More fish than I could ever imagine in a little bowl.",
+		SURFNTURF = "Bounties of land and sea.",
 
-        WOBSTER_SHELLER = "Its hard exterior shelters it from the cruel outside world.",
-        WOBSTER_DEN = "A damp and dreary home.",
-        WOBSTER_SHELLER_DEAD = "It's met its maker. I've met my lunch.",
-        WOBSTER_SHELLER_DEAD_COOKED = "It's a feast!",
+        WOBSTER_SHELLER = "Pinchy fish.",
+        WOBSTER_DEN = "A retreat for the pinchy fish.",
+        WOBSTER_SHELLER_DEAD = "Can I really eat this?",
+        WOBSTER_SHELLER_DEAD_COOKED = "Smells good...",
 
-        LOBSTERBISQUE = "I would like a spoon.",
-        LOBSTERDINNER = "Its death will give me life.",
+        LOBSTERBISQUE = "A cold soup of pinchy fish.",
+        LOBSTERDINNER = "A fishy feast.",
 
-        WOBSTER_MOONGLASS = "This world has made it hard, and sharp.",
-        MOONGLASS_WOBSTER_DEN = "What lives within that cold glass mound?",
+        WOBSTER_MOONGLASS = "It's pinchy and sharp.",
+        MOONGLASS_WOBSTER_DEN = "Glass? Again? I miss the dirt and clay...",
 
-		TRIDENT = "It was stolen from the sea, but it still holds power over the waves.",
+		TRIDENT = "It still rules over the oceans.",
 
 		WINCH =
 		{
-			GENERIC = "I doubt I'll find anything of interest.",
-			RETRIEVING_ITEM = "It's pulling something from the depths...",
-			HOLDING_ITEM = "This is what I have to show for my efforts.",
+			GENERIC = "Why is it called a winch if it pinches?",
+			RETRIEVING_ITEM = "It's found something!",
+			HOLDING_ITEM = "Finders keepers.",
 		},
 
         HERMITHOUSE = {
-            GENERIC = "Perhaps broken things can be fixed... over time...",
-            BUILTUP = "It's hardly worth saving.",
+            GENERIC = "It's just like my old place.",
+            BUILTUP = "It's a real home now.",
         },
 
-        SHELL_CLUSTER = "They're all clumped together... it seems a shame to separate them...",
+        SHELL_CLUSTER = "I wonder what's inside. Being so close can't be good.",
         --
 		SINGINGSHELL_OCTAVE3 =
 		{
-			GENERIC = "I wish I had a song left in my heart to sing.",
+			GENERIC = "Oh, they make music!",
 		},
 		SINGINGSHELL_OCTAVE4 =
 		{
-			GENERIC = "They are rather pretty...",
+			GENERIC = "It doesn't sound like the ocean.",
 		},
 		SINGINGSHELL_OCTAVE5 =
 		{
 			GENERIC = "Murky always wanted to visit the sea...", -- MT
         },
 
-        CHUM = "I had a pet fish once... it didn't last very long.",
+        CHUM = "Fish are friends, but this is food.",
 
         SUNKENCHEST =
         {
-            GENERIC = "No treasure could replace what I've lost.",
-            LOCKED = "Of course. It's locked.",
+            GENERIC = "Just like the stories!",
+            LOCKED = "We could just break it.",
         },
 
-        HERMIT_BUNDLE = "For once I'm rewarded for my efforts.",
+        HERMIT_BUNDLE = "She gave me gratitude!",
         HERMIT_BUNDLE_SHELLS = "I wonder if I can bring these back as souvenirs.", -- MT
 
-        RESKIN_TOOL = "Change is... not always terrible.",
-        MOON_FISSURE_PLUGGED = "They're trapped... for now.",
+        RESKIN_TOOL = "Time for a costume change!",
+        MOON_FISSURE_PLUGGED = "Well, I guess that works...", -- MNK 07/12 22:27
 
 
 		----------------------- ROT STRINGS GO ABOVE HERE ------------------
