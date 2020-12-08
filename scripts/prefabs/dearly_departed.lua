@@ -1,12 +1,12 @@
 local assets =
 {
+    Asset("ATLAS", "images/inventoryimages/dearly_departed.xml"), 
+    Asset("IMAGE", "images/inventoryimages/dearly_departed.tex"), 
 }
 
 local function OpenLetter(inst, user)
     --this is where we summon the ghost
-	local user = inst.component.inventory.owner
-	local x, y, z = user.Transform:GetWorldPosition()
-	SpawnPrefab("ghost").Transform:SetPosition(pos)
+
 end
 
 local function fn()
@@ -34,20 +34,20 @@ local function fn()
     end
 
     inst:AddComponent("inspectable")
+
     inst:AddComponent("unwrappable")
     inst.components.unwrappable:SetOnUnwrappedFn(OpenLetter)
-
-    inst:AddComponent("tool")
-    inst.components.tool:SetAction(ACTIONS.PLAY)
 
     inst:AddComponent("stackable")
     inst.components.stackable.maxsize = TUNING.STACK_SIZE_MEDITEM
 
     inst:AddComponent("inventoryitem")
+	inst.components.inventoryitem.imagename = "dearly_departed"
+    inst.components.inventoryitem.atlasname = "images/inventoryimages/dearly_departed.xml"
 
     MakeHauntableLaunch(inst)
 
     return inst
 end
 
-return Prefab("dearly_departed", fn, assets)
+return Prefab("common/inventory/dearly_departed", fn, assets)
