@@ -6,7 +6,9 @@ local assets =
 
 local function OpenLetter(inst, user)
     --this is where we summon the ghost
-
+	local user = inst.components.inventoryitem.owner
+	local x, y, z = user.Transform:GetWorldPosition()
+	SpawnPrefab("ghost").Transform:SetPosition(x, 0, z)
 end
 
 local function fn()
