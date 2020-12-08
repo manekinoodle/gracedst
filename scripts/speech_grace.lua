@@ -3327,34 +3327,34 @@ return {
 		-- Walter
         WOBYBIG =
         {
-            "She's... soft. And nice.",
-            "She's... soft. And nice.",
+            "Bull-sized and fluffy.",
+            "Bull-sized and fluffy.",
         },
         WOBYSMALL =
         {
-            "I wonder how she came to this miserable place.",
-            "I wonder how she came to this miserable place.",
+            "Like me, a little wayward soul.",
+            "Like me, a little wayward soul.",
         },
-		WALTERHAT = "It doesn't suit me.",
+		WALTERHAT = "It's not my hat.",
 		SLINGSHOT = "Did one of Notkin's friends have these? Or Khan's? It's been too long.", -- MT
-		SLINGSHOTAMMO_ROCK = "Someone could trip and break their neck. Maybe it will be me.",
-		SLINGSHOTAMMO_MARBLE = "Someone could trip and break their neck. Maybe it will be me.",
-		SLINGSHOTAMMO_THULECITE = "Someone could trip and break their neck. Maybe it will be me.",
-        SLINGSHOTAMMO_GOLD = "Someone could trip and break their neck. Maybe it will be me.",
-        SLINGSHOTAMMO_SLOW = "Someone could trip and break their neck. Maybe it will be me.",
-        SLINGSHOTAMMO_FREEZE = "Someone could trip and break their neck. Maybe it will be me.",
-		SLINGSHOTAMMO_POOP = "I suppose it has its uses.",
-        PORTABLETENT = "It makes no difference where I rest my head, my nights are filled with bad dreams.",
-        PORTABLETENT_ITEM = " and I set up a tent in our backyard once. It was... fun.",
+		SLINGSHOTAMMO_ROCK = "For a fight against Goliath. But I'm no David.",
+		SLINGSHOTAMMO_MARBLE = "For a fight against Goliath. But I'm no David.",
+		SLINGSHOTAMMO_THULECITE = "For a fight against Goliath. But I'm no David.",
+        SLINGSHOTAMMO_GOLD = "For a fight against Goliath. But I'm no David.",
+        SLINGSHOTAMMO_SLOW = "For a fight against Goliath. But I'm no David.",
+        SLINGSHOTAMMO_FREEZE = "For a fight against Goliath. But I'm no David.",
+		SLINGSHOTAMMO_POOP = "I guess it's come to this.",
+        PORTABLETENT = "Sweet dreams anywhere, anytime.",
+        PORTABLETENT_ITEM = "Sweet dreams anywhere, anytime.",
 
         -- Wigfrid
-        BATTLESONG_DURABILITY = "My heart has no desire to sing.",
-        BATTLESONG_HEALTHGAIN = "My heart has no desire to sing.",
-        BATTLESONG_SANITYGAIN = "My heart has no desire to sing.",
-        BATTLESONG_SANITYAURA = "My heart has no desire to sing.",
-        BATTLESONG_FIRERESISTANCE = "My heart has no desire to sing.",
-        BATTLESONG_INSTANT_TAUNT = "I only like tragedies.",
-        BATTLESONG_INSTANT_PANIC = "I only like tragedies.",
+        BATTLESONG_DURABILITY = "I'm not very good at singing.",
+        BATTLESONG_HEALTHGAIN = "I'm not very good at singing.",
+        BATTLESONG_SANITYGAIN = "I'm not very good at singing.",
+        BATTLESONG_SANITYAURA = "I'm not very good at singing.",
+        BATTLESONG_FIRERESISTANCE = "I'm not very good at singing.",
+        BATTLESONG_INSTANT_TAUNT = "I'm not very good at singing.",
+        BATTLESONG_INSTANT_PANIC = "I'm not very good at singing.",
 
 		-- Wendy
 		GHOSTLYELIXIR_SLOWREGEN = "This potion helps keep ghosts in this realm.", -- MT
@@ -3390,252 +3390,252 @@ return {
             DONE = "It's finished.", -- MT
         },
         SPICEPACK = "The smell is overwhelming.", -- MT
-        SPICE_GARLIC = "It's smell is good for keeping people at a distance.",
+        SPICE_GARLIC = "Vampires beware.",
         SPICE_SUGAR = "Children love this smell.", -- MT
-        SPICE_CHILI = "Full of more vitality than I'm used to.",
-        SPICE_SALT = "For rubbing into wounds.",
-        MONSTERTARTARE = "Looks good, tastes horrible.",
-        FRESHFRUITCREPES = "Could I get this a la mode?",
-        FROGFISHBOWL = "It's actually... really good...",
-        POTATOTORNADO = "Spiraling, just like my life.",
-        DRAGONCHILISALAD = "I missed having someone make me dinner...",
-        GLOWBERRYMOUSSE = "It swirls like the endless abyss.",
-        VOLTGOATJELLY = "It zaps your tongue.",
-        NIGHTMAREPIE = "It tastes like melancholy. Mmm.",
-        BONESOUP = "Supper looks good.",
-        MASHEDPOTATOES = "My stomach rumbles just looking at it...",
-        POTATOSOUFFLE = "A dish as delicate as life itself.",
-        MOQUECA = "Thank-you, Warly.",
-        GAZPACHO = "Cold and watery like a sailor's grave.",
-        ASPARAGUSSOUP = "Soup.",
-        VEGSTINGER = "Doesn't spice up my life.",
+        SPICE_CHILI = "It makes my tongue hurt.",
+        SPICE_SALT = "Just a pinch.",
+        MONSTERTARTARE = "No thanks.",
+        FRESHFRUITCREPES = "Almost like a dream.",
+        FROGFISHBOWL = "Tastes like chicken.",
+        POTATOTORNADO = "Let's take this for a spin.",
+        DRAGONCHILISALAD = "It makes my tongue hurt...",
+        GLOWBERRYMOUSSE = "It's sour, but it's a tasty sour.",
+        VOLTGOATJELLY = "Shockingly good.",
+        NIGHTMAREPIE = "The pie has a face. Hello.",
+        BONESOUP = "Bones made this, huh...",
+        MASHEDPOTATOES = "It's already been chewed for me!",
+        POTATOSOUFFLE = "Thank you, Warly!",
+        MOQUECA = "This is yummy.",
+        GAZPACHO = "Cold soup is usually red where I'm from.",
+        ASPARAGUSSOUP = "It's just soup.",
+        VEGSTINGER = "Spicy juice.",
         BANANAPOP = "I think the other children would like these too.", -- MT
-        CEVICHE = "All I taste is my sadness...",
-        SALSA = "I don't feel much like dancing.",
-        PEPPERPOPPER = "They're so good I almost forgot my crushing grief.",
+        CEVICHE = "It's all wet and chewy.",
+        SALSA = "It's already been... oh, that's spicy mush.",
+        PEPPERPOPPER = "Spicy, like a cannonball in my mouth.",
 
-        TURNIP = "It's... a turnip.",
-        TURNIP_COOKED = "The turnip is now cooked.",
-        TURNIP_SEEDS = "The life they contain is a mystery.",
+        TURNIP = "I've turned up a turnip.",
+        TURNIP_COOKED = "No turning up my nose at that.",
+        TURNIP_SEEDS = "Seedy.",
 
-        GARLIC = "It gives food flavor.",
-        GARLIC_COOKED = "It smells a bit nice.",
-        GARLIC_SEEDS = "The life they contain is a mystery.",
+        GARLIC = "Smells good.",
+        GARLIC_COOKED = "It smells even better now.",
+        GARLIC_SEEDS = "Seedy.",
 
-        ONION = "I never cry.",
-        ONION_COOKED = "It will never make anyone cry again.",
-        ONION_SEEDS = "The life they contain is a mystery.",
+        ONION = "They make my eyes sting.",
+        ONION_COOKED = "Nobody is going to cry from these now.",
+        ONION_SEEDS = "Seedy.",
 
-        POTATO = "It has eyes, yet it never cries.",
-        POTATO_COOKED = "Now its eyes will never open.",
-        POTATO_SEEDS = "The life they contain is a mystery.",
+        POTATO = "Jester's favourite food.",
+        POTATO_COOKED = "Now it's everyone else's favourite food.",
+        POTATO_SEEDS = "Seedy.",
 
-        TOMATO = "Red as heart's blood.",
-        TOMATO_COOKED = "Its flesh is far more bloody now.",
-        TOMATO_SEEDS = "The life they contain is a mystery.",
+        TOMATO = "The colour of flesh and blood.",
+        TOMATO_COOKED = "It's all watery.",
+        TOMATO_SEEDS = "Seedy.",
 
-        ASPARAGUS = "Vegetables are good for you, but what do I care?",
-        ASPARAGUS_COOKED = "If I ever feel like eating anything, I'll eat it.",
-        ASPARAGUS_SEEDS = "Will I live to see this grow?",
+        ASPARAGUS = "Little trees.",
+        ASPARAGUS_COOKED = "They're easy to eat if I just hold them.",
+        ASPARAGUS_SEEDS = "Seedy.",
 
-        PEPPER = "It looks so tiny and insignificant.",
-        PEPPER_COOKED = "What can this tiny plant possibly do to fill my empty life?",
-        PEPPER_SEEDS = "Will I live to see this grow?",
+        PEPPER = "Spicy plant.",
+        PEPPER_COOKED = "I shouldn't eat that.",
+        PEPPER_SEEDS = "Seedy.",
 
-        WEREITEM_BEAVER = "A small wooden reminder of Woodie's cursed existence.",
-        WEREITEM_GOOSE = "That is deeply disturbing.",
-        WEREITEM_MOOSE = "I don't want to play with that.",
+        WEREITEM_BEAVER = "I don't like this toy...",
+        WEREITEM_GOOSE = "My friends don't like this toy either.",
+        WEREITEM_MOOSE = "I'd be bartering extra in order to get rid of it.",
 
-        MERMHAT = "We all hide behind our own masks...",
+        MERMHAT = "This costume SUCKS!",
         MERMTHRONE =
         {
-            GENERIC = "\"The Frogs Who Desired a King\"...",
-            BURNT = "Their kingdom vanishes as swiftly as it appeared.",
+            GENERIC = "That looks comfy.",
+            BURNT = "A speck on the annals of history.",
         },
         MERMTHRONE_CONSTRUCTION =
         {
-            GENERIC = "I don't know why you bother.",
-            BURNT = "All that work, for nothing.",
+            GENERIC = "Creating a Saul, are we?",
+            BURNT = "And so a reign is cut short.",
         },
         MERMHOUSE_CRAFTED =
         {
-            GENERIC = "It has not yet been touched by the ravages of time.",
-            BURNT = "Nothing but ash.",
+            GENERIC = "Built with love.",
+            BURNT = "That love is gone.",
         },
 
-        MERMWATCHTOWER_REGULAR = "They seem to not wish us harm, for now.",
-        MERMWATCHTOWER_NOKING = "They fight without purpose...",
-        MERMKING = "He does look very regal, despite the warts.",
-        MERMGUARD = "Friend or foe?",
-        MERM_PRINCE = "Are you ready to shoulder the burdens of leadership?",
+        MERMWATCHTOWER_REGULAR = "They're watching me closely.",
+        MERMWATCHTOWER_NOKING = "There's no king to fight for.",
+        MERMKING = "He rules over a very real kingdom.",
+        MERMGUARD = "They want me to behave.",
+        MERM_PRINCE = "I don't think that's how leadership works.",
 
-        SQUID = "Bright eyes for dark times.",
+        SQUID = "It's got a big peeper.",
 
-		GHOSTFLOWER = "I promise to use it well.",
-        SMALLGHOST = "Another life cut short.",
+		GHOSTFLOWER = "A present from a friend.",
+        SMALLGHOST = "Another friend.",
 
         CRABKING =
         {
-            GENERIC = "One of us will be sent to a watery grave...",
-            INERT = "A crumbling edifice of sand... it's not even decorated.",
+            GENERIC = "I'll make you into a crabby patty!",
+            INERT = "Who lives here?",
         },
-		CRABKING_CLAW = "It wants to drag me down to the icy depths of the sea.",
+		CRABKING_CLAW = "Pincher, no pinching!",
 
-		MESSAGEBOTTLE = "I wonder what poor forgotten soul sent that.",
-		MESSAGEBOTTLEEMPTY = "It holds nothing but emptiness.",
+		MESSAGEBOTTLE = "A message from someone?",
+		MESSAGEBOTTLEEMPTY = "It's empty.",
 
         MEATRACK_HERMIT =
         {
-            DONE = "The drying is over.",
-            DRYING = "It sways in the drying wind.",
-            DRYINGINRAIN = "The rain is keeping it from drying.",
-            GENERIC = "One can't survive long without food...",
-            BURNT = "It's done drying. Forever.",
-            DONE_NOTMEAT = "The drying is over.",
-            DRYING_NOTMEAT = "It sways in the drying wind.",
-            DRYINGINRAIN_NOTMEAT = "The rain is keeping it from drying.",
+            DONE = "It's all dry now.",
+            DRYING = "It smells so good...",
+            DRYINGINRAIN = "Not much drying is happening.",
+            GENERIC = "It makes the meat all chewy.",
+            BURNT = "The rack got dried.",
+            DONE_NOTMEAT = "It's all dry now.",
+            DRYING_NOTMEAT = "It smells so good...",
+            DRYINGINRAIN_NOTMEAT = "Not much drying is happening.",
         },
         BEEBOX_HERMIT =
         {
-            READY = "Their toils have been fruitful!",
-            FULLHONEY = "Their toils have been fruitful!",
-            GENERIC = "There are only memories of sweetness here.",
-            NOHONEY = "Work, bees!",
-            SOMEHONEY = "Toil on.",
-            BURNT = "Burnt honey.",
+            READY = "It's time to harvest.",
+            FULLHONEY = "It's time to harvest.",
+            GENERIC = "They're doing work for us, now.",
+            NOHONEY = "Just a little more!",
+            SOMEHONEY = "Just a little more!",
+            BURNT = "It's gone beyond caramel.",
         },
 
-        HERMITCRAB = "It's a tragic fate, to be left behind by those you love.",
+        HERMITCRAB = "Are you alone, too?",
 
-        HERMIT_PEARL = "I will be its caretaker.",
-        HERMIT_CRACKED_PEARL = "I seem to leave only misery in my wake...",
+        HERMIT_PEARL = "If anything ever happens to this pearl...",
+        HERMIT_CRACKED_PEARL = "It's lost...",
 
         -- DSEAS
-        WATERPLANT = "How pretty.",
-        WATERPLANT_BOMB = "Nature rejects me...",
-        WATERPLANT_BABY = "I could cut it down now, before it grows...",
-        WATERPLANT_PLANTER = "Even if I plant it, the fickle thing may turn against me.",
+        WATERPLANT = "What a big flower!",
+        WATERPLANT_BOMB = "Time to do some weeding.",
+        WATERPLANT_BABY = "It'll grow tall and strong.",
+        WATERPLANT_PLANTER = "Will these make flowers, or just weeds?",
 
-        SHARK = "Are you here to send me to a watery grave?",
+        SHARK = "You'll be the one meeting Davey Jones!",
 
-        MASTUPGRADE_LAMP_ITEM = "A meager light to combat the darkness.",
-        MASTUPGRADE_LIGHTNINGROD_ITEM = "Alas, being struck down by lightning is one less thing I can look forward too.",
+        MASTUPGRADE_LAMP_ITEM = "A light to keep things bright.",
+        MASTUPGRADE_LIGHTNINGROD_ITEM = "Well, that would be mighty useful.",
 
-        WATERPUMP = "The fish is paying for its transgressions.",
+        WATERPUMP = "A little spittle goes a long way.",
 
-        BARNACLE = "We pried it from its home.",
-        BARNACLE_COOKED = "It's... chewy.",
+        BARNACLE = "Stuck no longer.",
+        BARNACLE_COOKED = "My jaws are getting a lot of exercise.",
 
-        BARNACLEPITA = "My pita is filled with disappointment.",
-        BARNACLESUSHI = "It's cold...",
-        BARNACLINGUINE = "I like my noodles plain, with butter.",
-        BARNACLESTUFFEDFISHHEAD = "They make starving seem almost appealing...",
+        BARNACLEPITA = "I'm just a pita disappointed.",
+        BARNACLESUSHI = "Fancy.",
+        BARNACLINGUINE = "This pasta's going to go fast-a!",
+        BARNACLESTUFFEDFISHHEAD = "It's just ugly, but the taste might be alright.",
 
-        LEAFLOAF = "It's nothing like any meatloaf I've tried.",
-        LEAFYMEATBURGER = "It's drab and flavorless...",
-        LEAFYMEATSOUFFLE = "Oh. I thought it was dessert...",
-        MEATYSALAD = "This salad tastes strange...",
+        LEAFLOAF = "Oh, well, it does taste alright.",
+        LEAFYMEATBURGER = "It's lacking.",
+        LEAFYMEATSOUFFLE = "Even I find this a bit strange.",
+        MEATYSALAD = "What an odd salad.",
 
         -- GROTTO
 
-		MOLEBAT = "Nature has played a cruel joke on this creature.",
+		MOLEBAT = "NOSEferatu, indeed.",
         MOLEBATHILL = "The earth is alive, and they plague her skin.", -- MT
 
-        BATNOSE = "It won't be bothering us anymore.",
-        BATNOSE_COOKED = "It doesn't look more appetizing now.",
-        BATNOSEHAT = "This feels silly.",
+        BATNOSE = "Not much smelling going on here, anymore.",
+        BATNOSE_COOKED = "Somehow, it smells worse.",
+        BATNOSEHAT = "Oh, I never liked multi-tasking.",
 
-        MUSHGNOME = "It's so... bouncy.",
+        MUSHGNOME = "Albino is most definitely cuter.",
 
-        SPORE_MOON = "Pop goes the weaselly little thing.",
+        SPORE_MOON = "I'd want mushroom between me and that.",
 
-        MOON_CAP = "It took nourishment from dead things, now its death will nourish me.",
-        MOON_CAP_COOKED = "All is malleable.",
+        MOON_CAP = "It makes me sleepy...",
+        MOON_CAP_COOKED = "What's this energy?",
 
-        MUSHTREE_MOON = "Curiouser and curiouser.",
+        MUSHTREE_MOON = "Now that's a big mushroom.",
 
-        LIGHTFLIER = "A small spot of light in the darkness... waiting to be snuffed out.",
+        LIGHTFLIER = "A little friend to light up the night.",
 
-        GROTTO_POOL_BIG = "A rare bit of beauty in this dark, dreary place.",
-        GROTTO_POOL_SMALL = "A rare bit of beauty in this dark, dreary place.",
+        GROTTO_POOL_BIG = "Pretty glass and moon water.",
+        GROTTO_POOL_SMALL = "Pretty glass and moon water.",
 
-        DUSTMOTH = "They seem to live only to clean. What a tiresome life.",
+        DUSTMOTH = "Oh, he likes clean things too!",
 
-        DUSTMOTHDEN = "Poor things, their home is no longer safe from us.",
+        DUSTMOTHDEN = "Pardon the intrusion.",
 
-        ARCHIVE_LOCKBOX = "How am I to get it open? Perhaps the key is nearby.",
-        ARCHIVE_CENTIPEDE = "I suppose I'm to be crushed by a bug... an ironic end.",
-        ARCHIVE_CENTIPEDE_HUSK = "It's dead.",
+        ARCHIVE_LOCKBOX = "There's something inside...",
+        ARCHIVE_CENTIPEDE = "Now that bug's going to crush me!",
+        ARCHIVE_CENTIPEDE_HUSK = "Crushed...",
 
         ARCHIVE_COOKPOT =
         {
-            COOKING_LONG = "Whatever's in there isn't dead yet.",
-            COOKING_SHORT = "It needs to boil.",
-            DONE = "Finally, food.",
-            EMPTY = "It's covered in dust.",
-            BURNT = "Burnt to a crisp.",
+            COOKING_LONG = "Patience is key.",
+            COOKING_SHORT = "Not long now.",
+            DONE = "Time to dig in.",
+            EMPTY = "Dusty!",
+            BURNT = "The pot got cooked.",
         },
 
-        ARCHIVE_MOON_STATUE = "This place feels rather like a tomb.",
+        ARCHIVE_MOON_STATUE = "A big statue of Atlas.",
         ARCHIVE_RUNE_STATUE =
         {
-            LINE_1 = "Words of a dead language.",
-            LINE_2 = "It was important enough to carve into stone, but we'll never know the meaning.",
-            LINE_3 = "What a pity.",
-            LINE_4 = "It was important enough to carve into stone, but we'll never know the meaning.",
-            LINE_5 = "What a pity.",
+            LINE_1 = "I can't read this.",
+            LINE_2 = "I wonder what it means.",
+            LINE_3 = "I can't read this.",
+            LINE_4 = "Not even my friends know what this means.",
+            LINE_5 = "I wonder...",
         },
 
         ARCHIVE_RESONATOR = {
-            GENERIC = "All paths lead to suffering.",
-            IDLE = "There's nothing left to look for.",
+            GENERIC = "All paths lead to suffering.", -- ??
+            IDLE = "There's nothing left to look for.", -- ??
         },
 
-        ARCHIVE_RESONATOR_ITEM = "The ones who designed it are long dead.",
+        ARCHIVE_RESONATOR_ITEM = "The ones who designed it are long dead.", -- ??
 
         ARCHIVE_LOCKBOX_DISPENCER = {
-          POWEROFF = "Devoid of life. Like everything in this place.",
+          POWEROFF = "It's off.",
           GENERIC =  "More knowledge is in here than what can live in one person's mind.", -- MT
         },
 
         ARCHIVE_SECURITY_DESK = {
-            POWEROFF = "There's no life in it.",
-            GENERIC = "How sad... there's nobody left to guard.",
+            POWEROFF = "It's off.",
+            GENERIC = "What are you guarding?",
         },
 
         ARCHIVE_SECURITY_PULSE = "Where are you going?",
 
         ARCHIVE_SWITCH = {
-            VALID = "It already has its treasure.",
-            GEMS = "It's not yet whole.",
+            VALID = "I've done all I can.",
+            GEMS = "Something goes here...",
         },
 
         ARCHIVE_PORTAL = {
-            POWEROFF = "It's long dead.",
-            GENERIC = "Not everything can come back so easily.",
+            POWEROFF = "A door long shut.",
+            GENERIC = "Something more needs to be done.",
         },
 
-        WALL_STONE_2 = "What will protect me from what's inside?",
-        WALL_RUINS_2 = "These didn't protect the ancients, now did they!",
+        WALL_STONE_2 = "Now that's a wall.",
+        WALL_RUINS_2 = "No, now THAT'S a wall.",
 
-        REFINED_DUST = "Dust to... somewhat denser dust.",
-        DUSTMERINGUE = "A treat devoid of sweetness...",
+        REFINED_DUST = "Odd dust.",
+        DUSTMERINGUE = "This is food for someone else.",
 
-        SHROOMCAKE = "Will it make me grow? Or shrink perhaps? Mushrooms are funny things.",
+        SHROOMCAKE = "Oh, I could try making something like this at home.",
 
-        NIGHTMAREGROWTH = "Something wicked this way comes.",
+        NIGHTMAREGROWTH = "Something wicked this way comes.", -- ??
 
-        TURFCRAFTINGSTATION = "We can change the very earth beneath our feet, but not the past.",
+        TURFCRAFTINGSTATION = "We're giving the earth a makeover!",
 
-        MOON_ALTAR_LINK = "Is something hiding in there?",
+        MOON_ALTAR_LINK = "There's something calling...",
     },
 
-    DESCRIBE_GENERIC = "Sigh... I don't know.",
-    DESCRIBE_TOODARK = "The darkness! It is too dark!",
-    DESCRIBE_SMOLDERING = "It's about to be swallowed by flames.",
+    DESCRIBE_GENERIC = "I don't know what this is.",
+    DESCRIBE_TOODARK = "I can't see what that is.",
+    DESCRIBE_SMOLDERING = "That's about to burn!",
     EAT_FOOD =
     {
-        TALLBIRDEGG_CRACKED = "I spared it the torment of living.",
-		WINTERSFEASTFUEL = "It smells nostalgic, yet unfamiliar.",
+        TALLBIRDEGG_CRACKED = "There's life in here.",
+		WINTERSFEASTFUEL = "The holiday season was just winter until I found a new home.",
     },
 }
