@@ -12,47 +12,47 @@ return {
 	{
         REPAIR =
         {
-            WRONGPIECE = "A round peg in a square hole.", -- MT
+            WRONGPIECE = "A round peg in a square hole.",
         },
         BUILD =
         {
-            MOUNTED = "I can't reach the ground from up here.", -- MT
-            HASPET = "Only one Half. Never more.", -- MT
+            MOUNTED = "I can't reach the ground from up here.",
+            HASPET = "Only one Half. Never more.",
         },
 		SHAVE =
 		{
-			AWAKEBEEFALO = "I need for this creature to be still like the dead first.", -- MT
-			GENERIC = "No, I'm not going to do that.", -- MT
-			NOBITS = "Nothing is left.", -- MT
+			AWAKEBEEFALO = "I need for this creature to be still.",
+			GENERIC = "No, I'm not going to do that.",
+			NOBITS = "Nothing is left.",
 --fallback to speech_wilson.lua             REFUSE = "only_used_by_woodie",
 		},
 		STORE =
 		{
-			GENERIC = "It's full.", -- MT
-			NOTALLOWED = "No, that wouldn't be polite.", -- MT
-			INUSE = "Are you storing your burdens?", -- MT
-            NOTMASTERCHEF = "I'll burn myself if I use that.", -- MT
+			GENERIC = "It's full.",
+			NOTALLOWED = "No, that wouldn't be polite.",
+			INUSE = "Are you storing your burdens?",
+            NOTMASTERCHEF = "I'll burn myself if I use that.",
 		},
         CONSTRUCT =
         {
-            INUSE = "I can wait my turn.", -- MT
-            NOTALLOWED = "The earth rejects it.", -- MT
-            EMPTY = "It won't be borne of the ground.", -- MT
-            MISMATCH = "A round peg in a square hole.", -- MT
+            INUSE = "I can wait my turn.",
+            NOTALLOWED = "The earth rejects it.",
+            EMPTY = "It won't be borne of the ground.",
+            MISMATCH = "A round peg in a square hole.",
         },
 		RUMMAGE =
 		{
-			GENERIC = "Must life be so long?", -- MT
-			INUSE = "I can wait my turn.", -- MT
-            NOTMASTERCHEF = "No, I shouldn't do that.", -- MT
+			GENERIC = "Must life be so long?",
+			INUSE = "I can wait my turn.",
+            NOTMASTERCHEF = "No, I shouldn't do that.",
 		},
 		UNLOCK =
         {
---fallback to speech_wilson.lua         	WRONGKEY = "No, that's not right.", -- MT
+--fallback to speech_wilson.lua         	WRONGKEY = "No, that's not right.",
         },
 		USEKLAUSSACKKEY =
         {
-        	WRONGKEY = "It was rejected. Like a body with debts.", -- MT
+        	WRONGKEY = "It was rejected. Like a body with debts.",
         	KLAUS = "That is a terrible idea.",
 			QUAGMIRE_WRONGKEY = "This isn't the right key.",
         },
@@ -62,28 +62,28 @@ return {
 		},
         COOK =
         {
-            GENERIC = "I always ate what the earth gave me.", -- MT
-            INUSE = "I can sustain myself with the smell.", -- MT
-            TOOFAR = "I am damp, but my arms are still too brittle.", -- MT
+            GENERIC = "I always ate what the earth gave me.",
+            INUSE = "I can sustain myself with the smell.",
+            TOOFAR = "I am damp, but my arms are still too brittle.",
         },
         START_CARRAT_RACE =
         {
-            NO_RACERS = "No Carrats. I can always just crouch and grab.", -- MT
+            NO_RACERS = "No Carrats. I can always just crouch and grab.",
         },
 
 		DISMANTLE =
 		{
-			COOKING = "No, it's still cooking.", -- MT
-			INUSE = "I can wait my turn.", -- MT
-			NOTEMPTY = "Take the bounty before throwing out the blood.", -- MT
+			COOKING = "No, it's still cooking.",
+			INUSE = "I can wait my turn.",
+			NOTEMPTY = "Take the bounty before throwing out the blood.",
         },
         FISH_OCEAN =
 		{
-			TOODEEP = "It'll snap if I do that.", -- MT
+			TOODEEP = "It'll snap if I do that.",
 		},
         OCEAN_FISHING_POND =
 		{
-			WRONGGEAR = "Don't bring a gun to a knife fight.", -- MT
+			WRONGGEAR = "Don't bring a gun to a knife fight.",
 		},
         --wickerbottom specific action
 --fallback to speech_wilson.lua         READ =
@@ -94,63 +94,63 @@ return {
 
         GIVE =
         {
-            GENERIC = "I can't ease this burden.", -- MT
-            DEAD = "The dead know no greed.", -- MT
-            SLEEPING = "No, a gift can't be received like this.", -- MT
-            BUSY = "Too busy. No feelings to give me in return.", -- MT
-            ABIGAILHEART = "As I thought.", -- MT
-            GHOSTHEART = "They have no attachment to this world.", -- MT
-            NOTGEM = "No, that's not the right thing.", -- MT
-            WRONGGEM = "This isn't it.", -- MT
-            NOTSTAFF = "It won't fit.", -- MT
-            MUSHROOMFARM_NEEDSSHROOM = "No, no, it desires a mushroom.", -- MT
-            MUSHROOMFARM_NEEDSLOG = "No, no, it desires a magic log.", -- MT
-            MUSHROOMFARM_NOMOONALLOWED = "They need the sight of Suok to survive.", -- MT
-            SLOTFULL = "It's full already.", -- MT
-            FOODFULL = "No more food. I'm sorry.", -- MT
-            NOTDISH = "I don't think that's right.", -- MT
-            DUPLICATE = "It's already known.", -- MT
-            NOTSCULPTABLE = "I can't give it shape.", -- MT
---fallback to speech_wilson.lua             NOTATRIUMKEY = "That's not the right one.", -- MT
-            CANTSHADOWREVIVE = "It is an agent of the sky. I shouldn't bring it to the earth.", -- MT
-            WRONGSHADOWFORM = "Misshapen, like a certain golem.", -- MT
-            NOMOON = "I can't do that here.", -- MT
-			PIGKINGGAME_MESSY = "What a mess.", -- MT
-			PIGKINGGAME_DANGER = "I feel danger nipping at my heels.", -- MT
-			PIGKINGGAME_TOOLATE = "Some stories can be missed.", -- MT
+            GENERIC = "I can't ease this burden.",
+            DEAD = "The dead know no greed.",
+            SLEEPING = "No, a gift can't be received like this.",
+            BUSY = "Too busy. No feelings to give me in return.",
+            ABIGAILHEART = "As I thought.",
+            GHOSTHEART = "They have no attachment to this world.",
+            NOTGEM = "No, that's not the right thing.",
+            WRONGGEM = "This isn't it.",
+            NOTSTAFF = "It won't fit.",
+            MUSHROOMFARM_NEEDSSHROOM = "No, no, it desires a mushroom.",
+            MUSHROOMFARM_NEEDSLOG = "No, no, it desires a magic log.",
+            MUSHROOMFARM_NOMOONALLOWED = "They need the sight of Suok to survive.",
+            SLOTFULL = "It's full already.",
+            FOODFULL = "No more food. I'm sorry.",
+            NOTDISH = "I don't think that's right.",
+            DUPLICATE = "It's already known.",
+            NOTSCULPTABLE = "I can't give it shape.",
+--fallback to speech_wilson.lua             NOTATRIUMKEY = "That's not the right one.",
+            CANTSHADOWREVIVE = "It is an agent of the sky. I shouldn't bring it to the earth.",
+            WRONGSHADOWFORM = "Misshapen, like a certain golem.",
+            NOMOON = "I can't do that here.",
+			PIGKINGGAME_MESSY = "What a mess.",
+			PIGKINGGAME_DANGER = "I feel danger nipping at my heels.",
+			PIGKINGGAME_TOOLATE = "Some stories can be missed.",
         },
         GIVETOPLAYER =
         {
-            FULL = "Their burdens should be eased, first.", -- MT
-            DEAD = "The dead know no greed.", -- MT
-            SLEEPING = "No, a gift can't be received like this.", -- MT
-            BUSY = "Too busy. No feelings to give me in return.", -- MT
+            FULL = "Their burdens should be eased, first.",
+            DEAD = "The dead know no greed.",
+            SLEEPING = "No, a gift can't be received like this.",
+            BUSY = "Too busy. No feelings to give me in return.",
         },
         GIVEALLTOPLAYER =
         {
-            FULL = "Their burdens should be eased, first.", -- MT
-            DEAD = "The dead know no greed.", -- MT
-            SLEEPING = "No, a gift can't be received like this.", -- MT
-            BUSY = "Too busy. No feelings to give me in return.", -- MT
+            FULL = "Their burdens should be eased, first.",
+            DEAD = "The dead know no greed.",
+            SLEEPING = "No, a gift can't be received like this.",
+            BUSY = "Too busy. No feelings to give me in return.",
         },
         WRITE =
         {
-            GENERIC = "No, I can't do that.", -- MT
-            INUSE = "Can I have a turn after you?", -- MT
+            GENERIC = "No, I can't do that.",
+            INUSE = "Can I have a turn after you?",
         },
         DRAW =
         {
-            NOIMAGE = "References are an artist's best friend.", -- MT
+            NOIMAGE = "References are an artist's best friend.",
         },
         CHANGEIN =
         {
-            GENERIC = "What's the point of doing that?", -- MT
-            BURNING = "I'd just cremate myself. No, that's not the word.", -- MT
-            INUSE = "I can wait my turn.", -- MT
+            GENERIC = "What's the point of doing that?",
+            BURNING = "I'd just cremate myself. No, that's not the word.",
+            INUSE = "I can wait my turn.",
         },
         ATTUNE =
         {
-            NOHEALTH = "My life force is lacking.", -- MT
+            NOHEALTH = "My life force is lacking.",
         },
         MOUNT =
         {
@@ -168,7 +168,7 @@ return {
             CANTLEARN = "Maybe those brothers could understand, but not me.",
 
             --MapRecorder/MapExplorer
-            WRONGWORLD = "It's something that's out of this world, and I don't mean exceptional.", -- MT
+            WRONGWORLD = "It's something that's out of this world, and I don't mean exceptional.",
 
 			--MapSpotRevealer/messagebottle
 			MESSAGEBOTTLEMANAGER_NOT_FOUND = "The Lines, er, the lines are hidden.",--Likely trying to read messagebottle treasure map in caves
@@ -263,10 +263,10 @@ return {
 	ANNOUNCE_CHARLIE = "Poet, builder, lover, soldier: grass and men...",
 	ANNOUNCE_CHARLIE_ATTACK = "...seize what light they ken - until life ceases.",
 --fallback to speech_wilson.lua 	ANNOUNCE_CHARLIE_MISSED = "only_used_by_winona", --winona specific
-	ANNOUNCE_COLD = "It's cold here. Grave-cold.", -- MT
+	ANNOUNCE_COLD = "It's cold here. Grave-cold.",
 	ANNOUNCE_HOT = "I feel my skin flake...",
 	ANNOUNCE_CRAFTING_FAIL = "I don't have enough to do that.",
-	ANNOUNCE_DEERCLOPS = "What do you see, big, strange bull?",
+	ANNOUNCE_DEERCLOPS = "What do you see, big, strange deer?",
 	ANNOUNCE_CAVEIN = "The earth is angry. She itches.",
 	ANNOUNCE_ANTLION_SINKHOLE =
 	{
@@ -292,7 +292,7 @@ return {
 	{
 		GENERIC = "My stomach is filled.",
 		PAINFUL = "I could have managed without that.",
-		SPOILED = "Even like this, I should always express thanks for the meal.", -- MT
+		SPOILED = "Even like this, I should always express thanks for the meal.",
 		STALE = "My stomach is filled.",
 		INVALID = "No, I won't have it.",
         YUCKY = "I can manage without that.",
@@ -309,7 +309,7 @@ return {
 --fallback to speech_wilson.lua         SAME_OLD_5 = "only_used_by_warly",
 --fallback to speech_wilson.lua 		TASTY = "only_used_by_warly",
     },
--- MNK 25/11 00:38
+
     ANNOUNCE_ENCUMBERED =
     {
         "I can do... this...",
@@ -331,7 +331,7 @@ return {
     ANNOUNCE_RUINS_RESET = "The dead have risen.",
     ANNOUNCE_SNARED = "I've been caught.",
     ANNOUNCE_REPELLED = "I can't do that!",
-	ANNOUNCE_ENTER_DARK = "I seem to hardly cast a shadow anymore.", -- MT
+	ANNOUNCE_ENTER_DARK = "I seem to hardly cast a shadow anymore.",
 	ANNOUNCE_ENTER_LIGHT = "My shadow is dark again.",
 	ANNOUNCE_FREEDOM = "Freedom. It's all an illusion.",
 	ANNOUNCE_HIGHRESEARCH = "I can't feel my forehead.",
@@ -350,13 +350,13 @@ return {
     ANNOUNCE_NOMOUNTEDGIFT = "Gifts should be opened near the earth.",
 	ANNOUNCE_NODANGERSLEEP = "I can't sleep near this murderous intent.",
 	ANNOUNCE_NODAYSLEEP = "It's too early for sleep.",
-	ANNOUNCE_NODAYSLEEP_CAVE = "Sleep is an indulgence. I can go without.", -- MT
-	ANNOUNCE_NOHUNGERSLEEP = "Sleep is an indulgence, but not food.",
+	ANNOUNCE_NODAYSLEEP_CAVE = "Sleep is an indulgence. I can go without.",
+	ANNOUNCE_NOHUNGERSLEEP = "Sleep is an indulgence, but food is not.",
 	ANNOUNCE_NOSLEEPONFIRE = "I would be cremated if I did that.",
 	ANNOUNCE_NODANGERSIESTA = "I couldn't possibly nap right now.",
 	ANNOUNCE_NONIGHTSIESTA = "I want to sleep elsewhere.",
 	ANNOUNCE_NONIGHTSIESTA_CAVE = "I want to sleep elsewhere.",
-	ANNOUNCE_NOHUNGERSIESTA = "Naps are an indulgence, but not food.",
+	ANNOUNCE_NOHUNGERSIESTA = "Naps are an indulgence, but food is not.",
 	ANNOUNCE_NODANGERAFK = "They tell me... not to do that.",
 	ANNOUNCE_NO_TRAP = "That was easy.",
 	ANNOUNCE_PECKED = "Unseen crows are bad omens.",
@@ -377,7 +377,7 @@ return {
 	ANNOUNCE_ACCOMPLISHMENT = "It's all scripted, anyway.",
 	ANNOUNCE_ACCOMPLISHMENT_DONE = "I can't help but be a little proud.",
 	ANNOUNCE_INSUFFICIENTFERTILIZER = "It wants more life before it'll grow.",
-	ANNOUNCE_TOOL_SLIP = "I should have held it tighter...", -- MT
+	ANNOUNCE_TOOL_SLIP = "I should have held it tighter...",
 	ANNOUNCE_LIGHTNING_DAMAGE_AVOIDED = "My hair's a little singed.",
 	ANNOUNCE_TOADESCAPING = "Why are you running?",
 	ANNOUNCE_TOADESCAPED = "Gone, like everyone else.",
@@ -390,7 +390,7 @@ return {
 
 	ANNOUNCE_WASHED_ASHORE = "I can almost hear the earth.",
 
-    ANNOUNCE_DESPAWN = "I've been forgotten, and now I'm moldering here...", -- MT
+    ANNOUNCE_DESPAWN = "I've been forgotten, and now I'm moldering here...",
 	ANNOUNCE_BECOMEGHOST = "oOoooooO!!",
 	ANNOUNCE_GHOSTDRAIN = "Hey, talk to me one at a time.",
 	ANNOUNCE_PETRIFED_TREES = "I feel sad all of a sudden.",
@@ -412,7 +412,7 @@ return {
 	},
 
     --hallowed nights
-    ANNOUNCE_SPOOKED = "A chill goes down my spine.", -- MT
+    ANNOUNCE_SPOOKED = "A chill goes down my spine.",
 	ANNOUNCE_BRAVERY_POTION = "I'm calm again, but it's like my head is full of stuffing.",
 	ANNOUNCE_MOONPOTION_FAILED = "My ears are still ringing. I can't hear my friends.",
 
@@ -511,7 +511,7 @@ return {
     ANNOUNCE_ATTACH_BUFF_PLAYERABSORPTION  = "How odd. I feel more like a doll.",
     ANNOUNCE_ATTACH_BUFF_WORKEFFECTIVENESS = "I can do more than just gravekeeping!",
     ANNOUNCE_ATTACH_BUFF_MOISTUREIMMUNITY  = "My side feels dry, just like the rest of me.",
-    ANNOUNCE_ATTACH_BUFF_SLEEPRESISTANCE   = "Sleep is an indulgence. I can go without.", -- MT
+    ANNOUNCE_ATTACH_BUFF_SLEEPRESISTANCE   = "Sleep is an indulgence. I can go without.",
 
     ANNOUNCE_DETACH_BUFF_ELECTRICATTACK    = "Now I am Edison.",
     ANNOUNCE_DETACH_BUFF_ATTACK            = "My bite is dulled.",
@@ -574,34 +574,34 @@ return {
         "You look excited.",
         "Somewhere... it's near here somewhere.",
     },
-	ANNOUNCE_SISTURN_FULL = "I get a warm feeling of overflowing love.", -- MT
-    ANNOUNCE_ABIGAIL_DEATH = "She has retired back to the other side.", -- MT
-    ANNOUNCE_ABIGAIL_RETRIEVE = "Rest.", -- MT
-	ANNOUNCE_ABIGAIL_LOW_HEALTH = "Watch yourself.", -- MT
+	ANNOUNCE_SISTURN_FULL = "I get a warm feeling of overflowing love.",
+    ANNOUNCE_ABIGAIL_DEATH = "She has retired back to the other side.",
+    ANNOUNCE_ABIGAIL_RETRIEVE = "Rest.",
+	ANNOUNCE_ABIGAIL_LOW_HEALTH = "Watch yourself.",
     ANNOUNCE_ABIGAIL_SUMMON =
 	{
 		LEVEL1 = "I know you're tired, but I can't do this alone...",
 		LEVEL2 = "I need your help, Abigail...",
-		LEVEL3 = "You've rested in peace long enough.", -- MT
+		LEVEL3 = "You've rested in peace long enough.",
 	},
 
     ANNOUNCE_GHOSTLYBOND_LEVELUP =
 	{
 		LEVEL2 = "You seem to have brightened up a bit, Abigail.",
-		LEVEL3 = "What an overwhelming presence.", -- MT
+		LEVEL3 = "What an overwhelming presence.",
 	},
 
 --fallback to speech_wilson.lua     ANNOUNCE_NOINSPIRATION = "only_used_by_wathgrithr",
 --fallback to speech_wilson.lua     ANNOUNCE_BATTLESONG_INSTANT_TAUNT_BUFF = "only_used_by_wathgrithr",
 --fallback to speech_wilson.lua     ANNOUNCE_BATTLESONG_INSTANT_PANIC_BUFF = "only_used_by_wathgrithr",
 
-    ANNOUNCE_ARCHIVE_NEW_KNOWLEDGE = "Is this knowledge?", -- MT
-    ANNOUNCE_ARCHIVE_OLD_KNOWLEDGE = "I already know this.", -- MT
-    ANNOUNCE_ARCHIVE_NO_POWER = "It is quiet.", -- MT
--- MNK 25/11 17:08
+    ANNOUNCE_ARCHIVE_NEW_KNOWLEDGE = "Is this knowledge?",
+    ANNOUNCE_ARCHIVE_OLD_KNOWLEDGE = "I already know this.",
+    ANNOUNCE_ARCHIVE_NO_POWER = "It is quiet.",
+
 	BATTLECRY =
 	{
-		GENERIC = "Return to the earth!", -- MT
+		GENERIC = "Return to the earth!",
 		PIG = "My friends don't like you. Die!",
 		PREY = "Suffer, like I have.",
 		SPIDER = "Get off the set!",
@@ -610,8 +610,8 @@ return {
 	},
 	COMBAT_QUIT =
 	{
-		GENERIC = "May the earth embrace you... later.", -- MT
-		PIG = "My friends have changed their mind.",
+		GENERIC = "May the earth embrace you... later.",
+		PIG = "My friends have changed their minds.",
 		PREY = "Grip tighter to life. I'll let you have it.",
 		SPIDER = "On second thoughts, you can stay.",
 		SPIDER_WARRIOR = "Maybe you can, but just a little longer.",
@@ -637,10 +637,10 @@ return {
         GLASSBLOCK = "Frozen.",
         ABIGAIL_FLOWER =
         {
-            GENERIC ="A tether to the world of the living.", -- MT
-			LEVEL1 = "I can feel the faint presence of a spirit.", -- MT
-			LEVEL2 = "She wishes to see her sister.", -- MT
-			LEVEL3 = "She is clamouring to meet her sister.", -- MT
+            GENERIC ="A tether to the world of the living.",
+			LEVEL1 = "I can feel the faint presence of a spirit.",
+			LEVEL2 = "She wishes to see her sister.",
+			LEVEL3 = "She is clamouring to meet her sister.",
 
 			-- deprecated
             LONG = "",
@@ -650,8 +650,8 @@ return {
             HAUNTED_GROUND = "I need to show Abigail how to play.",
         },
 
-        BALLOONS_EMPTY = "Discarded, just like I am.", -- MT
-        BALLOON = "These things pop. I don't wish to stay too close.", -- MT
+        BALLOONS_EMPTY = "Discarded, just like I am.",
+        BALLOON = "These things pop. I don't wish to stay too close.",
 
         BERNIE_INACTIVE =
         {
@@ -670,173 +670,173 @@ return {
 
         PLAYER =
         {
-            GENERIC = "Hello, %s.", -- MT
-            ATTACKER = "I will die on my own terms.", -- MT
-            MURDERER = "No man kills another, where I come from.", -- MT
-            REVIVER = "Your love is different to mine, %s.", -- MT
-            GHOST = "Shall I sing you a lullaby?", -- MT
-            FIRESTARTER = "The dead must not be cremated.", -- MT
+            GENERIC = "Hello, %s.",
+            ATTACKER = "I will die on my own terms.",
+            MURDERER = "No man kills another, where I come from.",
+            REVIVER = "Your love is different to mine, %s.",
+            GHOST = "Shall I sing you a lullaby?",
+            FIRESTARTER = "The dead must not be cremated.",
         },
         WILSON =
         {
-						GENERIC = "Are you friends with the Bachelor?", -- MT
-						ATTACKER = "No, I must care for the dead. Let me be.", -- MT
-						MURDERER = "Like him, you hail from a different life.", -- MT
-						REVIVER = "He... was seeking a cure for death. You succeeded.", -- MT
-						GHOST = "In defying death, you found it.", -- MT
-						FIRESTARTER = "Thanatica is already burnt. It won't come back.", -- MT
+						GENERIC = "Are you friends with the Bachelor?",
+						ATTACKER = "No, I must care for the dead. Let me be.",
+						MURDERER = "Like him, you hail from a different life.",
+						REVIVER = "He... was seeking a cure for death. You succeeded.",
+						GHOST = "In defying death, you found it.",
+						FIRESTARTER = "Thanatica is already burnt. It won't come back.",
 				},
         WOLFGANG =
         {
-						GENERIC = "Hello, %s.", -- MT
-						ATTACKER = "There are other ways to show your strength.", -- MT
-						MURDERER = "This isn't right.", -- MT
-						REVIVER = "Your strength is unparalleled.", -- MT
-						GHOST = "Even the strongest man must succumb to death.", -- MT
-						FIRESTARTER = "If you must destroy, use your muscles!", -- MT
+						GENERIC = "Hello, %s.",
+						ATTACKER = "There are other ways to show your strength.",
+						MURDERER = "This isn't right.",
+						REVIVER = "Your strength is unparalleled.",
+						GHOST = "Even the strongest man must succumb to death.",
+						FIRESTARTER = "If you must destroy, use your muscles!",
         },
         WAXWELL =
         {
-            GENERIC = "You are a harbinger of death, %s.", -- MT
-            ATTACKER = "I'm suspicious of you.", -- MT
-            MURDERER = "You will return to the earth, soon.", -- MT
-            REVIVER = "I can almost admire your efforts. Almost.", -- MT
-            GHOST = "Death is too peaceful a destination for you.", -- MT
-            FIRESTARTER = "Haven't you done enough?", -- MT
+            GENERIC = "You are a harbinger of death, %s.",
+            ATTACKER = "I'm suspicious of you.",
+            MURDERER = "You will return to the earth, soon.",
+            REVIVER = "I can almost admire your efforts. Almost.",
+            GHOST = "Death is too peaceful a destination for you.",
+            FIRESTARTER = "Haven't you done enough?",
         },
         WX78 =
         {
             GENERIC = "How do you do, %s?",
-            ATTACKER = "You lack a heart, and a conscience.", -- MT
-            MURDERER = "The earth will reject you, but you must die!", -- MT
-            REVIVER = "You give what you cannot have.", -- MT
-            GHOST = "Tin Man, do you wish for a heart?", -- MT
-            FIRESTARTER = "You lack a heart. But you also lack sense.", -- MT
+            ATTACKER = "You lack a heart, and a conscience.",
+            MURDERER = "The earth will reject you, but you must die!",
+            REVIVER = "You give what you cannot have.",
+            GHOST = "Tin Man, do you wish for a heart?",
+            FIRESTARTER = "You lack a heart. But you also lack sense.",
         },
         WILLOW =
         {
-            GENERIC = "Hello, %s.", -- MT
-            ATTACKER = "%s has legs of bone.", -- MT
-            MURDERER = "Are you a shabnak, %s?", -- MT
-            REVIVER = "Fire grants a peaceful death to none.", -- MT
-            GHOST = "We still need your light, %s.", -- MT
-            FIRESTARTER = "Why do you enjoy the flames, %s?", -- MT
+            GENERIC = "Hello, %s.",
+            ATTACKER = "%s has legs of bone.",
+            MURDERER = "Are you a shabnak, %s?",
+            REVIVER = "Fire grants a peaceful death to none.",
+            GHOST = "We still need your light, %s.",
+            FIRESTARTER = "Why do you enjoy the flames, %s?",
         },
         WENDY =
         {
-            GENERIC = "You, you're like me.", -- MT
-            ATTACKER = "No, no, you're not like me at all.", -- MT
-            MURDERER = "Are you a shabnak, %s?", -- MT
-            REVIVER = "You pull the dead back out of the earth, and the realm of the dead.", -- MT
-            GHOST = "She has more attachment to this world, yet you'll return. Fascinating.", -- MT
-            FIRESTARTER = "I thought you, of all people, would understand.", -- MT
+            GENERIC = "You, you're like me.",
+            ATTACKER = "No, no, you're not like me at all.",
+            MURDERER = "Are you a shabnak, %s?",
+            REVIVER = "You pull the dead back out of the earth, and the realm of the dead.",
+            GHOST = "She has more attachment to this world, yet you'll return. Fascinating.",
+            FIRESTARTER = "I thought you, of all people, would understand.",
         },
         WOODIE =
         {
             GENERIC = "How do you do, %s?",
-            ATTACKER = "%s, you should stick to chopping wood.", --MT
-            MURDERER = "I'll dig a comfy grave for you, %s.", -- MT
-            REVIVER = "Lucy speaks comforting words.", -- MT
-            GHOST = "Lucy is clamouring for your return.", -- MT
-            BEAVER = "What sort of creature are you?", -- MT
-            BEAVERGHOST = "Does your curse affect the dead, too? How sad.", -- MT
-            MOOSE = "What a strange-looking bull.", -- MT
-            MOOSEGHOST = "Does your curse affect the dead, too? How sad.", -- MT
-            GOOSE = "You look very aggressive. Stay over there.", -- MT
-            GOOSEGHOST = "I've changed my mind. You're quite pitiful.", -- MT
-            FIRESTARTER = "You are nonsensical. Even if I don't have much sense, either.", -- MT
+            ATTACKER = "%s, you should stick to chopping wood.",
+            MURDERER = "I'll dig a comfy grave for you, %s.",
+            REVIVER = "Lucy speaks comforting words.",
+            GHOST = "Lucy is clamouring for your return.",
+            BEAVER = "What sort of creature are you?",
+            BEAVERGHOST = "Does your curse affect the dead, too? How sad.",
+            MOOSE = "What a strange-looking bull.",
+            MOOSEGHOST = "Does your curse affect the dead, too? How sad.",
+            GOOSE = "You look very aggressive. Stay over there.",
+            GOOSEGHOST = "I've changed my mind. You're quite pitiful.",
+            FIRESTARTER = "You are nonsensical. Even if I don't have much sense, either.",
         },
         WICKERBOTTOM =
         {
-            GENERIC = "Hello, Ms. %s.", -- MT
-            ATTACKER = "If you do this, you'll be forgotten, too.", -- MT
-            MURDERER = "If anything, you should know what a shabnak-adyr is.", -- MT
-            REVIVER = "I feel your love for life along with your wisdom.", -- MT
-            GHOST = "What can you teach me about the dead?", -- MT
-            FIRESTARTER = "In seeking knowledge, must you also destroy it?", -- MT
+            GENERIC = "Hello, Ms. %s.",
+            ATTACKER = "If you do this, you'll be forgotten, too.",
+            MURDERER = "If anything, you should know what a shabnak-adyr is.",
+            REVIVER = "I feel your love for life along with your wisdom.",
+            GHOST = "What can you teach me about the dead?",
+            FIRESTARTER = "In seeking knowledge, must you also destroy it?",
         },
         WES =
         {
-            GENERIC = "Are you a Mask?", -- MT
-            ATTACKER = "Drop the act.", -- MT
-            MURDERER = "%s...", -- MT
-            REVIVER = "You're useful yet, %s.", -- MT
-            GHOST = "You lack a heart. I'll get you one.", -- MT
-            FIRESTARTER = "Must you make the earth scream in order to speak, %s?", -- MT
+            GENERIC = "Are you a Mask?",
+            ATTACKER = "Drop the act.",
+            MURDERER = "%s...",
+            REVIVER = "You're useful yet, %s.",
+            GHOST = "You lack a heart. I'll get you one.",
+            FIRESTARTER = "Must you make the earth scream in order to speak, %s?",
         },
         WEBBER =
         {
-            GENERIC = "Hi, %s. Shall we trade?", -- MT
-            ATTACKER = "%s, please, aren't we friends?", -- MT
-            MURDERER = "Please, stay still. I can take care of you better that way.", -- MT
-            REVIVER = "Your heart isn't that of a monster, %s.", -- MT
-            GHOST = "We'll need to play again, %s...", -- MT
-            FIRESTARTER = "%s, such games are dangerous.", -- MT
+            GENERIC = "Hi, %s. Shall we trade?",
+            ATTACKER = "%s, please, aren't we friends?",
+            MURDERER = "Please, stay still. I can take care of you better that way.",
+            REVIVER = "Your heart isn't that of a monster, %s.",
+            GHOST = "We'll need to play again, %s...",
+            FIRESTARTER = "%s, such games are dangerous.",
         },
         WATHGRITHR =
         {
-            GENERIC = "An actress? Like the rest of us...", -- MT
-            ATTACKER = "%s... is this part of your role?", -- MT
-            MURDERER = "No, no, no, he'll make us try this whole play again!", -- MT
-            REVIVER = "You pulled us out of the Theatre of Death.", -- MT
-            GHOST = "What was the name of your path?", -- MT
-            FIRESTARTER = "The Director wouldn't appreciate you burning his set.", -- MT
+            GENERIC = "An actress? Like the rest of us...",
+            ATTACKER = "%s... is this part of your role?",
+            MURDERER = "No, no, no, he'll make us try this whole play again!",
+            REVIVER = "You pulled us out of the Theatre of Death.",
+            GHOST = "What was the name of your path?",
+            FIRESTARTER = "The Director wouldn't appreciate you burning his set.",
         },
         WINONA =
         {
-            GENERIC = "Hello, %s.", -- MT
-            ATTACKER = "Your eyes are dark, %s.", -- MT
-            MURDERER = "You and the darkness are the same, %s.", -- MT
-            REVIVER = "A beacon. That's what you are.", -- MT
-            GHOST = "Death means nothing. Yet, it also means everything.", -- MT
-            FIRESTARTER = "There are other ways to stave off the darkness.", -- MT
+            GENERIC = "Hello, %s.",
+            ATTACKER = "Your eyes are dark, %s.",
+            MURDERER = "You and the darkness are the same, %s.",
+            REVIVER = "A beacon. That's what you are.",
+            GHOST = "Death means nothing. Yet, it also means everything.",
+            FIRESTARTER = "There are other ways to stave off the darkness.",
         },
         WORTOX =
         {
-            GENERIC = "The souls around you wail, %s.", -- MT
-            ATTACKER = "They're so noisy. It's all your fault.", -- MT
-            MURDERER = "%s, I'll take those souls off your hands.", -- MT
-            REVIVER = "%s likes to share.", -- MT
-            GHOST = "You had no weaknesses, %s.", -- MT
-            FIRESTARTER = "What a horrible way to harvest, %s.", -- MT
+            GENERIC = "The souls around you wail, %s.",
+            ATTACKER = "They're so noisy. It's all your fault.",
+            MURDERER = "%s, I'll take those souls off your hands.",
+            REVIVER = "%s likes to share.",
+            GHOST = "You had no weaknesses, %s.",
+            FIRESTARTER = "What a horrible way to harvest, %s.",
         },
         WORMWOOD =
         {
             GENERIC = "How do you do, %s?",
-            ATTACKER = "For each taste of blood, you should give back.", -- MT
-            MURDERER = "You don't grow herbs upon the taste of blood.", -- MT
-            REVIVER = "%s is a true avatar of the earth.", -- MT
-            GHOST = "Do you feel the pain of consciousness, %s?", -- MT
-            FIRESTARTER = "And I thought I lacked sense...", -- MT
+            ATTACKER = "For each taste of blood, you should give back.",
+            MURDERER = "You don't grow herbs upon the taste of blood.",
+            REVIVER = "%s is a true avatar of the earth.",
+            GHOST = "Do you feel the pain of consciousness, %s?",
+            FIRESTARTER = "And I thought I lacked sense...",
         },
         WARLY =
         {
-            GENERIC = "You smell good, %s.", -- MT
-            ATTACKER = "Please don't eat me! I'm skinny.", -- MT
-            MURDERER = "The dead wail from your stomach, %s.", -- MT
-            REVIVER = "A friend to the living and the dead.", -- MT
-            GHOST = "I'll mourn you, %s. And your food.", -- MT
-            FIRESTARTER = "What an interesting way of cooking. Can you go for less char, next time?", -- MT
+            GENERIC = "You smell good, %s.",
+            ATTACKER = "Please don't eat me! I'm skinny.",
+            MURDERER = "The dead wail from your stomach, %s.",
+            REVIVER = "A friend to the living and the dead.",
+            GHOST = "I'll mourn you, %s. And your food.",
+            FIRESTARTER = "What an interesting way of cooking. Can you go for less char, next time?",
         },
 
         WURT =
         {
             GENERIC = "Hello, %s.",
-            ATTACKER = "If you won't play nice, you can't play at all!", -- MT
-            MURDERER = "Go home. We don't want you.", -- MT
-            REVIVER = "The kids in town would love you, %s.", -- MT
-            GHOST = "Don't cry, %s.", -- MT
-            FIRESTARTER = "Go back down your well, %s!", -- MT
+            ATTACKER = "If you won't play nice, you can't play at all!",
+            MURDERER = "Go home. We don't want you.",
+            REVIVER = "The kids in town would love you, %s.",
+            GHOST = "Don't cry, %s.",
+            FIRESTARTER = "Go back down your well, %s!",
         },
 
         WALTER =
         {
-            GENERIC = "Hello %s, would you like to barter?", -- MT
-            ATTACKER = "That's not very nice, %s!", -- MT
-            MURDERER = "No man should kill another, %s.", -- MT
-            REVIVER = "Even as ghosts, we can listen, you know?", -- MT
-            GHOST = "I'll miss your stories, %s.", -- MT
-            FIRESTARTER = "You're not playing the game correctly.", -- MT
+            GENERIC = "Hello %s, would you like to barter?",
+            ATTACKER = "That's not very nice, %s!",
+            MURDERER = "No man should kill another, %s.",
+            REVIVER = "Even as ghosts, we can listen, you know?",
+            GHOST = "I'll miss your stories, %s.",
+            FIRESTARTER = "You're not playing the game correctly.",
         },
 
 --fallback to speech_wilson.lua         MIGRATION_PORTAL =
@@ -847,8 +847,8 @@ return {
 --fallback to speech_wilson.lua         },
         GLOMMER =
         {
-            GENERIC = "Murky drew something like this. I remember she showed me.", -- MT
-            SLEEPING = "It's snoring softly.", -- MT
+            GENERIC = "Murky drew something like this. I remember she showed me.",
+            SLEEPING = "It's snoring softly.",
         },
         GLOMMERFLOWER =
         {
@@ -873,7 +873,7 @@ return {
 		{
 		    PLANT = "You don't belong here.",
 		    DIRT = "What's being nurtured here?",
-		    WORM = "It used to be closed to the earth.",
+		    WORM = "It used to be close to the earth.",
 		},
         WORMLIGHT_PLANT = "You don't belong here.",
 		MOLE =
@@ -925,7 +925,7 @@ return {
         },
         MOONDIAL =
         {
-			GENERIC = "I've never liked clocks, but this one feels different.", -- MT
+			GENERIC = "I've never liked clocks, but this one feels different.",
 			NIGHT_NEW = "Tonight will be dark.",
 			NIGHT_WAX = "The moon is growing.",
 			NIGHT_FULL = "The full moon will watch over us tonight.",
@@ -938,7 +938,7 @@ return {
 		ARMORSKELETON = "These bones deserve to rest, but I cannot.",
 		SKELETONHAT = "This is very tasteless.",
 		RUINS_BAT = "The power of a bygone age.",
-		RUINSHAT = "It's heavy.", -- MT
+		RUINSHAT = "It's heavy.",
 		NIGHTMARE_TIMEPIECE =
 		{
             CALM = "I can't see, but I'm not seen either.",
@@ -1001,9 +1001,9 @@ return {
 
 		COMPASS =
 		{
-			GENERIC="Every direction eventually leads to death.", -- MT
+			GENERIC="Every direction eventually leads to death.",
 			N = "North.",
-			S = "South.", -- MT
+			S = "South.",
 			E = "East.",
 			W = "West.",
 			NE = "Northeast.",
@@ -1035,7 +1035,7 @@ return {
         },
         MUSHROOM_LIGHT =
         {
-            ON = "What a wonderful glow.", -- MT
+            ON = "What a wonderful glow.",
             OFF = "What a curious lamp.",
             BURNT = "It's cooked.",
         },
@@ -1051,7 +1051,7 @@ return {
         TOADSTOOL =
         {
             GENERIC = "Go back to sleep.",
-            RAGE = "Mother, Father, I will see you soon.", -- MT
+            RAGE = "Mother, Father, I will see you soon.",
         },
         MUSHROOMSPROUT =
         {
@@ -1161,7 +1161,7 @@ return {
             LEVEL1 =
             {
                 "This ghost is attached to the world of the living.",
-                "You're still faint.", -- MT
+                "You're still faint.",
             },
             LEVEL2 =
             {
@@ -1195,7 +1195,7 @@ return {
 		    SLEEPING = "How about I sing you a lullaby?",
         },
         BUNDLE = "A bundle of promise, not joy.",
-        BUNDLEWRAP = "I've wrapped things before, in the loft...",
+        BUNDLEWRAP = "I've wrapped things before, in the Loft...",
 		BACKPACK = "A place for more stuff, if I wish for it.",
 		BACONEGGS = "Salty, but it tastes of home.",
 		BANDAGE = "If you wrap it tightly, it's like a small hug.",
@@ -1213,7 +1213,7 @@ return {
 			GROWING = "It is being nurtured for now.",
 		},
         BEEQUEENHIVEGROWN = "It smells sweet, but my friends say it's dangerous.",
-        BEEGUARD = "They're playing their role.", -- MNK 25/11 23:38
+        BEEGUARD = "They're playing their roles.",
         HIVEHAT = "I feel royal.",
         MINISIGN =
         {
@@ -1247,15 +1247,15 @@ return {
 		},
 		BEEFALO =
 		{
-			FOLLOWER = "From this angle, I'm reminded of Burakh's bull.", -- MT
+			FOLLOWER = "From this angle, I'm reminded of Burakh's bull.",
 			GENERIC = "Our bulls are better.",
-			NAKED = "Aren't you cold?", -- MT
-			SLEEPING = "What do you dream of?", -- MT
+			NAKED = "Aren't you cold?",
+			SLEEPING = "What do you dream of?",
             --Domesticated states:
             DOMESTICATED = "What if we took you to the steppe?",
             ORNERY = "You're a strong one.",
             RIDER = "Can you take me home?",
-            PUDGY = "This beast has consumed Suok.", -- MT
+            PUDGY = "This beast has consumed Suok.",
 		},
 
 		BEEFALOHAT = "Well, if you ever want more hair...",
@@ -1263,10 +1263,10 @@ return {
 		BEEHAT = "The pointy bits can't get to me.",
         BEESWAX = "I could wax lyrical about this.",
 		BEEHIVE = "I don't like it.",
-		BEEMINE = "They hum like the earth.", -- MT
-		BEEMINE_MAXWELL = "They wish for vengeance.", -- MT
-		BERRIES = "Overwhelmingly tart. I think that's the word.", -- MT
-		BERRIES_COOKED = "Softer and sweeter.", -- MT
+		BEEMINE = "They hum like the earth.",
+		BEEMINE_MAXWELL = "They wish for vengeance.",
+		BERRIES = "Overwhelmingly tart. I think that's the word.",
+		BERRIES_COOKED = "Softer and sweeter.",
         BERRIES_JUICY = "Sweet berries.",
         BERRIES_JUICY_COOKED = "They won't last long.",
 		BERRYBUSH =
@@ -1441,7 +1441,7 @@ return {
 		},
 		COOKEDMANDRAKE = "No more screaming.",
 		COOKEDMEAT = "The taste of home.",
-		COOKEDMONSTERMEAT = "It still makes my nose numb.", -- MT
+		COOKEDMONSTERMEAT = "It still makes my nose numb.",
 		COOKEDSMALLMEAT = "Just enough for me.",
 		COOKPOT =
 		{
@@ -1513,7 +1513,7 @@ return {
 			UNLOCKED = "What mysteries will be revealed?",
 		},
 		DIVININGRODSTART = "I could use that.",
-		DRAGONFLY = "Straight outta hell.", -- MNK 26/11 22:52
+		DRAGONFLY = "Straight outta hell.",
 		ARMORDRAGONFLY = "Man, I'm HOT!",
 		DRAGON_SCALES = "The joke's a little... scale.",
 		DRAGONFLYCHEST = "It can take the heat.",
@@ -1623,13 +1623,13 @@ return {
         TWIGGY_OLD = "It was a lot plumper before.",
 		TWIGGY_NUT = "It should be in the earth.",
 		EYEPLANT = "I'm being watched.",
-		INSPECTSELF = "When sugar dissolves in tea, it's not lost, is it? Neither will you be.", -- MT
+		INSPECTSELF = "When sugar dissolves in tea, it's not lost, is it? Neither will you be.",
 		FARMPLOT =
 		{
-			GENERIC = "What life can be grown here?", -- MT
-			GROWING = "The plants remind me to be tenacious.", -- MT
-			NEEDSFERTILIZER = "This earth needs life.", -- MT
-			BURNT = "The earth is burnt and wounded.", -- MT
+			GENERIC = "What life can be grown here?",
+			GROWING = "The plants remind me to be tenacious.",
+			NEEDSFERTILIZER = "This earth needs life.",
+			BURNT = "The earth is burnt and wounded.",
 		},
 		FEATHERHAT = "It looks like a bad omen.",
 		FEATHER_CROW = "Inky black.",
@@ -1707,7 +1707,7 @@ return {
 		},
 		FROGGLEBUNWICH = "If I just imagine that the legs are chicken...",
 		FROGLEGS = "They're a bit twitchy.",
-		FROGLEGS_COOKED = "They're horribly appetising.",
+		FROGLEGS_COOKED = "They're horribly unappetising.",
 		FRUITMEDLEY = "Fruits we don't have at home, all in a cup.",
 		FURTUFT = "Soft.",
 		GEARS = "I know some people who'd love to chew on these.",
@@ -1775,7 +1775,7 @@ return {
 		HONEYCOMB = "It used to be home.",
 		HONEYHAM = "Sweet and salty. A festive food.",
 		HONEYNUGGETS = "Sweet, yet substantial.",
-		HORN = "It goes honk. Or whatever sound beefalo make.",
+		HORN = "It goes honk. Or whatever sound bulls make.",
 		HOUND = "That's not a Half.",
 		HOUNDCORPSE =
 		{
@@ -1808,7 +1808,7 @@ return {
 		KRAMPUS_SACK = "It smells of theft and crime.",
 		LEIF = "He wants revenge.",
 		LEIF_SPARSE = "He wants revenge.",
-		LIGHTER  = "Portable death.", -- MNK 29/11 20:51
+		LIGHTER  = "Portable death.",
 		LIGHTNING_ROD =
 		{
 			CHARGED = "It's charged.",
@@ -1839,7 +1839,7 @@ return {
 
         MANDRAKESOUP = "He's just a thin stock now.",
         MANDRAKE_COOKED = "Cooked, but quiet.",
-        MAPSCROLL = "The path is meaningless without a world to place it on.", -- MT
+        MAPSCROLL = "The path is meaningless without a world to place it on.",
         MARBLE = "Fancy rock.",
         MARBLEBEAN = "What stalk will grow from this?",
         MARBLEBEAN_SAPLING = "Oh, that's not a stalk.",
@@ -1897,10 +1897,10 @@ return {
         MONKEYBARREL = "I'm not going near that.",
         MONSTERLASAGNA = "No, even like this it's still evil.",
         FLOWERSALAD = "Pretty and delicious.",
-        ICECREAM = "Cold and sweet. I wonder how much I could trade this for.", -- MT
+        ICECREAM = "Cold and sweet. I wonder how much I could trade this for.",
         WATERMELONICLE = "Cold and sweet. I feel like I'm eating a Kain.",
         TRAILMIX = "My favourite!",
-        HOTCHILI = "My eyes water just smelling it.", -- MT
+        HOTCHILI = "My eyes water just smelling it.",
         GUACAMOLE = "I don't have to chew this very much.",
         MONSTERMEAT = "I don't want the evil meat.",
         MONSTERMEAT_DRIED = "Chewy evil meat.",
@@ -1909,8 +1909,8 @@ return {
         MOOSEEGG = "So I had to learn about the moose and the goose...",
         MOSSLING = "It's a little cute.",
         FEATHERFAN = "Fancy.",
-        MINIFAN = "It moves with me, like a companion.", -- MT
-        GOOSE_FEATHER = "Plucked. Could I gather these for peaceful slumber?", -- MT
+        MINIFAN = "It moves with me, like a companion.",
+        GOOSE_FEATHER = "Plucked. Could I gather these for peaceful slumber?",
         STAFF_TORNADO = "Now I control the tempest.",
         MOSQUITO =
         {
@@ -1924,15 +1924,15 @@ return {
             GENERIC = "It holds something good, I think.",
         },
         NIGHTLIGHT = "It's pretty.",
-        NIGHTMAREFUEL = "Made of bad imagination.", -- MT
-        NIGHTSWORD = "The real stuff fo nightmares.",
+        NIGHTMAREFUEL = "Made of bad imagination.",
+        NIGHTSWORD = "The real stuff of nightmares.",
         NITRE = "This isn't gold.",
         ONEMANBAND = "More men make a better band, but I guess I can compromise.",
         OASISLAKE =
 		{
 			GENERIC = "A sanctuary of sorts.",
 			EMPTY = "Oh, come on.",
-		}, -- MNK 30/11 21:56
+		},
         PANDORASCHEST = "A box of surprises.",
         PANFLUTE = "It could send me to sleep.",
         PAPYRUS = "Can I draw on this?",
@@ -1953,7 +1953,7 @@ return {
         PIGHOUSE =
         {
             FULL = "Where's a big bad wolf?",
-            GENERIC = "A house made of sticks, but what about straws or bricks?",
+            GENERIC = "A house made of sticks, but what about straw or bricks?",
             LIGHTSOUT = "Let me in! Let me in!",
             BURNT = "Nobody is living here anymore.",
         },
@@ -1997,7 +1997,7 @@ return {
         PURPLEGEM = "Purple... makes me think of his coat.",
         RABBIT =
         {
-            GENERIC = "These little ones are unassuming, like me.", -- MT
+            GENERIC = "These little ones are unassuming, like me.",
             HELD = "He's at my mercy.",
         },
         RABBITHOLE =
@@ -2010,7 +2010,7 @@ return {
             GENERIC = "Tell me, will it rain?",
             BURNT = "It's not telling me anything.",
         },
-        RAINCOAT = "With this, I won't be drenched to the bone.", -- MT
+        RAINCOAT = "With this, I won't be drenched to the bone.",
         RAINHAT = "It keeps my head dry, but what about my side?",
         RATATOUILLE = "Did a rat make this?",
         RAZOR = "It gets rid of the extra hair.",
@@ -2027,7 +2027,7 @@ return {
         {
             BURNING = "They can't be saved.",
             GENERIC = "Reeds. They could be used for something.",
-            PICKED = "Shaved beyond recognition.", -- MNK 01/12 12:56
+            PICKED = "Shaved beyond recognition.",
         },
         RELIC = "It's from a bygone age.",
         RUINS_RUBBLE = "Broken and forgotten.",
@@ -2097,7 +2097,7 @@ return {
         ROPE = "You're not thinking what I'm thinking.",
         ROTTENEGG = "Stinky.",
         ROYAL_JELLY = "Baby bee food. Not anymore.",
-        JELLYBEAN = "I can't grow these?", -- MNK 01/12 20:11
+        JELLYBEAN = "I can't grow these?",
         SADDLE_BASIC = "Now we can ride the big bull safely.",
         SADDLE_RACE = "Are these enough wings to finally fly?",
         SADDLE_WAR = "Now I'm a warlord!",
@@ -2126,8 +2126,8 @@ return {
    		},
    		SCULPTINGTABLE=
    		{
-			EMPTY = "It reminds me of home... and my new family...", -- MT
-			BLOCK = "Let's see, can I try doing what he does?", -- MT
+			EMPTY = "It reminds me of home... and my new family...",
+			BLOCK = "Let's see, can I try doing what he does?",
 			SCULPTURE = "It doesn't look too bad.",
 			BURNT = "I can't lose this...",
    		},
@@ -2199,9 +2199,9 @@ return {
 		SPOILED_FOOD = "Can I even eat this?",
         STAGEHAND =
         {
-			AWAKE = "Which masks are moving you?", -- MT
-			HIDING = "Director?", -- MT
-        }, -- MNK 02/12 20:38
+			AWAKE = "Which masks are moving you?",
+			HIDING = "Director?",
+        },
         STATUE_MARBLE =
         {
             GENERIC = "It's a marble statue.",
@@ -2210,18 +2210,18 @@ return {
             TYPE3 = "Birds might like this one.", --bird bath type statue
         },
 		STATUEHARP = "Ha. Does heaven really exist?",
-		STATUEMAXWELL = "Even this lifeless imitation reeks of death.", -- MT
+		STATUEMAXWELL = "Even this lifeless imitation reeks of death.",
 		STEELWOOL = "Scratchy.",
 		STINGER = "Pokes and cuts.",
 		STRAWHAT = "Slip, slop, slap.",
-		STUFFEDEGGPLANT = "Bitter. But the stuffing is delicious.", -- MT
+		STUFFEDEGGPLANT = "Bitter. But the stuffing is delicious.",
 		SWEATERVEST = "All dressed up to the nines.",
 		REFLECTIVEVEST = "Send back the energy that life gives you.",
-		HAWAIIANSHIRT = "I saw the Bachelor wear a shirt like this once.", -- MT
-		TAFFY = "How many nuts would this be worth, I wonder?", -- MT
+		HAWAIIANSHIRT = "I saw the Bachelor wear a shirt like this once.",
+		TAFFY = "How many nuts would this be worth, I wonder?",
 		TALLBIRD = "Leggy bird.",
-		TALLBIRDEGG = "So full of potential. Not like the eggs in town.", -- MT
-		TALLBIRDEGG_COOKED = "I mourn the lost life, but my mouth is watering.", -- MT
+		TALLBIRDEGG = "So full of potential. Not like the eggs in town.",
+		TALLBIRDEGG_COOKED = "I mourn the lost life, but my mouth is watering.",
 		TALLBIRDEGG_CRACKED =
 		{
 			COLD = "It's a cold egg.",
@@ -2233,14 +2233,14 @@ return {
 		TALLBIRDNEST =
 		{
 			GENERIC = "Isn't life a wonderful thing?",
-			PICKED = "The nest is empty, void of colour.", -- MT
+			PICKED = "The nest is empty, void of colour.",
 		},
 		TEENBIRD =
 		{
 			GENERIC = "Rebellious.",
 			HUNGRY = "Alright, let's get you lunch.",
 			STARVING = "He's hungry.",
-			SLEEPING = "In this dangerous world, you still sleep dreamlessly.", -- MT
+			SLEEPING = "In this dangerous world, you still sleep dreamlessly.",
 		},
 		TELEPORTATO_BASE =
 		{
@@ -2264,14 +2264,14 @@ return {
 			GENERIC = "Sleep is an indulgence. I can go without.",
 			BURNT = "I could really go without sleep right now.",
 		},
-		TENTACLE = "There's no Rule 34 here.",
+		TENTACLE = "Only suckers would fall for that.",
 		TENTACLESPIKE = "It pierces, but it'll do.",
-		TENTACLESPOTS = "It is smooth. I'd prefer to leave it alone.", -- MT
+		TENTACLESPOTS = "It is smooth. I'd prefer to leave it alone.",
 		TENTACLE_PILLAR = "What a big fellow.",
         TENTACLE_PILLAR_HOLE = "Stay down there.",
 		TENTACLE_PILLAR_ARM = "It's multiplying...",
 		TENTACLE_GARDEN = "Mary, Mary, quite contrary...",
-		TOPHAT = "Do I look like a fancy girl now?",
+		TOPHAT = "Do I look like a fancy girl, now?",
 		TORCH = "To grant a little sight in the night.",
 		TRANSISTOR = "Electrical doody doodad.",
 		TRAP = "Torture before execution.",
@@ -2290,52 +2290,52 @@ return {
 		},
 		TREECLUMP = "Was this placed intentionally?", -- unimplemented
 
-		TRINKET_1 = "A pity. If these were whole, they'd have worth.", --Melted Marbles MT
-		TRINKET_2 = "It looks like one of Notkin's trinkets.", --Fake Kazoo MT
-		TRINKET_3 = "A knot strong enough to bind us to this earth.", --Gord's Knot MT
-		TRINKET_4 = "He keeps a watchful eye.", --Gnome MT
-		TRINKET_5 = "Will the Polyhedron take us into the sky one day?", --Toy Rocketship MT
-		TRINKET_6 = "They smell burnt. Were they live, once upon a time?", --Frazzled Wires MT
-		TRINKET_7 = "The simplest game.", --Ball and Cup MT
-		TRINKET_8 = "There was that bathtub at home. I miss it.", --Rubber Bung MT
-		TRINKET_9 = "Currency to some, junk to others.", --Mismatched Buttons MT
-		TRINKET_10 = "It bit off too much to chew.", --Dentures MT
-		TRINKET_11 = "Would the Bachelor be angry if I say this reminds me of him?", --Lying Robot MT
-		TRINKET_12 = "Flexible. Not as fun without the danger.", --Dessicated Tentacle MT
-		TRINKET_13 = "Watchful, like a Mistress.", --Gnomette MT
-		TRINKET_14 = "When sugar dissolves in tea, it'd be lost because of this leak.", --Leaky Teacup MT
-		TRINKET_15 = "One piece means nothing, but such pieces elevate the others...", --Pawn MT
-		TRINKET_16 = "One piece means nothing, but such pieces elevate the others...", --Pawn MT
-		TRINKET_17 = "Discarded cutlery. I'd use it, if I found this at home.", --Bent Spork MT
-		TRINKET_18 = "It hides death.", --Trojan Horse MT
-		TRINKET_19 = "If the top keeps spinning, then you know...", --Unbalanced Top MT
-		TRINKET_20 = "My back stings. It doesn't itch.", --Backscratcher MT
-		TRINKET_21 = "When the beater gets beaten...", --Egg Beater MT
-		TRINKET_22 = "It's still holding together. Just like me.", --Frayed Yarn MT
-		TRINKET_23 = "My shoes are already too big.", --Shoehorn MT
-		TRINKET_24 = "How cute! I hope you bring me luck.", --Lucky Cat Jar MT
-		TRINKET_25 = "It smells of the Pest.", --Air Unfreshener MT
-		TRINKET_26 = "Where's all the insides?", --Potato Cup MT
-		TRINKET_27 = "Could this flimsy thing even hold a coat?", --Coat Hanger MT
-		TRINKET_28 = "Rook, line and sinker... Wait.", --Rook MT
-        TRINKET_29 = "Rook, line and sinker... Wait.", --Rook MT
-        TRINKET_30 = "The horse I'd trade a kingdom for.", --Knight MT
-        TRINKET_31 = "The horse I'd trade a kingdom for.", --Knight MT
-        TRINKET_32 = "I'm not a Mistress, and this ball won't give me sight.", --Cubic Zirconia Ball MT
-        TRINKET_33 = "It doesn't fit any of my fingers.", --Spider Ring MT
-        TRINKET_34 = "This hand isn't human, and won't grip onto fate as tightly.", --Monkey Paw MT
-        TRINKET_35 = "It's all gone.", --Empty Elixir MT
-        TRINKET_36 = "Will this help me chew better?", --Faux fangs MT
-        TRINKET_37 = "What creature did you vanquish?", --Broken Stake MT
-        TRINKET_38 = "A closer look at things out of my reach.", -- Binoculars Griftlands trinket MT
-        TRINKET_39 = "I can fit both my hands in this.", -- Lone Glove Griftlands trinket MT
-        TRINKET_40 = "To carry home around seems like a wonderful burden.", -- Snail Scale Griftlands trinket MT
-        TRINKET_41 = "It's fun to touch.", -- Goop Canister Hot Lava trinket MT
-        TRINKET_42 = "A certain prince's weakness.", -- Toy Cobra Hot Lava trinket MT
-        TRINKET_43= "I know children who'd love this little thing.", -- Crocodile Toy Hot Lava trinket MT
-        TRINKET_44 = "I can't piece this back together.", -- Broken Terrarium ONI trinket MT
-        TRINKET_45 = "What sort of music did you play?", -- Odd Radio ONI trinket MT
-        TRINKET_46 = "What is this?", -- Hairdryer ONI trinket MT
+		TRINKET_1 = "A pity. If these were whole, they'd have worth.", --Melted Marbles
+		TRINKET_2 = "It looks like one of Notkin's trinkets.", --Fake Kazoo
+		TRINKET_3 = "A knot strong enough to bind us to this earth.", --Gord's Knot
+		TRINKET_4 = "He keeps a watchful eye.", --Gnome
+		TRINKET_5 = "Will the Polyhedron take us into the sky one day?", --Toy Rocketship
+		TRINKET_6 = "They smell burnt. Were they live, once upon a time?", --Frazzled Wires
+		TRINKET_7 = "The simplest game.", --Ball and Cup
+		TRINKET_8 = "There was that bathtub at home. I miss it.", --Rubber Bung
+		TRINKET_9 = "Currency to some, junk to others.", --Mismatched Buttons
+		TRINKET_10 = "It bit off too much to chew.", --Dentures
+		TRINKET_11 = "Would the Bachelor be angry if I say this reminds me of him?", --Lying Robot
+		TRINKET_12 = "Flexible. Not as fun without the danger.", --Dessicated Tentacle
+		TRINKET_13 = "Watchful, like a Mistress.", --Gnomette
+		TRINKET_14 = "When sugar dissolves in tea, it'd be lost because of this leak.", --Leaky Teacup
+		TRINKET_15 = "One piece means nothing, but such pieces elevate the others...", --Pawn
+		TRINKET_16 = "One piece means nothing, but such pieces elevate the others...", --Pawn
+		TRINKET_17 = "Discarded cutlery. I'd use it, if I found this at home.", --Bent Spork
+		TRINKET_18 = "It hides death.", --Trojan Horse
+		TRINKET_19 = "If the top keeps spinning, then you know...", --Unbalanced Top
+		TRINKET_20 = "My back stings. It doesn't itch.", --Backscratcher
+		TRINKET_21 = "When the beater gets beaten...", --Egg Beater
+		TRINKET_22 = "It's still holding together. Just like me.", --Frayed Yarn
+		TRINKET_23 = "My shoes are already too big.", --Shoehorn
+		TRINKET_24 = "How cute! I hope you bring me luck.", --Lucky Cat Jar
+		TRINKET_25 = "It smells of the Pest.", --Air Unfreshener
+		TRINKET_26 = "Where's all the insides?", --Potato Cup
+		TRINKET_27 = "Could this flimsy thing even hold a coat?", --Coat Hanger
+		TRINKET_28 = "Rook, line and sinker... Wait.", --Rook
+        TRINKET_29 = "Rook, line and sinker... Wait.", --Rook
+        TRINKET_30 = "The horse I'd trade a kingdom for.", --Knight
+        TRINKET_31 = "The horse I'd trade a kingdom for.", --Knight
+        TRINKET_32 = "I'm not a Mistress, and this ball won't give me sight.", --Cubic Zirconia Ball
+        TRINKET_33 = "It doesn't fit any of my fingers.", --Spider Ring
+        TRINKET_34 = "This hand isn't human, and won't grip onto fate as tightly.", --Monkey Paw
+        TRINKET_35 = "It's all gone.", --Empty Elixir
+        TRINKET_36 = "Will this help me chew better?", --Faux fangs
+        TRINKET_37 = "What creature did you vanquish?", --Broken Stake
+        TRINKET_38 = "A closer look at things out of my reach.", -- Binoculars Griftlands trinket
+        TRINKET_39 = "I can fit both my hands in this.", -- Lone Glove Griftlands trinket
+        TRINKET_40 = "To carry home around seems like a wonderful burden.", -- Snail Scale Griftlands trinket
+        TRINKET_41 = "It's fun to touch.", -- Goop Canister Hot Lava trinket
+        TRINKET_42 = "A certain prince's weakness.", -- Toy Cobra Hot Lava trinket
+        TRINKET_43= "I know children who'd love this little thing.", -- Crocodile Toy Hot Lava trinket
+        TRINKET_44 = "I can't piece this back together.", -- Broken Terrarium ONI trinket
+        TRINKET_45 = "What sort of music did you play?", -- Odd Radio ONI trinket
+        TRINKET_46 = "What is this?", -- Hairdryer ONI trinket
 
         -- The numbers align with the trinket numbers above.
         LOST_TOY_1  = "This belongs to someone who greatly misses it.",
@@ -2362,10 +2362,10 @@ return {
         HALLOWEENCANDY_11 = "Bite the head first to put them out of their misery.",
         HALLOWEENCANDY_12 = "Lice are nice, but only like this.", --ONI meal lice candy
         HALLOWEENCANDY_13 = "So I DON'T chew these?", --Griftlands themed candy
-        HALLOWEENCANDY_14 = "I can't feel my tongue.", --Hot Lava pepper candy MT
-        CANDYBAG = "For the loot, as Sticky would call it.", -- MNK 03/12 21:02
+        HALLOWEENCANDY_14 = "I can't feel my tongue.", --Hot Lava pepper candy
+        CANDYBAG = "For the loot, as Sticky would call it.",
 
-		HALLOWEEN_ORNAMENT_1 = "It looks like you, friends.", -- MT
+		HALLOWEEN_ORNAMENT_1 = "It looks like you, friends.",
 		HALLOWEEN_ORNAMENT_2 = "I can't hang this upside-down. Pooey.",
 		HALLOWEEN_ORNAMENT_3 = "It'll be like the tree is infested.",
 		HALLOWEEN_ORNAMENT_4 = "It doesn't wriggly-wriggle.",
@@ -2387,7 +2387,7 @@ return {
         PERDSHRINE =
         {
             GENERIC = "Now you decide to beg us for food?",
-            EMPTY = "The Gobblers are going cold turkey.",
+            EMPTY = "They're going cold turkey.",
             BURNT = "That's all roasted now.",
         },
         REDLANTERN = "Guiding light, guide me.",
@@ -2476,19 +2476,19 @@ return {
         {
             GENERIC = "It's the never-ending circle of life.",
             RAT = "Keep skittering.",
-            BURNT = "Not much practise happening here.",
+            BURNT = "Not much practice happening here.",
         },
         YOTC_CARRAT_GYM_REACTION =
         {
             GENERIC = "Pop goes the weasel!",
             RAT = "Keep skittering.",
-            BURNT = "Not much practise happening here.",
+            BURNT = "Not much practice happening here.",
         },
         YOTC_CARRAT_GYM_STAMINA =
         {
-            GENERIC = "Hee hee, how fun!", -- MT
+            GENERIC = "Hee hee, how fun!",
             RAT = "Keep skittering.",
-            BURNT = "Not much practise happening here.",
+            BURNT = "Not much practice happening here.",
         },
 
         YOTC_CARRAT_GYM_DIRECTION_ITEM = "I can't use it until I place it.",
@@ -2512,7 +2512,7 @@ return {
 		TRUNK_SUMMER = "What could I do with this?",
 		TRUNK_WINTER = "Oh, who nose what's in store for us this season?",
 		TUMBLEWEED = "Odd. I don't feel any wind.",
-		TURKEYDINNER = "I gobble gobble gobble the gobbler now.",
+		TURKEYDINNER = "Now who's the one gobbling?",
 		TWIGS = "What's brown and sticky?",
 		UMBRELLA = "Keeping me dry. A little.",
 		GRASS_UMBRELLA = "Stay sun safe.",
@@ -2557,10 +2557,10 @@ return {
 		WARG = "I hope that's not anybody's Half.",
 		WASPHIVE = "The House of Hatred.",
 		WATERBALLOON = "When something needs to cool down quickly...",
-		WATERMELON = "Are you Victor? Georgiy? Khan?", -- MT
-		WATERMELON_COOKED = "Just water. I hear wailing in the distance.", -- MT
+		WATERMELON = "Are you Victor? Georgiy? Khan?",
+		WATERMELON_COOKED = "Just water. I hear wailing in the distance.",
 		WATERMELONHAT = "I don't want to make my head all juicy.",
-		WAXWELLJOURNAL = "These words make me sick looking at them.", -- MT
+		WAXWELLJOURNAL = "These words make me sick looking at them.",
 		WETGOOP = "Blech. I could do better.",
         WHIP = "Watch me neigh neigh. Is that how it goes?",
 		WINTERHAT = "It keeps my head warm.",
@@ -2582,11 +2582,11 @@ return {
 			GENERIC = "We can put a special tree here.",
             BURNT = "Winter is cancelled. At least the fun part is.",
 		},
-        WINTER_ORNAMENT = "How quaint. I should try hanging them on the graves.", -- MT
+        WINTER_ORNAMENT = "How quaint. I should try hanging them on the graves.",
         WINTER_ORNAMENTLIGHT = "Silent light... that doesn't sound right.",
         WINTER_ORNAMENTBOSS = "They look just like the real thing!",
 		WINTER_ORNAMENTFORGE = "The past is never really past.",
-		WINTER_ORNAMENTGORGE = "The past is never really past.", -- MNK 04/12
+		WINTER_ORNAMENTGORGE = "The past is never really past.",
 
         WINTER_FOOD1 = "Do I eat the head first? Or the legs?", --gingerbread cookie
         WINTER_FOOD2 = "It's just sugar.", --sugar cookie
@@ -2605,7 +2605,7 @@ return {
 			ALMOST_DONE_COOKING = "It's almost ready to eat!",
 			DISH_READY = "Ooh, I'm hungry!",
 		},
-		BERRYSAUCE = "Sweet. What would this go with?", -- MT
+		BERRYSAUCE = "Sweet. What would this go with?",
 		BIBINGKA = "This has a fun texture.",
 		CABBAGEROLLS = "The filling's all rolled up and cozy.",
 		FESTIVEFISH = "That's not very festive.",
@@ -2620,14 +2620,14 @@ return {
 		PUMPKINPIE = "Now that's a festive food.",
 		ROASTTURKEY = "That's one less person celebrating with us.",
 		STUFFING = "If I eat this, does that make ME the turkey?",
-		SWEETPOTATO = "I wonder if Jester will like sweet potatoes.", -- MT
+		SWEETPOTATO = "I wonder if Jester will like sweet potatoes.",
 		TAMALES = "Hot pockets.",
 		TOURTIERE = "Meaty meat pie. Maybe I can ask Burakh if he can make some.",
 
 		TABLE_WINTERS_FEAST =
 		{
 			GENERIC = "This table is for all of us to gather round.",
-			HAS_FOOD = "A sign of plenty. A strange sign for me.", -- MT
+			HAS_FOOD = "A sign of plenty. A strange sign for me.",
 			WRONG_TYPE = "No, I don't like the look of that.",
 			BURNT = "The Grinch called. He kidnapped our holiday.",
 		},
@@ -2636,7 +2636,7 @@ return {
 		GINGERBREADHOUSE = "Where's my Hansel?",
 		GINGERBREADPIG = "Come back! Let me eat you!",
 		CRUMBS = "His stuffing fell out.",
-		WINTERSFEASTFUEL = "The holiday season was just winter until I found a new home.", -- MT
+		WINTERSFEASTFUEL = "The holiday season was just winter until I found a new home.",
 
         KLAUS = "Here comes Santa Klaus, here comes Santa Klaus...",
         KLAUS_SACK = "Are there presents for me?",
@@ -2650,7 +2650,7 @@ return {
 		ACCOMPLISHMENT_SHRINE = "This is all just bits and bytes.",
 		LIVINGTREE = "It won't be living much longer.",
 		ICESTAFF = "Freeze! It's the caaawps!",
-		REVIVER = "A beatiing heart brings life back.",
+		REVIVER = "A beating heart brings life back.",
 		SHADOWHEART = "It beats, but there's no life in this.",
         ATRIUM_RUBBLE =
         {
@@ -2689,7 +2689,7 @@ return {
 		ROCK_MOON = "It tried so hard, and got so far...",
 		MOONROCKNUGGET = "But in the end, it doesn't even matter.",
 		MOONROCKCRATER = "Something's missing.",
-		MOONROCKSEED = "Cold, and truly dead. The dead are less dead than this.", -- MT
+		MOONROCKSEED = "Cold, and truly dead. The dead are less dead than this.",
 
         REDMOONEYE = "Maybe I can meet them again...",
         PURPLEMOONEYE = "Mark a place where friends can meet.",
@@ -2702,7 +2702,7 @@ return {
         LAVAARENA_BOARLORD = "I don't think we can talk this out.",
         BOARRIOR = "It'll only take one punch.",
         BOARON = "Got your nose! Ha, I wish.",
-        PEGHOOK = "You must fall to the earth first.", -- MT
+        PEGHOOK = "You must fall to the earth first.",
         TRAILS = "I'll trip you over, and then what?",
         TURTILLUS = "Look at all those chinks in your armour.",
         SNAPPER = "Vector? More like a scalar.",
@@ -2888,11 +2888,11 @@ return {
         QUAGMIRE_FERN = "Wilson calls them \"greens\"... but they're purple...",
         QUAGMIRE_FOLIAGE_COOKED = "Cooked purples.",
         QUAGMIRE_COIN1 = "I shall put them on my eyes when I die.",
-        QUAGMIRE_COIN2 = "Money is useless in the face of disease and death.", -- MT
+        QUAGMIRE_COIN2 = "Money is useless in the face of disease and death.",
         QUAGMIRE_COIN3 = "Wealth cannot buy immortality.",
         QUAGMIRE_COIN4 = "It came from above.",
         QUAGMIRE_GOATMILK = "But no honey.",
-        QUAGMIRE_SYRUP = "The smell makes me want to cough.", -- MT
+        QUAGMIRE_SYRUP = "The smell makes me want to cough.",
         QUAGMIRE_SAP_SPOILED = "As bittersweet as life.",
         QUAGMIRE_SEEDPACKET = "Planting seeds requires an optimism I don't possess.",
 
@@ -2955,7 +2955,7 @@ return {
         --v2 Winona
         WINONA_CATAPULT =
         {
-        	GENERIC = "It brings intruders back to the earth.", -- MT
+        	GENERIC = "It brings intruders back to the earth.",
         	OFF = "It won't be doing much like this.",
         	BURNING = "Oh dear...",
         	BURNT = "Now this got brought back to the earth.",
@@ -2997,7 +2997,7 @@ return {
         SEASTACK = "It'll hurt the boat if I hit it.",
         FISHINGNET = "Tonight we'll have a fish dish...",
         ANTCHOVIES = "Close your mouth. Stop chewing!",
-        STEERINGWHEEL = "All directions eventually lead to death.", -- MT
+        STEERINGWHEEL = "All directions eventually lead to death.",
         ANCHOR = "Stop it. Get some help.",
         BOATPATCH = "For big boo-boos.",
         DRIFTWOOD_TREE =
@@ -3008,14 +3008,14 @@ return {
             GENERIC = "This tree bleached its roots a little too much.",
         },
 
-        DRIFTWOOD_LOG = "The colour of bones rejected by the earth.", -- MT
+        DRIFTWOOD_LOG = "The colour of bones rejected by the earth.",
 
         MOON_TREE =
         {
             BURNING = "It's cremating.",
             BURNT = "Rest in pieces.",
             CHOPPED = "Ex-tree-mely chopped.",
-            GENERIC = "Oh, the leaves are white.", -- MNK 05/12 20:33
+            GENERIC = "Oh, the leaves are white.",
         },
 		MOON_TREE_BLOSSOM = "The flower came from the pretty tree.",
 
@@ -3192,7 +3192,7 @@ return {
 
         WALKINGPLANK = "An interesting kind of punishment.",
         OAR = "If I ever have to move the boat with a bit of elbow grease...",
-		OAR_DRIFTWOOD = "If I ever have to move the boat with a bit of elbow grease...", -- MNK 06/12 10:28
+		OAR_DRIFTWOOD = "If I ever have to move the boat with a bit of elbow grease...",
 
 		OCEANFISHINGROD = "I can get the reel big fish with this.",
 		OCEANFISHINGBOBBER_NONE = "The line's a bit plain.",
@@ -3233,7 +3233,7 @@ return {
 		OCEANFISH_MEDIUM_5 = "Just a cod of corn.",
 		OCEANFISH_MEDIUM_6 = "Pretty fish!",
 		OCEANFISH_MEDIUM_7 = "Pretty fish!",
-		OCEANFISH_MEDIUM_8 = "It's chilly. Very chilly.", -- MT
+		OCEANFISH_MEDIUM_8 = "It's chilly. Very chilly.",
 
 		PONDFISH = "Even when struggling for life, it has such a blank look.",
 		PONDEEL = "It's eel-y slippery.",
@@ -3304,7 +3304,7 @@ return {
 		},
 		SINGINGSHELL_OCTAVE5 =
 		{
-			GENERIC = "Murky always wanted to visit the sea...", -- MT
+			GENERIC = "Murky always wanted to visit the sea...",
         },
 
         CHUM = "Fish are friends, but this is food.",
@@ -3316,10 +3316,10 @@ return {
         },
 
         HERMIT_BUNDLE = "She gave me gratitude!",
-        HERMIT_BUNDLE_SHELLS = "I wonder if I can bring these back as souvenirs.", -- MT
+        HERMIT_BUNDLE_SHELLS = "I wonder if I can bring these back as souvenirs.",
 
         RESKIN_TOOL = "Time for a costume change!",
-        MOON_FISSURE_PLUGGED = "Well, I guess that works...", -- MNK 07/12 22:27
+        MOON_FISSURE_PLUGGED = "Well, I guess that works...",
 
 
 		----------------------- ROT STRINGS GO ABOVE HERE ------------------
@@ -3336,7 +3336,7 @@ return {
             "Like me, a little wayward soul.",
         },
 		WALTERHAT = "It's not my hat.",
-		SLINGSHOT = "Did one of Notkin's friends have these? Or Khan's? It's been too long.", -- MT
+		SLINGSHOT = "Did one of Notkin's friends have these? Or Khan's? It's been too long.",
 		SLINGSHOTAMMO_ROCK = "For a fight against Goliath. But I'm no David.",
 		SLINGSHOTAMMO_MARBLE = "For a fight against Goliath. But I'm no David.",
 		SLINGSHOTAMMO_THULECITE = "For a fight against Goliath. But I'm no David.",
@@ -3357,17 +3357,17 @@ return {
         BATTLESONG_INSTANT_PANIC = "I'm not very good at singing.",
 
 		-- Wendy
-		GHOSTLYELIXIR_SLOWREGEN = "This potion helps keep ghosts in this realm.", -- MT
-		GHOSTLYELIXIR_FASTREGEN = "This potion anchors ghosts to this realm.",  -- MT
-		GHOSTLYELIXIR_SHIELD = "This potion shields ghosts from harm.", -- MT
-		GHOSTLYELIXIR_ATTACK = "This potion makes ghosts stronger.", -- MT
-		GHOSTLYELIXIR_SPEED = "It smells sweet.", -- MT
-		GHOSTLYELIXIR_RETALIATION = "It has a bitter aftertaste.", -- MT
+		GHOSTLYELIXIR_SLOWREGEN = "This potion helps keep ghosts in this realm.",
+		GHOSTLYELIXIR_FASTREGEN = "This potion anchors ghosts to this realm.",
+		GHOSTLYELIXIR_SHIELD = "This potion shields ghosts from harm.",
+		GHOSTLYELIXIR_ATTACK = "This potion makes ghosts stronger.",
+		GHOSTLYELIXIR_SPEED = "It smells sweet.",
+		GHOSTLYELIXIR_RETALIATION = "It has a bitter aftertaste.",
 		SISTURN =
 		{
-			GENERIC = "A memorial for a loved one. It's a bit bare.", -- MT
-			SOME_FLOWERS = "These flowers should help a little.", -- MT
-			LOTS_OF_FLOWERS = "Overflowing with flowers, and love.", -- MT
+			GENERIC = "A memorial for a loved one. It's a bit bare.",
+			SOME_FLOWERS = "These flowers should help a little.",
+			LOTS_OF_FLOWERS = "Overflowing with flowers, and love.",
 		},
 
         --Wortox
@@ -3375,23 +3375,23 @@ return {
 
         PORTABLECOOKPOT_ITEM =
         {
-            GENERIC = "It looks light, and good for cooking in the steppe.", -- MT
-            DONE = "Will someone have that meal?", -- MT
+            GENERIC = "It looks light, and good for cooking in the steppe.",
+            DONE = "Will someone have that meal?",
 
-			COOKING_LONG = "Time slips through my fingers.", -- MT
-			COOKING_SHORT = "Almost.", -- MT
-			EMPTY = "Empty, like the Cathedral.", -- MT
+			COOKING_LONG = "Time slips through my fingers.",
+			COOKING_SHORT = "Almost.",
+			EMPTY = "Empty, like the Cathedral.",
         },
 
-        PORTABLEBLENDER_ITEM = "It's a little scary.", -- MT
+        PORTABLEBLENDER_ITEM = "It's a little scary.",
         PORTABLESPICER_ITEM =
         {
-            GENERIC = "It smells interesting. Like the cemetery.", -- MT
-            DONE = "It's finished.", -- MT
+            GENERIC = "It smells interesting. Like the cemetery.",
+            DONE = "It's finished.",
         },
-        SPICEPACK = "The smell is overwhelming.", -- MT
+        SPICEPACK = "The smell is overwhelming.",
         SPICE_GARLIC = "Vampires beware.",
-        SPICE_SUGAR = "Children love this smell.", -- MT
+        SPICE_SUGAR = "Children love this smell.",
         SPICE_CHILI = "It makes my tongue hurt.",
         SPICE_SALT = "Just a pinch.",
         MONSTERTARTARE = "No thanks.",
@@ -3409,7 +3409,7 @@ return {
         GAZPACHO = "Cold soup is usually red where I'm from.",
         ASPARAGUSSOUP = "It's just soup.",
         VEGSTINGER = "Spicy juice.",
-        BANANAPOP = "I think the other children would like these too.", -- MT
+        BANANAPOP = "I think the other children would like these too.",
         CEVICHE = "It's all wet and chewy.",
         SALSA = "It's already been... oh, that's spicy mush.",
         PEPPERPOPPER = "Spicy, like a cannonball in my mouth.",
@@ -3539,7 +3539,7 @@ return {
         -- GROTTO
 
 		MOLEBAT = "NOSEferatu, indeed.",
-        MOLEBATHILL = "The earth is alive, and they plague her skin.", -- MT
+        MOLEBATHILL = "The earth is alive, and they plague her skin.",
 
         BATNOSE = "Not much smelling going on here, anymore.",
         BATNOSE_COOKED = "Somehow, it smells worse.",
@@ -3595,7 +3595,7 @@ return {
 
         ARCHIVE_LOCKBOX_DISPENCER = {
           POWEROFF = "It's off.",
-          GENERIC =  "More knowledge is in here than what can live in one person's mind.", -- MT
+          GENERIC =  "More knowledge is in here than what can live in one person's mind.",
         },
 
         ARCHIVE_SECURITY_DESK = {
