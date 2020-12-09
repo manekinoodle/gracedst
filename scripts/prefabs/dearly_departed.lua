@@ -12,9 +12,9 @@ local function OpenLetter(inst, user)
 	ghost.Transform:SetPosition(x, 0, z)
 
 	--if ghost.components.follower.leader ~= leader then
-    --   user.components.leader:AddFollower(ghost)
+       user.components.leader:AddFollower(ghost)
     --end
-	--ghost.components.follower:AddLoyaltyTime(2500) --change to whatever
+	ghost.components.follower:AddLoyaltyTime(2500) --change to whatever
     --if ghost.components.combat ~= nil and ghost.components.combat:TargetIs(owner) then
     --    ghost.components.combat:SetTarget(nil)
     --end
