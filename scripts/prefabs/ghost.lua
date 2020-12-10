@@ -10,7 +10,6 @@ local prefabs =
 }
 
 local brain = require "brains/ghostbrain"
-local loyalbrain = require "brains/pigbrain"
 
 local function AbleToAcceptTest(inst, item)
     return false, item.prefab == "reviver" and "GHOSTHEART" or nil
