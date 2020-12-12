@@ -70,6 +70,11 @@ STRINGS.CHARACTER_DESCRIPTIONS.grace = "*A friend to all ghosts\n*Can build grav
 STRINGS.CHARACTER_QUOTES.grace = "\"Souls of a feather flock together.\""
 STRINGS.CHARACTER_SURVIVABILITY.grace = "Grim"
 
+--add brain?
+AddBrainPostInit("ghostbrain",function (brain)
+--code
+end)
+
 -- Custom speech strings
 STRINGS.CHARACTERS.GRACE = require "speech_grace"
 
