@@ -42,7 +42,7 @@ local function KeepTargetFn(inst, target)
         return true
     end
 
-    inst.brain.followtarget = nil
+	inst.brain.followtarget = inst.components.follower.leader
 
     return false
 end
