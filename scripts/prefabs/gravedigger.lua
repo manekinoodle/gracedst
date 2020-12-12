@@ -102,8 +102,8 @@ local function fn()
 	inst.components.weapon:SetDamage(19)
 	
 	inst:AddComponent("finiteuses")
-    inst.components.finiteuses:SetMaxUses(160)
-    inst.components.finiteuses:SetUses(160)
+    inst.components.finiteuses:SetMaxUses(75)
+    inst.components.finiteuses:SetUses(75)
     inst.components.finiteuses:SetOnFinished(inst.Remove)
 	inst.components.finiteuses:SetConsumption(ACTIONS.DIG, 1)
 	
