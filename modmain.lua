@@ -45,7 +45,7 @@ local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
 --gravestone related stuff
-local gravestone = AddRecipe("gravestone", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.TOWN, GLOBAL.TECH.NONE, "grave_placer", nil, nil, nil, "gravekeeper", "images/inventoryimages/gravestone.xml")
+local gravestone = AddRecipe("gravestone", {Ingredient("cutstone", 1), Ingredient("ghostflower", 1), Ingredient("boneshard", 3)}, GLOBAL.RECIPETABS.TOWN, GLOBAL.TECH.NONE, "grave_placer", nil, nil, nil, "gravekeeper", "images/inventoryimages/gravestone.xml")
 
 STRINGS.NAMES.gravestone = "Gravestone"
 STRINGS.NAMES.GRAVESTONE = "Gravestone"
@@ -53,7 +53,7 @@ STRINGS.RECIPE_DESC.gravestone = "Put old bones to rest."
 STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 
 --This is supposed to be the shovel
-local gravedigger = AddRecipe("gravedigger", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.TOOLS, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/gravedigger.xml")
+local gravedigger = AddRecipe("gravedigger", {Ingredient("shovel", 1), Ingredient("cutstone", 1)}, GLOBAL.RECIPETABS.TOOLS, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/gravedigger.xml")
 
 STRINGS.NAMES.gravedigger = "Gravedigger Shovel"
 STRINGS.NAMES.GRAVEDIGGER = "Gravedigger Shovel"
@@ -62,6 +62,17 @@ STRINGS.RECIPE_DESC.GRAVEDIGGER = "Also works for digging bodies up."
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.gravedigger = "Used to bury the dead."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.GRAVEDIGGER = "Used to bury the dead."
+
+--the dearly departed
+local dearly_departed = AddRecipe("dearly_departed", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/dearly_departed.xml")
+
+STRINGS.NAMES.dearly_departed = "Dearly Departed"
+STRINGS.NAMES.DEARLY_DEPARTED = "Dearly Departed"
+STRINGS.RECIPE_DESC.dearly_departed = "A letter to the dead."
+STRINGS.RECIPE_DESC.DEARLY_DEPARTED = "A letter to the dead."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.dearly_departed = "It seems personal."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
