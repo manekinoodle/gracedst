@@ -72,9 +72,6 @@ function GhostBrain:OnStart()
     {
         WhileNode(function() return GetLeader(self.inst) ~= nil end, "FollowTarget", 
 			Follow(self.inst, GetLeader, MIN_FOLLOW_DIST, TARGET_FOLLOW_DIST, MAX_FOLLOW_DIST)
-			--else then
-			--Follow(self.inst, function() return self.inst.brain.followtarget end, TUNING.GHOST_RADIUS*.25, TUNING.GHOST_RADIUS*.5, TUNING.GHOST_RADIUS)
-			--end
         ),
 		WhileNode(function() return GetFollowTarget(self.inst) ~= nil end, "FollowTarget", 
 			Follow(self.inst, function() return self.inst.brain.followtarget end, TUNING.GHOST_RADIUS*.25, TUNING.GHOST_RADIUS*.5, TUNING.GHOST_RADIUS)

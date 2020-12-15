@@ -24,6 +24,11 @@ local function AuraTest(inst, target)
         return true
     end
 
+	if inst.components.combat:TargetIs(nil) then
+	local master = inst.components.follower.leader
+	inst.components.combat.target = master.components.combat.target
+	end
+
     return not target:HasTag("ghostlyfriend") and not target:HasTag("abigail")
 end
 
@@ -42,9 +47,29 @@ local function KeepTargetFn(inst, target)
         return true
     end
 
-	inst.brain.followtarget = inst.components.follower.leader
-
     return false
+end
+
+--retargeting
+local RETARGET_MUST_TAGS = { "_combat" }
+local RETARGET_CANT_TAGS = { "playerghost", "INLIMBO" }
+local function retargetfn(inst)
+    --Find things attacking leader
+    local leader = inst.components.follower:GetLeader()
+    return leader ~= nil
+        and FindEntity(
+            leader,
+            TUNING.SHADOWWAXWELL_TARGET_DIST,
+            function(guy)
+                return guy ~= inst
+                    and (guy.components.combat:TargetIs(leader) or
+                        guy.components.combat:TargetIs(inst))
+                    and inst.components.combat:CanTarget(guy)
+            end,
+            RETARGET_MUST_TAGS, -- see entityreplica.lua
+            RETARGET_CANT_TAGS
+        )
+        or nil
 end
 
 local function fn()
@@ -110,6 +135,8 @@ local function fn()
     inst.components.combat.defaultdamage = TUNING.GHOST_DAMAGE
     inst.components.combat.playerdamagepercent = TUNING.GHOST_DMG_PLAYER_PERCENT
     inst.components.combat:SetKeepTargetFunction(KeepTargetFn)
+	--retarget function
+	inst.components.combat:SetRetargetFunction(2, retargetfn)
 
     inst:AddComponent("aura")
     inst.components.aura.radius = TUNING.GHOST_RADIUS
