@@ -419,7 +419,7 @@ return {
 	--winter's feast
 	ANNOUNCE_EATING_NOT_FEASTING = "I could join in.",
 	ANNOUNCE_WINTERS_FEAST_BUFF = "I feel warm and dry.",
-	ANNOUNCE_IS_FEASTING = "I wish they could enjoy it with me.",
+	ANNOUNCE_IS_FEASTING = "This tastes good...",
 	ANNOUNCE_WINTERS_FEAST_BUFF_OVER = "It's cold again.",
 
     --lavaarena event
