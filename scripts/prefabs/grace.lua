@@ -77,6 +77,9 @@ local master_postinit = function(inst)
 	--builder tag
 	inst:AddTag("gravekeeper")
 
+	--we're supposed to have this
+	inst:AddTag("player")
+
 	--WX78 had this tag, not sure if it's what gives him his spoilage immunity
 	if inst.components.eater ~= nil then
         inst.components.eater.ignoresspoilage = true
