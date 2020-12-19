@@ -1,5 +1,6 @@
 require "behaviours/follow"
 require "behaviours/wander"
+require "behaviours/chaseandattack"
 
 local GhostBrain = Class(Brain, function(self, inst)
     Brain._ctor(self, inst)
@@ -11,6 +12,8 @@ local MIN_FOLLOW_DIST = 2
 local TARGET_FOLLOW_DIST = 5
 local MAX_FOLLOW_DIST = 9
 local MAX_WANDER_DIST = 20
+local MAX_CHASE_DIST = 7
+local MAX_CHASE_TIME = 8
 
 local function GetLeader(inst)
     return inst.components.follower.leader
@@ -70,11 +73,12 @@ end
 function GhostBrain:OnStart()
     local root = PriorityNode(
     {
-        WhileNode(function() return GetLeader(self.inst) ~= nil end, "FollowTarget", 
+        WhileNode(function() return GetLeader(self.inst) ~= nil end, "FollowLeader", 
 			Follow(self.inst, GetLeader, MIN_FOLLOW_DIST, TARGET_FOLLOW_DIST, MAX_FOLLOW_DIST)
         ),
 		WhileNode(function() return GetFollowTarget(self.inst) ~= nil end, "FollowTarget", 
-			Follow(self.inst, function() return self.inst.brain.followtarget end, TUNING.GHOST_RADIUS*.25, TUNING.GHOST_RADIUS*.5, TUNING.GHOST_RADIUS)
+			ChaseAndAttack(self.inst, SpringCombatMod(MAX_CHASE_TIME), SpringCombatMod(MAX_CHASE_DIST))
+			--Follow(self.inst, function() return self.inst.brain.followtarget end, TUNING.GHOST_RADIUS*.25, TUNING.GHOST_RADIUS*.5, TUNING.GHOST_RADIUS)
         ),
         SequenceNode{
 			ParallelNodeAny{

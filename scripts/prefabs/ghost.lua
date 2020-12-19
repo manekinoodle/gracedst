@@ -24,11 +24,6 @@ local function AuraTest(inst, target)
         return true
     end
 
-	if inst.components.combat:TargetIs(nil) then
-	local master = inst.components.follower.leader
-	inst.components.combat.target = master.components.combat.target
-	end
-
     return not target:HasTag("ghostlyfriend") and not target:HasTag("abigail")
 end
 
