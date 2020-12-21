@@ -47,8 +47,8 @@ local STRINGS = GLOBAL.STRINGS
 --gravestone related stuff
 local gravestone = AddRecipe("gravestone", {Ingredient("cutstone", 1), Ingredient("ghostflower", 1), Ingredient("boneshard", 3)}, GLOBAL.RECIPETABS.TOWN, GLOBAL.TECH.NONE, "grave_placer", nil, nil, nil, "gravekeeper", "images/inventoryimages/gravestone.xml")
 
-STRINGS.NAMES.gravestone = "Gravestone"
-STRINGS.NAMES.GRAVESTONE = "Gravestone"
+STRINGS.NAMES.gravestone = "Grave"
+STRINGS.NAMES.GRAVESTONE = "Grave"
 STRINGS.RECIPE_DESC.gravestone = "Put old bones to rest."
 STRINGS.RECIPE_DESC.GRAVESTONE = "Put old bones to rest."
 
