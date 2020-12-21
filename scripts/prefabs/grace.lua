@@ -2,6 +2,13 @@ local MakePlayerCharacter = require "prefabs/player_common"
 
 local assets = {
     Asset("SCRIPT", "scripts/prefabs/player_common.lua"),
+	Asset("ATLAS", "images/inventoryimages/gravedigger.xml"), 
+    Asset("IMAGE", "images/inventoryimages/gravedigger.tex"), 
+}
+
+local prefabs =
+{
+    "gravedigger",
 }
 
 -- Your character's stats
