@@ -126,4 +126,4 @@ local function fn()
 	
 end
 
-return  Prefab("common/inventory/gravedigger", fn, assets, prefabs)
+return  Prefab("gravedigger", fn, assets, prefabs)

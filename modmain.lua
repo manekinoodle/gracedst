@@ -4,7 +4,7 @@ PrefabFiles = {
 	"gravestone",
 	"gravedigger",
 	"dearly_departed",
-	"ghost",
+	--"ghost",
 }
 
 Assets = {
@@ -37,6 +37,13 @@ Assets = {
 
 	Asset( "IMAGE", "images/names_gold_grace.tex" ),
     Asset( "ATLAS", "images/names_gold_grace.xml" ),
+
+	Asset("ATLAS", "images/inventoryimages/gravedigger.xml"), 
+    Asset("IMAGE", "images/inventoryimages/gravedigger.tex"), 
+}
+
+local prefabs = {
+	"gravedigger",
 }
 
 AddMinimapAtlas("images/map_icons/grace.xml")
@@ -92,6 +99,12 @@ STRINGS.CHARACTERS.GRACE = require "speech_grace"
 -- The character's name as appears in-game
 STRINGS.NAMES.grace = "Grace"
 STRINGS.SKIN_NAMES.grace_none = "Grace"
+
+--will this fix our shovel?
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE["gravedigger"] = {
+    atlas = "images/inventoryimages/gravedigger.xml",
+    image = "gravedigger.tex",
+}
 
 -- The skins shown in the cycle view window on the character select screen.
 -- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes
