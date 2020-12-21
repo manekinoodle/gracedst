@@ -77,7 +77,7 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
 STRINGS.CHARACTER_NAMES.grace = "Grace"
-STRINGS.CHARACTER_DESCRIPTIONS.grace = "*A friend to all ghosts\n*Can build graves\n*Spoiled food has less of an effect\n*Frail\n*Has a small appetite"
+STRINGS.CHARACTER_DESCRIPTIONS.grace = "*A friend to all ghosts\n*Can build graves\n*Spoiled food has no effect\n*Frail\n*Has a small appetite"
 STRINGS.CHARACTER_QUOTES.grace = "\"Souls of a feather flock together.\""
 STRINGS.CHARACTER_SURVIVABILITY.grace = "Grim"
 
@@ -91,7 +91,7 @@ STRINGS.CHARACTERS.GRACE = require "speech_grace"
 
 -- The character's name as appears in-game
 STRINGS.NAMES.grace = "Grace"
-STRINGS.SKIN_NAMES.grace_none = "Ghost Grace"
+STRINGS.SKIN_NAMES.grace_none = "Grace"
 
 -- The skins shown in the cycle view window on the character select screen.
 -- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes
