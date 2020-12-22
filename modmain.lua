@@ -71,7 +71,7 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.gravedigger = "Used to bury the dead."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.GRAVEDIGGER = "Used to bury the dead."
 
 --the dearly departed
-local dearly_departed = AddRecipe("dearly_departed", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/dearly_departed.xml")
+local dearly_departed = AddRecipe("dearly_departed", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "unimplemented", "images/inventoryimages/dearly_departed.xml")
 
 STRINGS.NAMES.dearly_departed = "Dearly Departed"
 STRINGS.NAMES.DEARLY_DEPARTED = "Dearly Departed"

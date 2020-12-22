@@ -7,6 +7,7 @@ local assets =
 
 local prefabs =
 {
+	"nightmarefuel",
 }
 
 local brain = require "brains/ghostbrain"
@@ -14,6 +15,68 @@ local brain = require "brains/ghostbrain"
 local function AbleToAcceptTest(inst, item)
     return false, item.prefab == "reviver" and "GHOSTHEART" or nil
 end
+
+--if it all goes wrong, we comment everything beneath the line
+------------------------------------------------------------------------------------------------------
+--[[local function OnGetItemFromPlayer(inst, giver, item)
+    local is_event_item = IsSpecialEventActive(SPECIAL_EVENTS.HALLOWED_NIGHTS) and item.components.tradable.halloweencandyvalue and item.components.tradable.halloweencandyvalue > 0
+
+    if item.components.tradable.goldvalue > 0 or is_event_item then
+        inst:DoTaskInTime(2 / 3, ontradeforgold, item, giver)
+    end
+end
+
+local function OnRefuseItem(inst, giver, item)
+end
+
+local function AbleToAcceptTest(inst, item, giver)
+	return true
+end
+
+local function AcceptTest(inst, item, giver)
+    -- Wurt can still play the mini-game though
+    if giver:HasTag("merm") then
+        return
+    end
+    return item.components.tradable.goldvalue > 0
+end
+
+local function launchitem(item, angle)
+    local speed = math.random() * 4 + 2
+    angle = (angle + math.random() * 60 - 30) * DEGREES
+    item.Physics:SetVel(speed * math.cos(angle), math.random() * 2 + 8, speed * math.sin(angle))
+end
+
+local function ontradeforgold(inst, item, giver)
+    local x, y, z = inst.Transform:GetWorldPosition()
+    y = 4.5
+
+    local angle
+    if giver ~= nil and giver:IsValid() then
+        angle = 180 - giver:GetAngleToPoint(x, 0, z)
+    else
+        local down = TheCamera:GetDownVec()
+        angle = math.atan2(down.z, down.x) / DEGREES
+        giver = nil
+    end
+
+    for k = 1, item.components.tradable.goldvalue do
+        local nug = SpawnPrefab("nightmarefuel")
+        nug.Transform:SetPosition(x, y, z)
+        launchitem(nug, angle)
+    end
+
+    if item.components.tradable.tradefor ~= nil then
+        for _, v in pairs(item.components.tradable.tradefor) do
+            local item = SpawnPrefab(v)
+            if item ~= nil then
+                item.Transform:SetPosition(x, y, z)
+                launchitem(item, angle)
+            end
+        end
+    end
+--]]
+---------------------------------------------------------------------------------------
 
 local function OnDeath(inst)
     inst.components.aura:Enable(false)
@@ -119,6 +182,9 @@ local function fn()
     --Added so you can attempt to give hearts to trigger flavour text when the action fails
     inst:AddComponent("trader")
     inst.components.trader:SetAbleToAcceptTest(AbleToAcceptTest)
+	--inst.components.trader:SetAcceptTest(AcceptTest)
+    --inst.components.trader.onaccept = OnGetItemFromPlayer
+    --inst.components.trader.onrefuse = OnRefuseItem
 
     inst:ListenForEvent("death", OnDeath)
     inst:ListenForEvent("attacked", OnAttacked)
