@@ -51,7 +51,7 @@ AddMinimapAtlas("images/map_icons/grace.xml")
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
-STRINGS.Characters.Grace = require "speech_grace"
+STRINGS.CHARACTERS.GRACE = require "speech_grace"
 
 --gravestone related stuff
 local gravestone = AddRecipe("gravestone", {Ingredient("cutstone", 1), Ingredient("ghostflower", 1), Ingredient("boneshard", 3)}, GLOBAL.RECIPETABS.TOWN, GLOBAL.TECH.NONE, "grave_placer", nil, nil, nil, "gravekeeper", "images/inventoryimages/gravestone.xml")
@@ -89,7 +89,7 @@ GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.gravedigger = "I suppose the dead woul
 GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.gravedigger = "This shovel's done some solid work."
 GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.gravedigger = "Old digger."
 
-STRINGS.CHARACTERS.GRACE.DESCRIBE.gravedigger = "It feels solid in my hands."
+STRINGS.CHARACTERS.GRACE.DESCRIBE.GRAVEDIGGER = "It feels solid in my hands."
 GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.GRAVEDIGGER = "Ugh, it's all rusty!"
 GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GRAVEDIGGER = "Wolfgang will break shovel before digging hole..."
 GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.GRAVEDIGGER = "Will this shovel bury me one day?"
