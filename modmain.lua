@@ -70,7 +70,7 @@ STRINGS.RECIPE_DESC.GRAVEDIGGER = "Also works for digging bodies up."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.gravedigger = "Used to bury the dead."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.GRAVEDIGGER = "Used to bury the dead."
 
-GLOBAL.STRINGS.CHARACTERS.GRACE.DESCRIBE.gravedigger = "If only it was a fire sword."
+
 GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.gravedigger = "If only it was a fire sword."
 GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.gravedigger = "Makes my moustache tingle!"
 GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.gravedigger = "Seems dangerous..."
@@ -82,7 +82,6 @@ GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.gravedigger = "A sword that shoots
 GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.gravedigger = "Such a cool looking sword!"
 GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.gravedigger = "Bah! I could have used that horn for chaud-froid"
 
-GLOBAL.STRINGS.CHARACTERS.GRACE.DESCRIBE.gravedigger = "If only it was a fire sword."
 GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.GRAVEDIGGER = "If only it was a fire sword."
 GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GRAVEDIGGER = "Makes my moustache tingle!"
 GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.GRAVEDIGGER = "Seems dangerous..."
@@ -93,6 +92,7 @@ GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GRAVEDIGGER = "If only I had one of t
 GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GRAVEDIGGER = "A sword that shoots lightning!"
 GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.GRAVEDIGGER = "Such a cool looking sword!"
 GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.GRAVEDIGGER = "Bah! I could have used that horn for chaud-froid"
+
 
 --the dearly departed
 local dearly_departed = AddRecipe("dearly_departed", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "unimplemented", "images/inventoryimages/dearly_departed.xml")
