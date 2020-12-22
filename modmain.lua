@@ -38,8 +38,8 @@ Assets = {
 	Asset( "IMAGE", "images/names_gold_grace.tex" ),
     Asset( "ATLAS", "images/names_gold_grace.xml" ),
 
-	Asset("ATLAS", "images/inventoryimages/gravedigger.xml"), 
-    Asset("IMAGE", "images/inventoryimages/gravedigger.tex"), 
+	Asset("ATLAS", "images/inventoryimages/gravedigger.xml"),
+    Asset("IMAGE", "images/inventoryimages/gravedigger.tex"),
 }
 
 local prefabs = {
@@ -50,6 +50,8 @@ AddMinimapAtlas("images/map_icons/grace.xml")
 
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
+
+STRINGS.Characters.Grace = require "speech_grace"
 
 --gravestone related stuff
 local gravestone = AddRecipe("gravestone", {Ingredient("cutstone", 1), Ingredient("ghostflower", 1), Ingredient("boneshard", 3)}, GLOBAL.RECIPETABS.TOWN, GLOBAL.TECH.NONE, "grave_placer", nil, nil, nil, "gravekeeper", "images/inventoryimages/gravestone.xml")
@@ -70,28 +72,39 @@ STRINGS.RECIPE_DESC.GRAVEDIGGER = "Also works for digging bodies up."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.gravedigger = "Used to bury the dead."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.GRAVEDIGGER = "Used to bury the dead."
 
+STRINGS.CHARACTERS.GRACE.DESCRIBE.gravedigger = "It feels solid in my hands."
+GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.gravedigger = "Ugh, it's all rusty!"
+GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.gravedigger = "Wolfgang will break shovel before digging hole..."
+GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.gravedigger = "Will this shovel bury me one day?"
+GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.gravedigger = "THIS SHOVEL HAS SUFFERED."
+GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.gravedigger = "As far as I'm concerned, it's still a shovel."
+GLOBAL.STRINGS.CHARACTERS.WOODIE.DESCRIBE.gravedigger = "Dig a hole. Plant a body!"
+GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.gravedigger = "Advanced technology from a bygone age."
+GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.gravedigger = "I won't die yet."
+GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.gravedigger = "We can dig many holes with this."
+GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.gravedigger = "My work is for the living, you know?"
+GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.gravedigger = "There's a lot I could dig up with this."
+GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.gravedigger = "Rusty scooper."
+GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.gravedigger = "I suppose the dead wouldn't want me rooming with them."
+GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.gravedigger = "This shovel's done some solid work."
+GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.gravedigger = "Old digger."
 
-GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.gravedigger = "If only it was a fire sword."
-GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.gravedigger = "Makes my moustache tingle!"
-GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.gravedigger = "Seems dangerous..."
-GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.gravedigger = "Finally a sword for ME!"
-GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.gravedigger = "Impressive, but tacky."
-GLOBAL.STRINGS.CHARACTERS.WOODIE.DESCRIBE.gravedigger = "I hope Lucy doesn't get jealous."
-GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.gravedigger = "If only I had one of these years ago..."
-GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.gravedigger = "A sword that shoots lightning!"
-GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.gravedigger = "Such a cool looking sword!"
-GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.gravedigger = "Bah! I could have used that horn for chaud-froid"
-
-GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.GRAVEDIGGER = "If only it was a fire sword."
-GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GRAVEDIGGER = "Makes my moustache tingle!"
-GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.GRAVEDIGGER = "Seems dangerous..."
-GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.GRAVEDIGGER = "Finally a sword for ME!"
-GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GRAVEDIGGER = "Impressive, but tacky."
-GLOBAL.STRINGS.CHARACTERS.WOODIE.DESCRIBE.GRAVEDIGGER = "I hope Lucy doesn't get jealous."
-GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GRAVEDIGGER = "If only I had one of these years ago..."
-GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GRAVEDIGGER = "A sword that shoots lightning!"
-GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.GRAVEDIGGER = "Such a cool looking sword!"
-GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.GRAVEDIGGER = "Bah! I could have used that horn for chaud-froid"
+STRINGS.CHARACTERS.GRACE.DESCRIBE.gravedigger = "It feels solid in my hands."
+GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.GRAVEDIGGER = "Ugh, it's all rusty!"
+GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GRAVEDIGGER = "Wolfgang will break shovel before digging hole..."
+GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.GRAVEDIGGER = "Will this shovel bury me one day?"
+GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.GRAVEDIGGER = "THIS SHOVEL HAS SUFFERED."
+GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GRAVEDIGGER = "As far as I'm concerned, it's still a shovel."
+GLOBAL.STRINGS.CHARACTERS.WOODIE.DESCRIBE.GRAVEDIGGER = "Dig a hole. Plant a body!"
+GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GRAVEDIGGER = "Advanced technology from a bygone age."
+GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GRAVEDIGGER = "I won't die yet."
+GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.GRAVEDIGGER = "We can dig many holes with this."
+GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.GRAVEDIGGER = "My work is for the living, you know?"
+GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.GRAVEDIGGER = "There's a lot I could dig up with this."
+GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.GRAVEDIGGER = "Rusty scooper."
+GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.GRAVEDIGGER = "I suppose the dead wouldn't want me rooming with them."
+GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.GRAVEDIGGER = "This shovel's done some solid work."
+GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GRAVEDIGGER = "Old digger."
 
 
 --the dearly departed
