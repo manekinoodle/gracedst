@@ -1,6 +1,11 @@
 local assets =
 {
+	Asset("ANIM", "anim/gravejacket_ground.zip"), 
 	Asset("ANIM", "anim/swap_gravejacket.zip"),
+
+    Asset("ATLAS", "images/inventoryimages/gravejacket.xml"), 
+    Asset("IMAGE", "images/inventoryimages/gravejacket.tex"), 
+
 }
 
 local function onequip(inst, owner)
@@ -35,6 +40,8 @@ local function fn()
     inst:AddComponent("inspectable")
 
     inst:AddComponent("inventoryitem")
+	inst.components.inventoryitem.imagename = "gravejacket"
+    inst.components.inventoryitem.atlasname = "images/inventoryimages/gravejacket.xml"
 
     inst:AddComponent("equippable")
     inst.components.equippable.equipslot = EQUIPSLOTS.BODY
@@ -45,7 +52,7 @@ local function fn()
 
     inst:AddComponent("fueled")
     inst.components.fueled.fueltype = FUELTYPE.USAGE
-    inst.components.fueled:InitializeFuelLevel(TUNING.GRAVEJACKET_PERISHTIME)
+    inst.components.fueled:InitializeFuelLevel(TUNING.SWEATERVEST_PERISHTIME)
     inst.components.fueled:SetDepletedFn(inst.Remove)
 
 	inst:AddComponent("insulator")

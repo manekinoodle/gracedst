@@ -48,7 +48,7 @@ Assets = {
 
 local prefabs = {
 	"gravedigger",
-	"gravejacket"
+	"gravejacket",
 }
 
 AddMinimapAtlas("images/map_icons/grace.xml")
@@ -92,7 +92,7 @@ GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.gravedigger = "There's a lot I could d
 GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.gravedigger = "Rusty scooper."
 GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.gravedigger = "I suppose the dead wouldn't want me rooming with them."
 GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.gravedigger = "This shovel's done some solid work."
-GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.gravedigger = "Old digger."
+GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.gravedigger = "Old digger"
 
 STRINGS.CHARACTERS.GRACE.DESCRIBE.GRAVEDIGGER = "It feels solid in my hands."
 GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.GRAVEDIGGER = "Ugh, it's all rusty!"
@@ -109,8 +109,18 @@ GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.GRAVEDIGGER = "There's a lot I could d
 GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.GRAVEDIGGER = "Rusty scooper."
 GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.GRAVEDIGGER = "I suppose the dead wouldn't want me rooming with them."
 GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.GRAVEDIGGER = "This shovel's done some solid work."
-GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GRAVEDIGGER = "Old digger."
+GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GRAVEDIGGER = "Old digger"
 
+--the grave jacket
+local gravejacket = AddRecipe("gravejacket", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.DRESS, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/gravejacket.xml")
+
+STRINGS.NAMES.gravejacket = "Gravedigger's Jacket"
+STRINGS.NAMES.GRAVEJACKET = "Gravedigger's Jacket"
+STRINGS.RECIPE_DESC.gravejacket = "A letter to the dead."
+STRINGS.RECIPE_DESC.GRAVEJACKET = "A letter to the dead."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.gravejacket = "It seems personal."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GRAVEJACKET = "It seems personal."
 
 --the dearly departed
 local dearly_departed = AddRecipe("dearly_departed", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "unimplemented", "images/inventoryimages/dearly_departed.xml")
@@ -122,17 +132,6 @@ STRINGS.RECIPE_DESC.DEARLY_DEPARTED = "A letter to the dead."
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.dearly_departed = "It seems personal."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
-
---the dearly departed
-local gravejacket = AddRecipe("gravejacket", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.DRESS, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/gravejacket.xml")
-
-STRINGS.NAMES.gravejacket = "Gravedigger's Jacket"
-STRINGS.NAMES.GRAVEJACKET = "Gravedigger's Jacket"
-STRINGS.RECIPE_DESC.gravejacket = "A letter to the dead."
-STRINGS.RECIPE_DESC.GRAVEJACKET = "A letter to the dead."
-
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.gravejacket = "It seems personal."
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.GRAVEJACKET = "It seems personal."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
