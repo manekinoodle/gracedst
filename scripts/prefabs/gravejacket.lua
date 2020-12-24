@@ -8,14 +8,75 @@ local assets =
 
 }
 
+local function onequippedskinitem_xmasuit(inst) -- in case the player uses wardrobe while xmasuit is equipped
+    if inst.components.inventory 
+	and inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY) ~= nil 
+	and inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY):HasTag("xmasuit")
+	and inst.components.skinner then
+	
+		local xmasuit = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY)
+		
+		if inst.components.skinner.clothing["body"] ~= nil 
+		and inst.components.skinner.clothing["body"] ~= "" then
+			xmasuit.bodyskin = inst.components.skinner.clothing["body"]
+		end
+		
+		if xmasuit then
+			inst:DoTaskInTime(0.5, function() xmasuit.reequip(xmasuit, inst) end)
+		end
+	end
+end
+
 local function onequip(inst, owner)
     owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
     inst.components.fueled:StartConsuming()
+
+	-------------------------------------------------------------------------------------------------
+	if owner.components.skinner.clothing["body"] ~= "" then
+		inst.bodyskin = owner.components.skinner.clothing["body"] -- store skin name in a variable
+		owner.components.skinner.clothing["body"] = ""
+		owner.components.skinner:ClearClothing("body")
+	end
+	
+	local tuck_torso = BASE_TORSO_TUCK[owner.prefab] and BASE_TORSO_TUCK[owner.prefab] == "full"
+	if tuck_torso then --if torso is tucked then we have to switch symbols around
+		owner.components.skinner:SetSkinMode()
+		owner.AnimState:SetSymbolExchange( "torso_pelvis", "torso" ) -- switch body parts around 
+		owner.AnimState:OverrideSkinSymbol("torso_pelvis", "gravejacket", "torso" )
+	end
+
+	owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
+	owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
+
+	owner:ListenForEvent("equipskinneditem", onequippedskinitem_xmasuit)
+	owner:ListenForEvent("unequipskinneditem", onequippedskinitem_xmasuit)
+	
 end
 
 local function onunequip(inst, owner)
     owner.AnimState:ClearOverrideSymbol("swap_body")
     inst.components.fueled:StopConsuming()
+
+	owner.AnimState:ClearOverrideSymbol("arm_lower")
+	owner.AnimState:ClearOverrideSymbol("arm_upper")
+	owner.AnimState:ClearOverrideSymbol("torso")
+	
+	if owner.CurrentModdedSkin ~= nil then
+		owner:RemoveEventCallback("onchangemoddedskin", onequippedskinitem_xmasuit)
+	end
+	
+	owner.AnimState:ClearOverrideSymbol("swap_body")
+
+	if inst.bodyskin ~= nil then
+		owner.components.skinner.clothing["body"] = inst.bodyskin
+		owner.components.skinner:SetSkinMode()
+		inst.bodyskin = nil
+	end
+	
+	local tuck_torso = BASE_TORSO_TUCK[owner.prefab] and BASE_TORSO_TUCK[owner.prefab] == "full"
+	if tuck_torso then 
+		owner.components.skinner:SetSkinMode() -- fix switched body parts
+	end
 end
 
 local function fn()
@@ -57,6 +118,8 @@ local function fn()
 
 	inst:AddComponent("insulator")
     inst.components.insulator:SetInsulation( TUNING.INSULATION_LARGE )
+
+	inst:AddTag("xmasuit")
 
     MakeHauntableLaunch(inst)
 
