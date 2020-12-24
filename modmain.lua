@@ -4,6 +4,7 @@ PrefabFiles = {
 	"gravestone",
 	"gravedigger",
 	"dearly_departed",
+	"gravejacket",
 	--"ghost",
 }
 
@@ -40,10 +41,14 @@ Assets = {
 
 	Asset("ATLAS", "images/inventoryimages/gravedigger.xml"),
     Asset("IMAGE", "images/inventoryimages/gravedigger.tex"),
+
+	Asset("ATLAS", "images/inventoryimages/gravejacket.xml"),
+    Asset("IMAGE", "images/inventoryimages/gravejacket.tex"),
 }
 
 local prefabs = {
 	"gravedigger",
+	"gravejacket"
 }
 
 AddMinimapAtlas("images/map_icons/grace.xml")
@@ -117,6 +122,17 @@ STRINGS.RECIPE_DESC.DEARLY_DEPARTED = "A letter to the dead."
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.dearly_departed = "It seems personal."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
+
+--the dearly departed
+local gravejacket = AddRecipe("gravejacket", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.DRESS, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/gravejacket.xml")
+
+STRINGS.NAMES.gravejacket = "Gravedigger's Jacket"
+STRINGS.NAMES.GRAVEJACKET = "Gravedigger's Jacket"
+STRINGS.RECIPE_DESC.gravejacket = "A letter to the dead."
+STRINGS.RECIPE_DESC.GRAVEJACKET = "A letter to the dead."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.gravejacket = "It seems personal."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GRAVEJACKET = "It seems personal."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
