@@ -29,6 +29,16 @@ local function onequippedskinitem_gravejacket(inst) -- in case the player uses w
 end
 
 local function onequip(inst, owner)
+	if owner.prefab ~= "grace" then
+		inst:DoTaskInTime(0.1, function()
+			owner.components.inventory:DropItem(inst)
+			if owner:HasTag("player") then
+				owner.components.talker:Say("I can't use this!")
+				return
+			end
+		end)
+		return
+	end
     owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
     inst.components.fueled:StartConsuming()
 
