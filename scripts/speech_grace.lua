@@ -570,7 +570,7 @@ return {
     ANNOUNCE_GHOST_QUEST = "I'll help you find your lost toy. Just tell me where to go.",
     ANNOUNCE_GHOST_HINT = "Is that the way?",
     ANNOUNCE_GHOST_TOY_NEAR = {
-        "My friends are making a racket.",
+        "It's near...",
         "It's less than a hop and a skip away.",
         "Very soon.",
         "You look excited.",
@@ -1925,7 +1925,7 @@ return {
         MOUND =
         {
             DUG = "Forgive me for this.",
-            GENERIC = "It holds something good, I think.",
+            GENERIC = "Oh, I really shouldn't dig this up...",
         },
         NIGHTLIGHT = "It's pretty.",
         NIGHTMAREFUEL = "Made of bad imagination.",

@@ -145,6 +145,7 @@ local function fn()
     inst.components.insulator:SetInsulation( TUNING.INSULATION_MED )
 
 	inst:AddComponent("waterproofer")
+	inst.components.waterproofer:SetEffectiveness(TUNING.WATERPROOFNESS_MED)
 
 	inst:AddTag("gravejacket")
 
