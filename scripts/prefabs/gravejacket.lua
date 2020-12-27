@@ -13,6 +13,7 @@ local function onequippedskinitem_gravejacket(inst) -- in case the player uses w
     if inst.components.inventory
 	and inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY) ~= nil
 	and inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY):HasTag("gravejacket")
+	and inst.components.inventoryitem.owner:HasTag("gravekeeper")
 	and inst.components.skinner then
 
 		local gravejacket = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY)
@@ -29,16 +30,7 @@ local function onequippedskinitem_gravejacket(inst) -- in case the player uses w
 end
 
 local function onequip(inst, owner)
-	if owner.prefab ~= "grace" then
-		inst:DoTaskInTime(0.1, function()
-			owner.components.inventory:DropItem(inst)
-			if owner:HasTag("player") then
-				owner.components.talker:Say("I can't use this!")
-				return
-			end
-		end)
-		return
-	end
+
     owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
     inst.components.fueled:StartConsuming()
 
@@ -61,6 +53,18 @@ local function onequip(inst, owner)
 
 	owner:ListenForEvent("equipskinneditem", onequippedskinitem_gravejacket)
 	owner:ListenForEvent("unequipskinneditem", onequippedskinitem_gravejacket)
+
+	if owner.prefab ~= "grace" then
+		inst:DoTaskInTime(0.1, function()
+			owner.components.inventory:DropItem(inst)
+			--owner.components.inventory:Unequip(EQUIPSLOTS.BODY, slip)
+			if owner:HasTag("player") then
+				owner.components.talker:Say("I can't use this!")
+				return
+			end
+		end)
+		return
+	end
 
 end
 
