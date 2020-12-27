@@ -29,13 +29,20 @@ end
 --function that is executed when grave is hammered
 local function onhammered(inst, worker)
 		local pt = inst:GetPosition()
-        SpawnPrefab("rock_break_fx").Transform:SetPosition(pt:Get())
-        inst.components.lootdropper:DropLoot(pt)
+		local x, y, z = inst.Transform:GetWorldPosition()
+		local angle
 
-        if inst.showCloudFXwhenRemoved then
-            local fx = SpawnPrefab("collapse_small")
-            fx.Transform:SetPosition(inst.Transform:GetWorldPosition())
-        end
+		if worker ~= nil then
+			angle = 180 -- worker:GetAngleToPoint(x, 0, z)
+		end
+
+        SpawnPrefab("rock_break_fx").Transform:SetPosition(pt:Get())
+
+		local nug = SpawnPrefab("rocks")
+		nug.Transform:SetPosition(x, y, z)
+		
+        local fx = SpawnPrefab("collapse_small")
+        fx.Transform:SetPosition(inst.Transform:GetWorldPosition())
 
 		if not inst.doNotRemoveOnWorkDone then
 	        inst:Remove()
@@ -139,7 +146,6 @@ local function fn()
     inst.MiniMapEntity:SetIcon("gravestones.png")
 
     inst:AddTag("grave")
-	inst:AddTag("structure")
 
     inst.AnimState:SetBank("gravestone")
     inst.AnimState:SetBuild("gravestones")
