@@ -55,15 +55,60 @@ local function onequip(inst, owner)
 	owner:ListenForEvent("unequipskinneditem", onequippedskinitem_gravejacket)
 
 	if owner.prefab ~= "grace" then
-		inst:DoTaskInTime(0.1, function()
-			owner.components.inventory:DropItem(inst)
-			--owner.components.inventory:Unequip(EQUIPSLOTS.BODY, slip)
-			if owner:HasTag("player") then
-				owner.components.talker:Say("I can't use this!")
+	  inst:DoTaskInTime(0.1, function()
+	    owner.components.inventory:DropItem(inst)
+	    --owner.components.inventory:Unequip(EQUIPSLOTS.BODY, slip)
+			if owner.prefab == "willow" then
+	     	owner.components.talker:Say("It's better used as fuel.")
+	     	return
+			elseif owner.prefab == "wolfgang" then
+				owner.components.talker:Say("It is too small for Wolfgang.")
+				return
+			elseif owner.prefab == "wendy" then
+				owner.components.talker:Say("It's... greasy.")
+				return
+			elseif owner.prefab == "wx78" then
+				owner.components.talker:Say("ERROR: DOES NOT MEET COVERING STANDARDS")
+				return
+			elseif owner.prefab == "wickerbottom" then
+				owner.components.talker:Say("I believe the young lady needs it more.")
+				return
+			elseif owner.prefab == "woodie" then
+				owner.components.talker:Say("It's far too small for me.")
+				return
+			elseif owner.prefab == "waxwell" then
+				owner.components.talker:Say("I'm not so desperate as to steal a young girl's clothing.")
+				return
+			elseif owner.prefab == "wathgrithr" then
+				owner.components.talker:Say("It is not befitting of a warrior.")
+				return
+			elseif owner.prefab == "webber" then
+				owner.components.talker:Say("We don't want this coat.")
+				return
+			elseif owner.prefab == "warly" then
+				owner.components.talker:Say("That thing stays out of my kitchen.")
+				return
+			elseif owner.prefab == "walter" then
+				owner.components.talker:Say("It's not nice to take things without asking.")
+				return
+			elseif owner.prefab == "wurt" then
+				owner.components.talker:Say("Yucky jacket, glorp.")
+				return
+			elseif owner.prefab == "wortox" then
+				owner.components.talker:Say("This is no coat for me, hyuyu!")
+				return
+			elseif owner.prefab == "winona" then
+				owner.components.talker:Say("It'd be too hard to work in that.")
+				return
+			elseif owner.prefab == "wormwood" then
+				owner.components.talker:Say("Dirty coat")
+				return
+			else
+				owner.components.talker:Say("That's a bit too small for me.")
 				return
 			end
-		end)
-		return
+	  end)
+	  return
 	end
 
 end
