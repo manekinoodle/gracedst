@@ -1706,7 +1706,7 @@ return {
 		FROG =
 		{
 			DEAD = "Good riddance.",
-			GENERIC = "What does that tongue do?",
+			GENERIC = "That's no prince.",
 			SLEEPING = "I wish he was dead.",
 		},
 		FROGGLEBUNWICH = "If I just imagine that the legs are chicken...",
