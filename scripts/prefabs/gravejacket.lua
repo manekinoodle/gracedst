@@ -57,7 +57,6 @@ local function onequip(inst, owner)
 	if owner.prefab ~= "grace" then
 	  inst:DoTaskInTime(0.1, function()
 	    owner.components.inventory:DropItem(inst)
-	    --owner.components.inventory:Unequip(EQUIPSLOTS.BODY, slip)
 			if owner.prefab == "willow" then
 	     	owner.components.talker:Say("It's better used as fuel.")
 	     	return
