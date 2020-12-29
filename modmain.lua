@@ -112,7 +112,7 @@ GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.GRAVEDIGGER = "This shovel's done some
 GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GRAVEDIGGER = "Old digger"
 
 --the grave jacket
-local gravejacket = AddRecipe("gravejacket", {Ingredient("flint", 1)}, GLOBAL.RECIPETABS.DRESS, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/gravejacket.xml")
+local gravejacket = AddRecipe("gravejacket", {Ingredient("pigskin", 2), Ingredient("silk", 2), Ingredient("beefalowool",2)}, GLOBAL.RECIPETABS.DRESS, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/gravejacket.xml")
 
 STRINGS.NAMES.gravejacket = "Gravedigger's Coat"
 STRINGS.NAMES.GRAVEJACKET = "Gravedigger's Coat"
