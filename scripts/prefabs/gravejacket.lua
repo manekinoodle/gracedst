@@ -51,8 +51,6 @@ local function onequip(inst, owner)
 	owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
 	owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
 
-	owner:ListenForEvent("equipskinneditem", onequippedskinitem_gravejacket)
-	owner:ListenForEvent("unequipskinneditem", onequippedskinitem_gravejacket)
 
 	if owner.prefab ~= "grace" then
 	  inst:DoTaskInTime(0.1, function()
@@ -120,9 +118,7 @@ local function onunequip(inst, owner)
 	owner.AnimState:ClearOverrideSymbol("arm_upper")
 	owner.AnimState:ClearOverrideSymbol("torso")
 
-	if owner.CurrentModdedSkin ~= nil then
-		owner:RemoveEventCallback("onchangemoddedskin", onequippedskinitem_gravejacket)
-	end
+
 
 	owner.AnimState:ClearOverrideSymbol("swap_body")
 
@@ -137,8 +133,6 @@ local function onunequip(inst, owner)
 		owner.components.skinner:SetSkinMode() -- fix switched body parts
 	end
 
-	owner:RemoveEventCallback("equipskinneditem", onequippedskinitem_gravejacket)
-	owner:RemoveEventCallback("unequipskinneditem", onequippedskinitem_gravejacket)
 end
 
 local function onpreload(inst, data)
