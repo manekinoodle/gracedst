@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+    <folder id="0" name="swap_body">
+        <file id="0" name="swap_body/swap_body-0.png" width="90" height="130" pivot_x="0.5" pivot_y="0.227885"/>
+        <file id="1" name="swap_body/swap_body-1.png" width="93" height="131" pivot_x="0.510223" pivot_y="0.226872"/>
+        <file id="2" name="swap_body/swap_body-2.png" width="93" height="131" pivot_x="0.505376" pivot_y="0.223855"/>
+        <file id="3" name="swap_body/swap_body-3.png" width="86" height="131" pivot_x="0.493605" pivot_y="0.226336"/>
+        <file id="4" name="swap_body/swap_body-4.png" width="88" height="132" pivot_x="0.503389" pivot_y="0.222143"/>
+        <file id="5" name="swap_body/swap_body-5.png" width="88" height="132" pivot_x="0.457874" pivot_y="0.229914"/>
+        <file id="6" name="swap_body/swap_body-6.png" width="91" height="124" pivot_x="0.504945" pivot_y="0.235887"/>
+        <file id="7" name="swap_body/swap_body-7.png" width="91" height="124" pivot_x="0.507418" pivot_y="0.24254"/>
+        <file id="8" name="swap_body/swap_body-8.png" width="95" height="125" pivot_x="0.511842" pivot_y="0.2454"/>
+        <file id="9" name="swap_body/swap_body-13.png" width="169" height="150" pivot_x="0.467751" pivot_y="0.215167"/>
+    </folder>
+    <entity id="0" name="swap_gravejacket_smooth">
+        <animation id="0" name="anim" length="34">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="swap_body" folder="0" file="9" abs_x="-0.45" abs_y="0.3" abs_pivot_x="0.467751" abs_pivot_y="0.215167" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="34">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="swap_body">
+                <key id="0" spin="0">
+                    <object folder="0" file="9" x="-0.45" y="0.3" angle="0"/>
+                </key>
+                <key id="1" time="34" spin="0">
+                    <object folder="0" file="9" x="-0.45" y="0.3" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

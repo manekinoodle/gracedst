@@ -3676,7 +3676,7 @@ return {
 		FIRENETTLES = "Those plants are from Hell.",
 		FORGETMELOTS = "Oh, aren't you pretty.",
 		SWEETTEA = "How about a spot of tea?",
-		TILLWEED = "This weed loves the earth a bit too much.",
+		TILLWEED = "It reminds me of twyre, just a little.",
 		TILLWEEDSALVE = "It helps with wounds.",
 
 		TROPHYSCALE_OVERSIZEDVEGGIES =

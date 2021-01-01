@@ -2,6 +2,7 @@ local assets =
 {
 	Asset("ANIM", "anim/gravejacket_ground.zip"),
 	Asset("ANIM", "anim/swap_gravejacket.zip"),
+	Asset("ANIM", "anim/swap_gravejacket_smooth.zip"),
 	Asset("ANIM", "anim/gravejacket_skin.zip"),
 
     Asset("ATLAS", "images/inventoryimages/gravejacket.xml"),
@@ -31,7 +32,11 @@ end
 
 local function onequip(inst, owner)
 
-    owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
+		if owner.components.skinner.skin_name == "grace_none" then
+			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
+		else
+			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket_smooth", "swap_body")
+		end
     inst.components.fueled:StartConsuming()
 
 	-------------------------------------------------------------------------------------------------

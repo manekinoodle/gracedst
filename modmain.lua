@@ -18,8 +18,11 @@ Assets = {
     Asset( "IMAGE", "images/selectscreen_portraits/grace_silho.tex" ),
     Asset( "ATLAS", "images/selectscreen_portraits/grace_silho.xml" ),
 
-    Asset( "IMAGE", "bigportraits/grace.tex" ),
-    Asset( "ATLAS", "bigportraits/grace.xml" ),
+    Asset( "IMAGE", "bigportraits/grace_none.tex" ),
+    Asset( "ATLAS", "bigportraits/grace_none.xml" ),
+
+		Asset( "IMAGE", "bigportraits/grace_classic.tex" ),
+		Asset( "ATLAS", "bigportraits/grace_classic.xml" ),
 
 	Asset( "IMAGE", "images/map_icons/grace.tex" ),
 	Asset( "ATLAS", "images/map_icons/grace.xml" ),
@@ -206,3 +209,42 @@ local skin_modes = {
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
 AddModCharacter("grace", "FEMALE", skin_modes)
+
+--Hornet: I am currently using wilba as an example, youll want to change all instances of "wilba" to the prefab name of your character!
+--Skins
+local _G = GLOBAL
+local PREFAB_SKINS = _G.PREFAB_SKINS
+local PREFAB_SKINS_IDS = _G.PREFAB_SKINS_IDS
+local SKIN_AFFINITY_INFO = GLOBAL.require("skin_affinity_info")
+
+modimport("skins_api") --Hornet: We import the file! If you named your file something else other than skins_api then youll want to rename this function to the name of the file
+
+SKIN_AFFINITY_INFO.grace = {
+	"grace_classic",
+}
+
+PREFAB_SKINS["grace"] = {
+	"grace_none",
+	"grace_classic",
+}
+
+PREFAB_SKINS_IDS = {} --Make sure this is after you  change the PREFAB_SKINS["character"] table
+for prefab,skins in pairs(PREFAB_SKINS) do
+    PREFAB_SKINS_IDS[prefab] = {}
+    for k,v in pairs(skins) do
+      	  PREFAB_SKINS_IDS[prefab][v] = k
+    end
+end
+
+
+
+AddSkinnableCharacter("grace") --Hornet: The character youd like to skin, make sure you use the prefab name. And MAKE sure you run this function AFTER you import the skins_api file
+
+--Skin STRINGS
+
+STRINGS.SKIN_NAMES.grace_none = "Grace"
+STRINGS.SKIN_NAMES.grace_classic = "The Nostalgic"
+
+STRINGS.SKIN_DESCRIPTIONS.grace_none = "Oddly enough, this dress isn't tattered or torn."
+STRINGS.SKIN_QUOTES.grace_classic = "\"I think they've fallen out of love with me.\""
+STRINGS.SKIN_DESCRIPTIONS.grace_classic = "Old costumes bring back old memories."
