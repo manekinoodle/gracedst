@@ -20,21 +20,7 @@ local function OnDeath(inst)
 end
 
 local function AuraTest(inst, target)
-    if inst.components.combat:TargetIs(target) or (target.components.combat.target ~= nil and target.components.combat:TargetIs(inst)) then
-        return true
-    end
-
-    return not target:HasTag("ghostlyfriend") and not target:HasTag("abigail")
-end
-
-local function OnAttacked(inst, data)
---    print("onattack", data.attacker, data.damage, data.damageresolved)
-
-    if data.attacker == nil then
-        inst.components.combat:SetTarget(nil)
-    elseif not data.attacker:HasTag("noauradamage") then
-       inst.components.combat:SetTarget(data.attacker) 
-    end
+	--do nothing?
 end
 
 local function KeepTargetFn(inst, target)
@@ -62,7 +48,7 @@ local function fn()
     inst.AnimState:SetLightOverride(TUNING.GHOST_LIGHT_OVERRIDE)
 
     inst.Light:SetIntensity(.9)
-    inst.Light:SetRadius(1.1)
+    inst.Light:SetRadius(3)
     inst.Light:SetFalloff(.6)
     inst.Light:Enable(true)
     inst.Light:SetColour(180/255, 195/255, 100/255)
@@ -121,7 +107,6 @@ local function fn()
     inst.components.trader:SetAbleToAcceptTest(AbleToAcceptTest)
 
     inst:ListenForEvent("death", OnDeath)
-    inst:ListenForEvent("attacked", OnAttacked)
 
     ------------------
 
