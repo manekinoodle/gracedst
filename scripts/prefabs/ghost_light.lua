@@ -9,7 +9,7 @@ local prefabs =
 {
 }
 
-local brain = require "brains/ghostbrain"
+local brain = require "brains/ghostlightbrain"
 
 local function AbleToAcceptTest(inst, item)
     return false, item.prefab == "reviver" and "GHOSTHEART" or nil
@@ -17,34 +17,6 @@ end
 
 local function OnDeath(inst)
     inst.components.aura:Enable(false)
-end
-
-local function AuraTest(inst, target)
-    if inst.components.combat:TargetIs(target) or (target.components.combat.target ~= nil and target.components.combat:TargetIs(inst)) then
-        return true
-    end
-
-    return not target:HasTag("ghostlyfriend") and not target:HasTag("abigail")
-end
-
-local function OnAttacked(inst, data)
---    print("onattack", data.attacker, data.damage, data.damageresolved)
-
-    if data.attacker == nil then
-        inst.components.combat:SetTarget(nil)
-    elseif not data.attacker:HasTag("noauradamage") then
-       inst.components.combat:SetTarget(data.attacker) 
-    end
-end
-
-local function KeepTargetFn(inst, target)
-    if target and inst:GetDistanceSqToInst(target) < TUNING.GHOST_FOLLOW_DSQ then
-        return true
-    end
-
-    inst.brain.followtarget = nil
-
-    return false
 end
 
 local function fn()
