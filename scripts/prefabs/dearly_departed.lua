@@ -8,7 +8,8 @@ local function OpenLetter(inst, user)
     --this is where we summon the ghost
 	local user = inst.components.inventoryitem.owner
 	local x, y, z = user.Transform:GetWorldPosition()
-	local ghost = SpawnPrefab("ghost")
+	--local ghost = SpawnPrefab("ghost")
+	local ghost = SpawnPrefab("ghost_light") --so I can quickly test the new ghost type
 	ghost.Transform:SetPosition(x, 0, z)
 
 	--if ghost.components.follower.leader ~= leader then

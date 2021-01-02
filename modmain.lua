@@ -5,7 +5,7 @@ PrefabFiles = {
 	"gravedigger",
 	"dearly_departed",
 	"gravejacket",
-	--"ghost",
+	"ghost_light",
 }
 
 Assets = {
