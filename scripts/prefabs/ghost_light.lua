@@ -19,6 +19,34 @@ local function OnDeath(inst)
     inst.components.aura:Enable(false)
 end
 
+local function AuraTest(inst, target)
+    if inst.components.combat:TargetIs(target) or (target.components.combat.target ~= nil and target.components.combat:TargetIs(inst)) then
+        return true
+    end
+
+    return not target:HasTag("ghostlyfriend") and not target:HasTag("abigail")
+end
+
+local function OnAttacked(inst, data)
+--    print("onattack", data.attacker, data.damage, data.damageresolved)
+
+    if data.attacker == nil then
+        inst.components.combat:SetTarget(nil)
+    elseif not data.attacker:HasTag("noauradamage") then
+       inst.components.combat:SetTarget(data.attacker) 
+    end
+end
+
+local function KeepTargetFn(inst, target)
+    if target and inst:GetDistanceSqToInst(target) < TUNING.GHOST_FOLLOW_DSQ then
+        return true
+    end
+
+    inst.brain.followtarget = nil
+
+    return false
+end
+
 local function fn()
     local inst = CreateEntity()
 
@@ -33,16 +61,16 @@ local function fn()
     inst.AnimState:SetBloomEffectHandle("shaders/anim_bloom_ghost.ksh")
     inst.AnimState:SetLightOverride(TUNING.GHOST_LIGHT_OVERRIDE)
 
-    inst.Light:SetIntensity(.7)
-    inst.Light:SetRadius(.7)
+    inst.Light:SetIntensity(.9)
+    inst.Light:SetRadius(1.1)
     inst.Light:SetFalloff(.6)
     inst.Light:Enable(true)
-    inst.Light:SetColour(180/255, 195/255, 120/255)
+    inst.Light:SetColour(180/255, 195/255, 100/255)
 
     inst.AnimState:SetBank("ghost")
     inst.AnimState:SetBuild("ghost_build")
     inst.AnimState:PlayAnimation("idle", true)
-    --inst.AnimState:SetMultColour(1,1,1,.6)
+    inst.AnimState:SetMultColour(1,1,.3,1)
 
     inst:AddTag("monster")
     inst:AddTag("hostile")
@@ -100,4 +128,4 @@ local function fn()
     return inst
 end
 
-return Prefab("ghost", fn, assets, prefabs)
+return Prefab("ghost_light", fn, assets, prefabs)

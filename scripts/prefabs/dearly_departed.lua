@@ -4,6 +4,11 @@ local assets =
     Asset("IMAGE", "images/inventoryimages/dearly_departed.tex"), 
 }
 
+local prefabs =
+{
+	"ghost_light",
+}
+
 local function OpenLetter(inst, user)
     --this is where we summon the ghost
 	local user = inst.components.inventoryitem.owner
