@@ -9,7 +9,7 @@ local prefabs =
 {
 }
 
-local brain = require "brains/ghostlightbrain"
+local brain = require "brains/ghostbrain"
 
 local function AbleToAcceptTest(inst, item)
     return false, item.prefab == "reviver" and "GHOSTHEART" or nil
@@ -20,7 +20,21 @@ local function OnDeath(inst)
 end
 
 local function AuraTest(inst, target)
-	--do nothing?
+    if inst.components.combat:TargetIs(target) or (target.components.combat.target ~= nil and target.components.combat:TargetIs(inst)) then
+        return true
+    end
+
+    return not target:HasTag("ghostlyfriend") and not target:HasTag("abigail")
+end
+
+local function OnAttacked(inst, data)
+--    print("onattack", data.attacker, data.damage, data.damageresolved)
+
+    if data.attacker == nil then
+        inst.components.combat:SetTarget(nil)
+    elseif not data.attacker:HasTag("noauradamage") then
+       inst.components.combat:SetTarget(data.attacker) 
+    end
 end
 
 local function KeepTargetFn(inst, target)
@@ -42,23 +56,12 @@ local function fn()
     inst.entity:AddLight()
     inst.entity:AddNetwork()
 
-	--this is what handles the ghost's collider, disabling it makes it so it has no collisions
-    --MakeGhostPhysics(inst, .5, .5)
-	MakeGhostPhysics(inst, 0, .3)
-
-    inst.AnimState:SetBloomEffectHandle("shaders/anim_bloom_ghost.ksh")
-    inst.AnimState:SetLightOverride(TUNING.GHOST_LIGHT_OVERRIDE)
-
-    inst.Light:SetIntensity(.9)
-    inst.Light:SetRadius(3)
-    inst.Light:SetFalloff(.6)
-    inst.Light:Enable(true)
-    inst.Light:SetColour(180/255, 195/255, 100/255)
+    MakeGhostPhysics(inst, .5, .5)
 
     inst.AnimState:SetBank("ghost")
     inst.AnimState:SetBuild("ghost_build")
     inst.AnimState:PlayAnimation("idle", true)
-    inst.AnimState:SetMultColour(1,1,.3,1)
+    inst.AnimState:SetMultColour(0,0,0,.6)
 
     inst:AddTag("monster")
     inst:AddTag("hostile")
@@ -79,6 +82,11 @@ local function fn()
 
     inst:SetBrain(brain)
 
+    inst:AddComponent("locomotor")
+    inst.components.locomotor.walkspeed = TUNING.GHOST_SPEED
+    inst.components.locomotor.runspeed = TUNING.GHOST_SPEED
+    inst.components.locomotor.directdrive = true
+
     inst:SetStateGraph("SGghost")
 
     inst:AddComponent("sanityaura")
@@ -87,10 +95,10 @@ local function fn()
     inst:AddComponent("inspectable")
 
     inst:AddComponent("health")
-    inst.components.health:SetMaxHealth(TUNING.GHOST_HEALTH)
+    inst.components.health:SetMaxHealth(TUNING.GHOST_HEALTH * 3)
 
     inst:AddComponent("combat")
-    inst.components.combat.defaultdamage = TUNING.GHOST_DAMAGE
+    inst.components.combat.defaultdamage = (TUNING.GHOST_DAMAGE* 3)
     inst.components.combat.playerdamagepercent = TUNING.GHOST_DMG_PLAYER_PERCENT
     inst.components.combat:SetKeepTargetFunction(KeepTargetFn)
 
@@ -104,10 +112,11 @@ local function fn()
     inst.components.trader:SetAbleToAcceptTest(AbleToAcceptTest)
 
     inst:ListenForEvent("death", OnDeath)
+    inst:ListenForEvent("attacked", OnAttacked)
 
     ------------------
 
     return inst
 end
 
-return Prefab("ghost_light", fn, assets, prefabs)
+return Prefab("ghost_shadow", fn, assets, prefabs)

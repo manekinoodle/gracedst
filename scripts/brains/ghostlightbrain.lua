@@ -1,5 +1,4 @@
-require "behaviours/follow"
-require "behaviours/wander"
+require "behaviours/standandattack"
 
 local GhostLightBrain = Class(Brain, function(self, inst)
     Brain._ctor(self, inst)
