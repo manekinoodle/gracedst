@@ -4,6 +4,7 @@ local assets =
 	Asset("ANIM", "anim/swap_gravejacket.zip"),
 	Asset("ANIM", "anim/swap_gravejacket_smooth.zip"),
 	Asset("ANIM", "anim/gravejacket_skin.zip"),
+	Asset("ANIM", "anim/swap_gravejacket_classic.zip"),
 
     Asset("ATLAS", "images/inventoryimages/gravejacket.xml"),
     Asset("IMAGE", "images/inventoryimages/gravejacket.tex"),
@@ -34,8 +35,14 @@ local function onequip(inst, owner)
 
 		if owner.components.skinner.skin_name == "grace_none" then
 			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
+			owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
+			owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
+		elseif owner.components.skinner.skin_name == "grace_classic" then
+			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket_classic", "swap_body")
 		else
 			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket_smooth", "swap_body")
+			owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
+			owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
 		end
     inst.components.fueled:StartConsuming()
 
@@ -52,10 +59,6 @@ local function onequip(inst, owner)
 		owner.AnimState:SetSymbolExchange( "torso_pelvis", "torso" ) -- switch body parts around
 		owner.AnimState:OverrideSkinSymbol("torso_pelvis", "gravejacket", "torso" )
 	end
-
-	owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
-	owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
-
 
 	if owner.prefab ~= "grace" then
 	  inst:DoTaskInTime(0.1, function()
@@ -167,7 +170,7 @@ local function fn()
         return inst
     end
 
-    inst.AnimState:SetBank("gravejacket_ground")
+		inst.AnimState:SetBank("gravejacket_ground")
     inst.AnimState:SetBuild("gravejacket_ground")
     inst.AnimState:PlayAnimation("gravejacket_ground")
 

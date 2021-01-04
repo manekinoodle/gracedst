@@ -1,6 +1,6 @@
 -- This information tells other players more about the mod
 name = "Grace"
-description = "Play as Grace from Pathologic. \n\nVersion 0.62"
+description = "Play as Grace from Pathologic. \n\nVersion 0.7"
 author = "ManekiNoodle and PyrotechnicCake"
 version = "0.62" -- This is the version of the template. Change it to your own number.
 

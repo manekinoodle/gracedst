@@ -29,7 +29,7 @@ table.insert(prefabs, CreatePrefabSkin("grace_classic",
 	rarity_modifier = "Woven", --Ive put the rarity_modifier to Woven, Doesnt make a difference other than say youve woven the skin
 	skip_item_gen = true,
 	skip_giftable_gen = true,
-	skin_tags = { "BASE", "GRACE", "CLASSIC"}, --Notice in this skin_tags table I have "VICTORIAN", This tag actually makes the little gorge icon show up on the skin! Other tags will do the same thing such as forge, yotc, yotp, yotv, yog and so on!
+	skin_tags = { "BASE", "GRACE"}, --Notice in this skin_tags table I have "VICTORIAN", This tag actually makes the little gorge icon show up on the skin! Other tags will do the same thing such as forge, yotc, yotp, yotv, yog and so on!
 	skins = {
 		normal_skin = "grace_classic", --Rename your "normal_skin" accordingly
 		ghost_skin = "ghost_grace_build", --And if you did a ghost skin, rename that too!
