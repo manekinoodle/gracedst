@@ -193,6 +193,8 @@ STRINGS.SKIN_NAMES.grace_none = "Grace"
 --entity names
 STRINGS.NAMES.GHOST_LIGHT = "Glowing Ghost" 
 
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GHOST_LIGHT = "I feel safe around it."
+
 --will this fix our shovel?
 TUNING.STARTING_ITEM_IMAGE_OVERRIDE["gravedigger"] = {
     atlas = "images/inventoryimages/gravedigger.xml",
