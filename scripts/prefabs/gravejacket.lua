@@ -47,11 +47,6 @@ local function onequip(inst, owner)
     inst.components.fueled:StartConsuming()
 
 	-------------------------------------------------------------------------------------------------
-	if owner.components.skinner.clothing["body"] ~= "" then
-		inst.bodyskin = owner.components.skinner.clothing["body"] -- store skin name in a variable
-		owner.components.skinner.clothing["body"] = ""
-		owner.components.skinner:ClearClothing("body")
-	end
 
 	local tuck_torso = BASE_TORSO_TUCK[owner.prefab] and BASE_TORSO_TUCK[owner.prefab] == "full"
 	if tuck_torso then --if torso is tucked then we have to switch symbols around
@@ -177,7 +172,7 @@ local function fn()
     inst:AddComponent("inspectable")
 
     inst:AddComponent("inventoryitem")
-	inst.components.inventoryitem.imagename = "gravejacket"
+		inst.components.inventoryitem.imagename = "gravejacket"
     inst.components.inventoryitem.atlasname = "images/inventoryimages/gravejacket.xml"
 
     inst:AddComponent("equippable")
