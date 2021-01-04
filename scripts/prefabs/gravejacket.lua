@@ -2,7 +2,6 @@ local assets =
 {
 	Asset("ANIM", "anim/gravejacket_ground.zip"),
 	Asset("ANIM", "anim/swap_gravejacket.zip"),
-	Asset("ANIM", "anim/swap_gravejacket_smooth.zip"),
 	Asset("ANIM", "anim/gravejacket_skin.zip"),
 	Asset("ANIM", "anim/swap_gravejacket_classic.zip"),
 
@@ -33,27 +32,31 @@ end
 
 local function onequip(inst, owner)
 
-		if owner.components.skinner.skin_name == "grace_none" then
-			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
-			owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
-			owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
-		elseif owner.components.skinner.skin_name == "grace_classic" then
-			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket_classic", "swap_body")
-		else
-			owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket_smooth", "swap_body")
-			owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
-			owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
-		end
-    inst.components.fueled:StartConsuming()
-
-	-------------------------------------------------------------------------------------------------
+	if owner.components.skinner.clothing["body"] ~= "" then
+		inst.bodyskin = owner.components.skinner.clothing["body"] -- store skin name in a variable
+	--	owner.components.skinner.clothing["body"] = ""
+	--	owner.components.skinner:ClearClothing("body")
+	end
 
 	local tuck_torso = BASE_TORSO_TUCK[owner.prefab] and BASE_TORSO_TUCK[owner.prefab] == "full"
 	if tuck_torso then --if torso is tucked then we have to switch symbols around
-		owner.components.skinner:SetSkinMode()
-		owner.AnimState:SetSymbolExchange( "torso_pelvis", "torso" ) -- switch body parts around
-		owner.AnimState:OverrideSkinSymbol("torso_pelvis", "gravejacket", "torso" )
+	  owner.components.skinner:SetSkinMode()
+	  owner.AnimState:SetSymbolExchange( "torso_pelvis", "torso" ) -- switch body parts around
+	  owner.AnimState:OverrideSkinSymbol("torso_pelvis", "gravejacket", "torso" )
 	end
+
+	if owner.components.skinner.skin_name == "grace_classic" then
+		owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket_classic", "swap_body")
+	else
+		owner.AnimState:OverrideSymbol("swap_body", "swap_gravejacket", "swap_body")
+		owner.AnimState:OverrideSymbol("arm_lower", "gravejacket_skin", "arm_lower")
+		owner.AnimState:OverrideSymbol("arm_upper", "gravejacket_skin", "arm_upper")
+	end
+  inst.components.fueled:StartConsuming()
+
+	-------------------------------------------------------------------------------------------------
+
+
 
 	if owner.prefab ~= "grace" then
 	  inst:DoTaskInTime(0.1, function()
@@ -117,13 +120,17 @@ local function onunequip(inst, owner)
     owner.AnimState:ClearOverrideSymbol("swap_body")
     inst.components.fueled:StopConsuming()
 
-	owner.AnimState:ClearOverrideSymbol("arm_lower")
-	owner.AnimState:ClearOverrideSymbol("arm_upper")
+	if owner.components.skinner.skin_name == "grace_none" then
+		owner.AnimState:ClearOverrideSymbol("arm_lower")
+		owner.AnimState:ClearOverrideSymbol("arm_upper")
+	end
 	owner.AnimState:ClearOverrideSymbol("torso")
 
+	if owner.CurrentModdedSkin ~= nil then
+		owner:RemoveEventCallback("onchangemoddedskin", onequippedskinitem_gravejacket)
+	end
 
-
-	owner.AnimState:ClearOverrideSymbol("swap_body")
+--	owner.AnimState:ClearOverrideSymbol("swap_body")
 
 	if inst.bodyskin ~= nil then
 		owner.components.skinner.clothing["body"] = inst.bodyskin
