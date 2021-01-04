@@ -190,6 +190,9 @@ STRINGS.CHARACTERS.GRACE = require "speech_grace"
 STRINGS.NAMES.grace = "Grace"
 STRINGS.SKIN_NAMES.grace_none = "Grace"
 
+--entity names
+STRINGS.NAMES.GHOST_LIGHT = "Glowing Ghost" 
+
 --will this fix our shovel?
 TUNING.STARTING_ITEM_IMAGE_OVERRIDE["gravedigger"] = {
     atlas = "images/inventoryimages/gravedigger.xml",
