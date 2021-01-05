@@ -33,6 +33,10 @@ local function KeepTargetFn(inst, target)
     return false
 end
 
+local function OnDepleted(inst)
+	inst.sg:GoToState("dissipate")
+end
+
 local function fn()
     local inst = CreateEntity()
 
@@ -58,7 +62,7 @@ local function fn()
     inst.AnimState:SetBank("ghost")
     inst.AnimState:SetBuild("ghost_build")
     inst.AnimState:PlayAnimation("idle", true)
-    inst.AnimState:SetMultColour(1,1,.3,1)
+    inst.AnimState:SetMultColour(1,1,.2,1)
 
     inst:AddTag("monster")
     inst:AddTag("hostile")
@@ -93,6 +97,20 @@ local function fn()
     inst.components.combat.defaultdamage = TUNING.GHOST_DAMAGE
     inst.components.combat.playerdamagepercent = TUNING.GHOST_DMG_PLAYER_PERCENT
     inst.components.combat:SetKeepTargetFunction(KeepTargetFn)
+
+	--fuel controls
+	inst:AddComponent("fueled")
+	inst.components.fueled.fueltype = FUELTYPE.CAVE
+    inst.components.fueled.maxfuel = (TUNING.FIREPIT_FUEL_MAX * 3)
+	inst.components.fueled:StartConsuming()
+    inst.components.fueled.accepting = true
+	inst.components.fueled:SetDepletedFn(OnDepleted)
+
+    --inst.components.fueled:SetTakeFuelFn(ontakefuel)
+    --inst.components.fueled:SetUpdateFn(onupdatefueled)
+    --inst.components.fueled:SetSectionCallback(onfuelchange)
+    inst.components.fueled:InitializeFuelLevel(TUNING.FIREPIT_FUEL_START)
+	-----------------------------------------------------------------------
 
     inst:AddComponent("aura")
     inst.components.aura.radius = TUNING.GHOST_RADIUS

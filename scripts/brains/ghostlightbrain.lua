@@ -6,13 +6,13 @@ end)
 
 function GhostLightBrain:OnStart()
     local root = PriorityNode(
-    {
+    {--[[
         SequenceNode{
 			ParallelNodeAny{
 				WaitNode(10),
 			},
             ActionNode(function() self.inst.sg:GoToState("dissipate") end),
-        }
+        }]]
     }, 1)
         
     self.bt = BT(self.inst, root)
