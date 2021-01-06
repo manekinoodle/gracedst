@@ -3,8 +3,8 @@ local assets =
 	Asset("ANIM", "anim/radient_remembrance.zip"), 
     Asset("ANIM", "anim/radient_remembrance.zip"),  
 
-    Asset("ATLAS", "images/inventoryimages/dearly_departed.xml"), 
-    Asset("IMAGE", "images/inventoryimages/dearly_departed.tex"), 
+    Asset("ATLAS", "images/inventoryimages/radient_remembrance.xml"), 
+    Asset("IMAGE", "images/inventoryimages/radient_remembrance.tex"), 
 }
 
 local prefabs =
@@ -17,9 +17,11 @@ local function OpenLetter(inst, user)
 		--this is where we summon the ghost
 		local user = inst.components.inventoryitem.owner
 		local x, y, z = user.Transform:GetWorldPosition()
-		--local ghost = SpawnPrefab("ghost")
-		local ghost = SpawnPrefab("ghost_light") --so I can quickly test the new ghost type
-		ghost.Transform:SetPosition(x, 0, z)
+		
+		--if user.prefab == "grace" then
+			local ghost = SpawnPrefab("ghost_light") --so I can quickly test the new ghost type
+			ghost.Transform:SetPosition(x, 0, z)
+		--end
 	end
 end
 
@@ -56,8 +58,8 @@ local function fn()
     inst.components.stackable.maxsize = TUNING.STACK_SIZE_MEDITEM
 
     inst:AddComponent("inventoryitem")
-	inst.components.inventoryitem.imagename = "dearly_departed"
-    inst.components.inventoryitem.atlasname = "images/inventoryimages/dearly_departed.xml"
+	inst.components.inventoryitem.imagename = "radient_remembrance"
+    inst.components.inventoryitem.atlasname = "images/inventoryimages/radient_remembrance.xml"
 
     MakeHauntableLaunch(inst)
 

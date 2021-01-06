@@ -49,6 +49,12 @@ Assets = {
 
 	Asset("ATLAS", "images/inventoryimages/gravejacket.xml"),
     Asset("IMAGE", "images/inventoryimages/gravejacket.tex"),
+
+	Asset("ATLAS", "images/inventoryimages/dearly_departed.xml"),
+    Asset("IMAGE", "images/inventoryimages/dearly_departed.tex"),
+
+	Asset("ATLAS", "images/inventoryimages/radient_remembrance.xml"),
+    Asset("IMAGE", "images/inventoryimages/radient_remembrance.tex"),
 }
 
 local prefabs = {
@@ -173,12 +179,28 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.dearly_departed = "It seems personal."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
 
 --the radient remembrance
-local radient_remembrance = AddRecipe("radient_remembrance", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1), Ingredient("fireflies", 2)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/dearly_departed.xml")
+local radient_remembrance = AddRecipe("radient_remembrance", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1), Ingredient("fireflies", 2)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/radient_remembrance.xml")
 
 STRINGS.NAMES.RADIENT_REMEMBRANCE = "Radient Remembrance"
 STRINGS.RECIPE_DESC.RADIENT_REMEMBRANCE = "A fond memory of those who passed."
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.RADIENT_REMEMBRANCE = "It seems personal."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RADIENT_REMEMBRANCE = "Is this a drawing?"
+STRINGS.CHARACTERS.GRACE.DESCRIBE.RADIENT_REMEMBRANCE = "I remember them fondly."
+GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.RADIENT_REMEMBRANCE = "A crudely drawn portrait."
+GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.RADIENT_REMEMBRANCE = "A work of art in a teeny envelope."
+GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.RADIENT_REMEMBRANCE = "A drawing of a dead person."
+GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.RADIENT_REMEMBRANCE = "SUBJECT DEPICTED IS DECEASED"
+GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.RADIENT_REMEMBRANCE = "The younge lady's keepsake."
+GLOBAL.STRINGS.CHARACTERS.WOODIE.DESCRIBE.RADIENT_REMEMBRANCE = "This man has a nice beard, or is it a woman?"
+GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.RADIENT_REMEMBRANCE = "Even a crudely drawn picture can hold power."
+GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.RADIENT_REMEMBRANCE = "They took an offer from the other studio."
+GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.RADIENT_REMEMBRANCE = "We don't recognise them."
+GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.RADIENT_REMEMBRANCE = "Is this toast or paper?"
+GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.RADIENT_REMEMBRANCE = "Pinetree pioneer award for artistic effort."
+GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.RADIENT_REMEMBRANCE = "Just pictures, no words, glorp."
+GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.RADIENT_REMEMBRANCE = "Stealing this is beneath me, hyuyu!"
+GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.RADIENT_REMEMBRANCE = "You never forget the people you loose."
+GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RADIENT_REMEMBRANCE = "Family"
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"
@@ -209,6 +231,17 @@ GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.GHOST_LIGHT = "I prefer a warm fire."
 GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GHOST_LIGHT = "Spooky, but less spooky than darkness."
 GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.GHOST_LIGHT = "Just let the dark take my life."
 GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.GHOST_LIGHT = "SOULS CAN BE A SUFFCIENT LIGHT SOURCE"
+GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GHOST_LIGHT = "A suitable reading light."
+GLOBAL.STRINGS.CHARACTERS.WOODIE.DESCRIBE.GHOST_LIGHT = "Shines like the moon."
+GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GHOST_LIGHT = "Anything to fend off Charlie."
+GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GHOST_LIGHT = "Low budget special effects."
+GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.GHOST_LIGHT = "We shouldn't get too close."
+GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.GHOST_LIGHT = "The smell is ruining my appetite."
+GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.GHOST_LIGHT = "It's somebody with a lamp under a sheet."
+GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.GHOST_LIGHT = "Yellow ghost makes light, glorp."
+GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.GHOST_LIGHT = "No soul is safe from me, hyuyu!"
+GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.GHOST_LIGHT = "Barely brighter than a desk lamp."
+GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GHOST_LIGHT = "Smelly ghost"
 
 --shadow ghost
 STRINGS.NAMES.GHOST_SHADOW = "Shadow Wraith" 
