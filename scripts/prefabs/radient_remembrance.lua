@@ -18,10 +18,11 @@ local function OpenLetter(inst, user)
 		local user = inst.components.inventoryitem.owner
 		local x, y, z = user.Transform:GetWorldPosition()
 		
-		--if user.prefab == "grace" then
+		if user.prefab == "grace" then
 			local ghost = SpawnPrefab("ghost_light") --so I can quickly test the new ghost type
 			ghost.Transform:SetPosition(x, 0, z)
-		--end
+			inst.components.stackable:Get():Remove()
+		end
 	end
 end
 
