@@ -4,6 +4,7 @@ PrefabFiles = {
 	"gravestone",
 	"gravedigger",
 	"dearly_departed",
+	"radient_remembrance",
 	"gravejacket",
 	"ghost_light",
 	"ghost_shadow",
@@ -170,6 +171,14 @@ STRINGS.RECIPE_DESC.DEARLY_DEPARTED = "A letter to the dead."
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.dearly_departed = "It seems personal."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
+
+--the radient remembrance
+local radient_remembrance = AddRecipe("radient_remembrance", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1), Ingredient("fireflies", 2)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/dearly_departed.xml")
+
+STRINGS.NAMES.RADIENT_REMEMBRANCE = "Radient Remembrance"
+STRINGS.RECIPE_DESC.RADIENT_REMEMBRANCE = "A fond memory of those who passed."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RADIENT_REMEMBRANCE = "It seems personal."
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.grace = "The Gravekeeper"

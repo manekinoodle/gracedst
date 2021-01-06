@@ -1,12 +1,14 @@
 local assets =
 {
+	Asset("ANIM", "anim/dearly_departed.zip"), 
+    Asset("ANIM", "anim/dearly_departed.zip"),  
+
     Asset("ATLAS", "images/inventoryimages/dearly_departed.xml"), 
     Asset("IMAGE", "images/inventoryimages/dearly_departed.tex"), 
 }
 
 local prefabs =
 {
-	"ghost_light",
 }
 
 local function OpenLetter(inst, user)
@@ -14,7 +16,7 @@ local function OpenLetter(inst, user)
 	local user = inst.components.inventoryitem.owner
 	local x, y, z = user.Transform:GetWorldPosition()
 	--local ghost = SpawnPrefab("ghost")
-	local ghost = SpawnPrefab("ghost_light") --so I can quickly test the new ghost type
+	local ghost = SpawnPrefab("ghost") --so I can quickly test the new ghost type
 	ghost.Transform:SetPosition(x, 0, z)
 
 	--if ghost.components.follower.leader ~= leader then
