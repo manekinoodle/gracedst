@@ -20,6 +20,9 @@ Assets = {
     Asset( "IMAGE", "images/selectscreen_portraits/grace_silho.tex" ),
     Asset( "ATLAS", "images/selectscreen_portraits/grace_silho.xml" ),
 
+		Asset( "IMAGE", "bigportraits/grace.tex" ),
+    Asset( "ATLAS", "bigportraits/grace.xml" ),
+
     Asset( "IMAGE", "bigportraits/grace_none.tex" ),
     Asset( "ATLAS", "bigportraits/grace_none.xml" ),
 
@@ -182,7 +185,7 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
 local radient_remembrance = AddRecipe("radient_remembrance", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1), Ingredient("fireflies", 2)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/radient_remembrance.xml")
 
 STRINGS.NAMES.RADIENT_REMEMBRANCE = "Radiant Remembrance"
-STRINGS.RECIPE_DESC.RADIENT_REMEMBRANCE = "A fond memory of those who passed."
+STRINGS.RECIPE_DESC.RADIENT_REMEMBRANCE = "A fond memory of those who have passed."
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.RADIENT_REMEMBRANCE = "Is this a drawing?"
 STRINGS.CHARACTERS.GRACE.DESCRIBE.RADIENT_REMEMBRANCE = "I remember them fondly."
@@ -197,8 +200,8 @@ GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.RADIENT_REMEMBRANCE = "They took a
 GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.RADIENT_REMEMBRANCE = "We don't recognise them."
 GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.RADIENT_REMEMBRANCE = "Is this toast or paper?"
 GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.RADIENT_REMEMBRANCE = "I'd give an award for artistic effort."
-GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.RADIENT_REMEMBRANCE = "Just pictures, no words, glorp."
-GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.RADIENT_REMEMBRANCE = "Even imps have standards."
+GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.RADIENT_REMEMBRANCE = "Just pictures, no words, florp."
+GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.RADIENT_REMEMBRANCE = "Even imps have standards. I'm not taking that."
 GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.RADIENT_REMEMBRANCE = "You never forget the people you lose."
 GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RADIENT_REMEMBRANCE = "Family"
 
@@ -238,8 +241,8 @@ GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GHOST_LIGHT = "Low budget special 
 GLOBAL.STRINGS.CHARACTERS.WEBBER.DESCRIBE.GHOST_LIGHT = "We shouldn't get too close."
 GLOBAL.STRINGS.CHARACTERS.WARLY.DESCRIBE.GHOST_LIGHT = "The smell is ruining my appetite."
 GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE.GHOST_LIGHT = "It's somebody with a lamp under a sheet."
-GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.GHOST_LIGHT = "Yellow ghost makes light, glorp."
-GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.GHOST_LIGHT = "No soul is safe from me, hyuyu!"
+GLOBAL.STRINGS.CHARACTERS.WURT.DESCRIBE.GHOST_LIGHT = "Yellow ghost makes light, flurp."
+GLOBAL.STRINGS.CHARACTERS.WORTOX.DESCRIBE.GHOST_LIGHT = "I'll eat any soul, even this one."
 GLOBAL.STRINGS.CHARACTERS.WINONA.DESCRIBE.GHOST_LIGHT = "Barely brighter than a desk lamp."
 GLOBAL.STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GHOST_LIGHT = "Smelly ghost"
 
@@ -260,8 +263,6 @@ TUNING.STARTING_ITEM_IMAGE_OVERRIDE["gravedigger"] = {
     image = "gravedigger.tex",
 }
 
--- The skins shown in the cycle view window on the character select screen.
--- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes
 local skin_modes = {
     {
         type = "ghost_skin",
@@ -275,14 +276,13 @@ local skin_modes = {
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
 AddModCharacter("grace", "FEMALE", skin_modes)
 
---Hornet: I am currently using wilba as an example, youll want to change all instances of "wilba" to the prefab name of your character!
 --Skins
 local _G = GLOBAL
 local PREFAB_SKINS = _G.PREFAB_SKINS
 local PREFAB_SKINS_IDS = _G.PREFAB_SKINS_IDS
 local SKIN_AFFINITY_INFO = GLOBAL.require("skin_affinity_info")
 
-modimport("skins_api") --Hornet: We import the file! If you named your file something else other than skins_api then youll want to rename this function to the name of the file
+modimport("skins_api")
 
 SKIN_AFFINITY_INFO.grace = {
 	"grace_classic",
@@ -293,7 +293,7 @@ PREFAB_SKINS["grace"] = {
 	"grace_classic",
 }
 
-PREFAB_SKINS_IDS = {} --Make sure this is after you  change the PREFAB_SKINS["character"] table
+PREFAB_SKINS_IDS = {}
 for prefab,skins in pairs(PREFAB_SKINS) do
     PREFAB_SKINS_IDS[prefab] = {}
     for k,v in pairs(skins) do
@@ -303,7 +303,7 @@ end
 
 
 
-AddSkinnableCharacter("grace") --Hornet: The character youd like to skin, make sure you use the prefab name. And MAKE sure you run this function AFTER you import the skins_api file
+AddSkinnableCharacter("grace")
 
 --Skin STRINGS
 

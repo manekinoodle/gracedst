@@ -1,8 +1,8 @@
 -- This information tells other players more about the mod
 name = "Grace"
-description = "Play as Grace from Pathologic. \n\nVersion 0.7"
+description = "Play as Grace from Pathologic. \n\nVersion 0.71"
 author = "ManekiNoodle and PyrotechnicCake"
-version = "0.62" -- This is the version of the template. Change it to your own number.
+version = "0.71" -- This is the version of the template. Change it to your own number.
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "nil"
