@@ -31,6 +31,32 @@ local function KeepTargetFn(inst, target)
     inst.brain.followtarget = nil
 
     return false
+end 
+
+local function onupdatefueled(inst)
+    --leaving empty for now, testing if this breaks anything
+	local fuel = inst.components.fueled:GetPercent()
+
+	if fuel ~= nil then
+		if fuel <= 0.25 then
+		inst.Light:SetRadius(1)
+		end
+		if fuel > 0.25 then
+		inst.Light:SetRadius(2)
+		end
+		if fuel <= 0.5 then
+		inst.Light:SetRadius(2)
+		end
+		if fuel > 0.5 then
+		inst.Light:SetRadius(3)
+		end
+		if fuel <= 0.75 then
+		inst.Light:SetRadius(3)
+		end
+		if fuel > 0.75 then
+		inst.Light:SetRadius(4)
+		end
+	end
 end
 
 local function OnDepleted(inst)
@@ -54,7 +80,7 @@ local function fn()
     inst.AnimState:SetLightOverride(TUNING.GHOST_LIGHT_OVERRIDE)
 
     inst.Light:SetIntensity(.9)
-    inst.Light:SetRadius(3)
+    inst.Light:SetRadius(4)
     inst.Light:SetFalloff(.6)
     inst.Light:Enable(true)
     inst.Light:SetColour(180/255, 195/255, 100/255)
@@ -101,15 +127,17 @@ local function fn()
 	--fuel controls
 	inst:AddComponent("fueled")
 	inst.components.fueled.fueltype = FUELTYPE.CAVE
-    inst.components.fueled.maxfuel = (TUNING.FIREPIT_FUEL_MAX * 3)
+    inst.components.fueled.maxfuel = (TUNING.FIREPIT_FUEL_MAX * 2)
 	inst.components.fueled:StartConsuming()
     inst.components.fueled.accepting = true
 	inst.components.fueled:SetDepletedFn(OnDepleted)
 
+	--for lighting controls
+	inst.components.fueled:SetUpdateFn(onupdatefueled)
+
     --inst.components.fueled:SetTakeFuelFn(ontakefuel)
-    --inst.components.fueled:SetUpdateFn(onupdatefueled)
     --inst.components.fueled:SetSectionCallback(onfuelchange)
-    inst.components.fueled:InitializeFuelLevel(TUNING.FIREPIT_FUEL_START)
+    inst.components.fueled:InitializeFuelLevel(TUNING.FIREPIT_FUEL_MAX * 2)
 	-----------------------------------------------------------------------
 
     inst:AddComponent("aura")
