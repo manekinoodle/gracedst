@@ -40,20 +40,11 @@ local function onupdatefueled(inst)
 	if fuel ~= nil then
 		if fuel <= 0.25 then
 		inst.Light:SetRadius(1)
-		end
-		if fuel > 0.25 then
+		elseif fuel <= 0.5 then
 		inst.Light:SetRadius(2)
-		end
-		if fuel <= 0.5 then
-		inst.Light:SetRadius(2)
-		end
-		if fuel > 0.5 then
+		elseif fuel <= 0.75 then
 		inst.Light:SetRadius(3)
-		end
-		if fuel <= 0.75 then
-		inst.Light:SetRadius(3)
-		end
-		if fuel > 0.75 then
+		elseif fuel > 0.75 then
 		inst.Light:SetRadius(4)
 		end
 	end
