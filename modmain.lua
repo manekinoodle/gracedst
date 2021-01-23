@@ -188,7 +188,7 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEARLY_DEPARTED = "It seems personal."
 local radient_remembrance = AddRecipe("radient_remembrance", {Ingredient("papyrus", 2), Ingredient("ghostflower", 1), Ingredient("fireflies", 2)}, GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, "gravekeeper", "images/inventoryimages/radient_remembrance.xml")
 
 STRINGS.NAMES.RADIENT_REMEMBRANCE = "Radiant Remembrance"
-STRINGS.RECIPE_DESC.RADIENT_REMEMBRANCE = "A fond memory of those who have passed."
+STRINGS.RECIPE_DESC.RADIENT_REMEMBRANCE = "A fond memory of those who've passed."
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.RADIENT_REMEMBRANCE = "Is this a drawing?"
 STRINGS.CHARACTERS.GRACE.DESCRIBE.RADIENT_REMEMBRANCE = "I remember them fondly."
