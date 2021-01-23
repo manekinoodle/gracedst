@@ -29,6 +29,9 @@ Assets = {
 		Asset( "IMAGE", "bigportraits/grace_classic.tex" ),
 		Asset( "ATLAS", "bigportraits/grace_classic.xml" ),
 
+		Asset( "IMAGE", "bigportraits/grace_roseate.tex" ),
+		Asset( "ATLAS", "bigportraits/grace_roseate.xml" ),
+
 	Asset( "IMAGE", "images/map_icons/grace.tex" ),
 	Asset( "ATLAS", "images/map_icons/grace.xml" ),
 
@@ -228,12 +231,12 @@ STRINGS.SKIN_NAMES.grace_none = "Grace"
 --light ghost
 STRINGS.NAMES.GHOST_LIGHT = "Glowing Ghost"
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.GHOST_LIGHT = "Yellow, like the sun. Or pee."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GHOST_LIGHT = "Yellow, like the sun. Or urine."
 STRINGS.CHARACTERS.GRACE.DESCRIBE.GHOST_LIGHT = "I feel safe around it."
 GLOBAL.STRINGS.CHARACTERS.WILLOW.DESCRIBE.GHOST_LIGHT = "I'd prefer a warm fire."
 GLOBAL.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GHOST_LIGHT = "Spooky, but less spooky than darkness."
-GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.GHOST_LIGHT = "Just let the dark take my life."
-GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.GHOST_LIGHT = "SOULS CAN BE A SUFFCIENT LIGHT SOURCE"
+GLOBAL.STRINGS.CHARACTERS.WENDY.DESCRIBE.GHOST_LIGHT = "Just let the darkness take my life."
+GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE.GHOST_LIGHT = "SOULS CAN BE A SUFFICIENT LIGHT SOURCE"
 GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GHOST_LIGHT = "A suitable reading light."
 GLOBAL.STRINGS.CHARACTERS.WOODIE.DESCRIBE.GHOST_LIGHT = "Shines like the moon."
 GLOBAL.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GHOST_LIGHT = "Can we get something else? Anything else?"
@@ -286,11 +289,13 @@ modimport("skins_api")
 
 SKIN_AFFINITY_INFO.grace = {
 	"grace_classic",
+	"grace_roseate",
 }
 
 PREFAB_SKINS["grace"] = {
 	"grace_none",
 	"grace_classic",
+	"grace_roseate",
 }
 
 PREFAB_SKINS_IDS = {}
@@ -309,7 +314,10 @@ AddSkinnableCharacter("grace")
 
 STRINGS.SKIN_NAMES.grace_none = "Grace"
 STRINGS.SKIN_NAMES.grace_classic = "The Nostalgic"
+STRINGS.SKIN_NAMES.grace_roseate = "The Roseate"
 
 STRINGS.SKIN_DESCRIPTIONS.grace_none = "Oddly enough, this dress isn't tattered or torn."
 STRINGS.SKIN_QUOTES.grace_classic = "\"I think they've fallen out of love with me.\""
 STRINGS.SKIN_DESCRIPTIONS.grace_classic = "Old costumes bring back old memories."
+STRINGS.SKIN_QUOTES.grace_roseate = "\"Can I hold your hand?\""
+STRINGS.SKIN_DESCRIPTIONS.grace_roseate = "Roses are flowers that can be shared by both the dead and the living."

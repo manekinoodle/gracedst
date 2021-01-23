@@ -42,7 +42,7 @@ table.insert(prefabs, CreatePrefabSkin("grace_classic",
 
 }))
 
---[[table.insert(prefabs, CreatePrefabSkin("grace_roseate",
+table.insert(prefabs, CreatePrefabSkin("grace_roseate",
 {
 	base_prefab = "grace",
 	build_name_override = "grace_roseate", --The build name of your new skin,
@@ -58,12 +58,11 @@ table.insert(prefabs, CreatePrefabSkin("grace_classic",
 	},
 
 	assets = {
-		Asset( "ANIM", "anim/grace_classic.zip" ),
+		Asset( "ANIM", "anim/grace_roseate.zip" ),
 		Asset( "ANIM", "anim/ghost_grace_build.zip" ),
 	},
 
 }))
--- ]]
 
 --If youd like to make more skins, simply copy the CreatePrefabSkin function and accordingly make new skins you want!
 

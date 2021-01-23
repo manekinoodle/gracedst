@@ -120,7 +120,7 @@ local function onunequip(inst, owner)
     owner.AnimState:ClearOverrideSymbol("swap_body")
     inst.components.fueled:StopConsuming()
 
-	if owner.components.skinner.skin_name == "grace_none" then
+	if owner.components.skinner.skin_name == "grace_none" or "grace_roseate" then
 		owner.AnimState:ClearOverrideSymbol("arm_lower")
 		owner.AnimState:ClearOverrideSymbol("arm_upper")
 	end
